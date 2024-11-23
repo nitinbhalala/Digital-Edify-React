@@ -1,12 +1,28 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import digitaledify from "../assets/digitaledify.png";
 import { FaAngleDown, FaBars } from "react-icons/fa6";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { FaTimes } from "react-icons/fa";
+import StartNowModal from "./HomePage/StartNowModal";
 
 const Header = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(true);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+    return () => {
+      document.body.classList.remove("overflow-hidden");
+    };
+  }, [isOpen]);
+
+  const openModal = () => setIsOpen(true);
+  const closeModal = () => setIsOpen(false);
 
   const handleMouseEnter = (data) => {
     setIsDropdownOpen(data);
@@ -21,11 +37,11 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white border-b top-0 -left-2 right-0 z-50">
+    <header className="bg-white border-b top-0 lg:-left-2 right-0 z-50">
       <div className="container mx-auto px-0 xl:px-24">
         <div className="flex items-center justify-between px-8 py-3 pb-2 lg:p-0 lg:px-0">
           {/* Logo */}
-          <div className="">
+          <div >
             <img
               src={digitaledify}
               alt="Digital Edify - Best AWS, DevOps, Python, Digital Marketing Training Institute"
@@ -610,12 +626,13 @@ const Header = () => {
               <button className="bg-white text-base border border-black py-2 px-6 rounded-3xl hover:text-blue-800 hover:border-blue-800">
                 Login
               </button>
-              <button className="text-white text-base bg-sky-700 py-2 px-6 rounded-3xl  hover:bg-pink-700">
+              <button className="text-white text-base bg-sky-700 py-2 px-6 rounded-3xl  hover:bg-pink-700" onClick={() => openModal()}>
                 Start Now
               </button>
             </div>
           </div>
         </div>
+        {isOpen && <StartNowModal closeModal={closeModal} />}
       </div>
     </header>
   );

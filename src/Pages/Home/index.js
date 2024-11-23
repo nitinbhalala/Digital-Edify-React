@@ -12,15 +12,26 @@ import P9 from "../../assets/Compaines/p9.webp";
 import P10 from "../../assets/Compaines/p10.webp";
 import P12 from "../../assets/Compaines/p12.webp";
 import Landing from "./Landing";
+import BlackButton from "../../Components/BlackButton";
+import WhiteButton from "../../Components/WhiteButton";
 
 const images = [P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, P12];
 const Home = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const textItems = [
-    { text: "Learn.", color: "text-blue-500" },
-    { text: "Build.", color: "text-green-500" },
-    { text: "Get Job.", color: "text-pink-500" },
+    {
+      text: "Learn.",
+      color: "from-[#006dbd] to-[#002cd4] bg-clip-text text-transparent",
+    },
+    {
+      text: "Build.",
+      color: "from-[#5e00c8] to-[#ac008e] bg-clip-text text-transparent",
+    },
+    {
+      text: "Get Job.",
+      color: "from-[#ac008e] to-[#cd0064] bg-clip-text text-transparent",
+    },
   ];
 
   useEffect(() => {
@@ -31,64 +42,80 @@ const Home = () => {
     return () => clearInterval(interval); // Cleanup interval on unmount
   }, [textItems.length]);
   return (
-    <div className="mt-16 mb-12 justify-items-center">
-      <h4 className="text-3xl font-medium ">
-        India's #1 Premium Training Institute
-      </h4>
-      <div className="flex font-bold justify-center gap-7">
-        {textItems.map((item, index) => (
-          <h1
-            key={index}
-            className={`transition-all duration-500 ${
-              index === activeIndex ? item.color : "text-black "
-            } text-[110px] font-extrabold mb-2.5`}
-          >
-            {item.text}
-          </h1>
-        ))}
-      </div>
-      <p className="mt-5 mb-12 text-lg max-w-xl text-center">
-        100000+ uplifted through our hybrid classroom & online training,
-        enriched by real-time projects and job support.
-      </p>
-      <div className="flex space-x-4">
-        {/* Join Free Demo Button */}
-        <button className="flex gap-3  items-center px-4 py-2 bg-black text-white font-medium rounded-xl hover:bg-sky-500">
-          <MdOutlineLaptop size={20} />
-          Join Free Demo
-        </button>
-
-        {/* Contact Course Advisor Button */}
-        <button
-          className="flex gap-3 rounded-xl items-center px-4 py-2 border border-orange-600 font-semibold hover:text-white hover:bg-pink-700"
-          style={{
-            boxShadow: "0px 10px 43px  rgba(239, 68, 68, 0.5)", // Bottom-only shadow
-          }}
-        >
-          <MdPerson size={20} />
-          Contact Course Advisor
-        </button>
-      </div>
-      <div className="mt-24">
-        <h2 className="text-center mb-2.5 text-3xl font-extrabold text-[#555]">
-          Your Path to a Successful IT Career
-        </h2>
-        <p className="text-lg mb-8 text-center text-[#212529]">
-          Our Alumni Work at Top Compaines
+    <>
+      <div className="container mx-auto px-5 mt-16 mb-12 justify-items-center">
+        <h4 className="text-2xl lg:text-4xl font-medium text-center">
+          India's #1 Premium Training Institute
+        </h4>
+        <div className="flex flex-wrap font-bold justify-center gap-3 lg:gap-7 mb-2.5 leading-[45px] lg:leading-snug">
+          {textItems.map((item, index) => (
+            <h1
+              key={index}
+              className={`bg-gradient-to-r ${
+                index === activeIndex ? item.color : "text-black "
+              } text-[50px] lg:text-[115px] font-extrabold `}
+            >
+              {item.text}
+            </h1>
+          ))}
+        </div>
+        <p className="mt-5 mb-12 text-base lg:text-lg max-w-xl text-center">
+          100000+ uplifted through our hybrid classroom & online training,
+          enriched by real-time projects and job support.
         </p>
-        <div className="flex flex-wrap max-w-7xl justify-center">
-          {images?.map((image) => {
-            return (
+        <div className="flex space-x-4">
+          {/* Join Free Demo Button */}
+
+          <BlackButton
+            name="Join Free Demo"
+            icon={<MdOutlineLaptop className="text-xs lg:text-xl" />}
+          />
+
+          {/* Contact Course Advisor Button */}
+          <WhiteButton
+            name="Contact Course Advisor"
+            icon={<MdPerson className="text-sm lg:text-2xl" />}
+          />
+        </div>
+        <div className="mt-24">
+          <h2 className="text-center mb-2.5 text-lg lg:text-3xl font-extrabold text-[#555]">
+            Your Path to a Successful IT Career
+          </h2>
+          <p className="text-sm lg:text-lg mb-8 text-center text-[#212529]">
+            Our Alumni Work at Top Compaines
+          </p>
+          <div className="hidden lg:flex flex-wrap max-w-7xl justify-center">
+            {images?.map((image) => {
+              return (
+                <img
+                  src={image}
+                  className="h-6 w-16 sm:h-8 sm:w-20 lg:h-auto lg:w-auto mt-2.5 mb-5 mx-1 lg:mx-10 filter grayscale-[100%] hover:filter-none "
+                />
+              );
+            })}
+          </div>
+          <div className="flex max-w-xl sm:gap-3 lg:gap-4 justify-center items-center lg:hidden">
+            {images.slice(0, 5).map((image, index) => (
               <img
+                key={index}
                 src={image}
-                className="h-auto w-auto mt-2.5 mb-5 mx-10 filter grayscale-[100%] hover:filter-none "
+                className="h-6 w-16 sm:h-10 sm:w-28 lg:h-auto lg:w-auto mt-2.5 mb-4 mx-1 lg:mx-10 filter grayscale-[100%] hover:filter-none"
               />
-            );
-          })}
+            ))}
+          </div>
+          <div className="flex max-w-xl lg:gap-4 justify-center items-center lg:hidden">
+            {images.slice(5, 11).map((image, index) => (
+              <img
+                key={index}
+                src={image}
+                className="h-6 w-14 sm:h-10 sm:w-[105px] lg:h-auto lg:w-auto mt-2.5 mb-5 mx-1 lg:mx-10 filter grayscale-[100%] hover:filter-none"
+              />
+            ))}
+          </div>
         </div>
       </div>
       <Landing />
-    </div>
+    </>
   );
 };
 
