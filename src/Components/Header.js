@@ -38,7 +38,7 @@ const Header = () => {
 
   return (
     <header className="bg-white border-b top-0 lg:-left-2 right-0 z-50">
-      <div className="container mx-auto px-0 xl:px-24">
+      <div className="container mx-auto ">
         <div className="flex items-center justify-between px-8 py-3 pb-2 lg:p-0 lg:px-0">
           {/* Logo */}
           <div >
@@ -57,9 +57,8 @@ const Header = () => {
           </div>
 
           <div
-            className={` ${
-              isMobileMenuOpen ? "block px-6 pt-10" : "hidden"
-            } fixed lg:static top-0 left-0 w-full lg:w-auto h-screen lg:h-auto flex flex-col lg:flex-row transition-all bg-white lg:bg-transparent lg:flex gap-3 md:gap-6 lg:items-center`}
+            className={` ${isMobileMenuOpen ? "block px-6 pt-10" : "hidden"
+              } fixed lg:static top-0 left-0 w-full lg:w-auto h-screen lg:h-auto flex flex-col lg:flex-row transition-all bg-white lg:bg-transparent lg:flex gap-3 md:gap-6 lg:items-center`}
           >
             <div className="content-center">
               <ul className="flex flex-col lg:flex-row lg:gap-5 ">
@@ -69,11 +68,10 @@ const Header = () => {
                   onMouseLeave={handleMouseLeave}
                 >
                   <a
-                    className={`font-normal py-5 text-base font-sans uppercase flex gap-2 items-center cursor-pointer ${
-                      isDropdownOpen === 1
+                    className={`font-normal py-5 text-base font-sans uppercase flex gap-2 items-center cursor-pointer ${isDropdownOpen === 1
                         ? "border-b border-b-[#F06292]"
                         : "border-0"
-                    } `}
+                      } `}
                   >
                     Courses <FaAngleDown size={15} />
                   </a>
@@ -335,11 +333,10 @@ const Header = () => {
                   onMouseLeave={handleMouseLeave}
                 >
                   <a
-                    className={`font-normal text-base font-sans uppercase flex gap-2 items-center cursor-pointer py-5 ${
-                      isDropdownOpen === 2
+                    className={`font-normal text-base font-sans uppercase flex gap-2 items-center cursor-pointer py-5 ${isDropdownOpen === 2
                         ? "border-b border-b-[#F06292]"
                         : "border-0"
-                    }`}
+                      }`}
                   >
                     Programs <FaAngleDown size={15} />
                   </a>
@@ -450,11 +447,10 @@ const Header = () => {
                   onMouseLeave={handleMouseLeave}
                 >
                   <a
-                    className={`font-normal text-base font-sans uppercase flex gap-2 items-center cursor-pointer py-5 ${
-                      isDropdownOpen === 3
+                    className={`font-normal text-base font-sans uppercase flex gap-2 items-center cursor-pointer py-5 ${isDropdownOpen === 3
                         ? "border-b border-b-[#F06292]"
                         : "border-0"
-                    }`}
+                      }`}
                   >
                     Services <FaAngleDown size={15} />
                   </a>
@@ -539,11 +535,10 @@ const Header = () => {
                   onMouseLeave={handleMouseLeave}
                 >
                   <a
-                    className={`font-normal text-base font-sans uppercase flex gap-2 items-center cursor-pointer py-5 ${
-                      isDropdownOpen === 4
+                    className={`font-normal text-base font-sans uppercase flex gap-2 items-center cursor-pointer py-5 ${isDropdownOpen === 4
                         ? "border-b border-b-[#F06292]"
                         : "border-0"
-                    }`}
+                      }`}
                   >
                     Resources <FaAngleDown size={15} />
                   </a>
@@ -589,11 +584,10 @@ const Header = () => {
                   onMouseLeave={handleMouseLeave}
                 >
                   <a
-                    className={`font-normal text-base font-sans uppercase flex gap-2 items-center cursor-pointer py-5 ${
-                      isDropdownOpen === 5
+                    className={`font-normal text-base font-sans uppercase flex gap-2 items-center cursor-pointer py-5 ${isDropdownOpen === 5
                         ? "border-b border-b-[#F06292]"
                         : "border-0"
-                    }`}
+                      }`}
                   >
                     Company <FaAngleDown size={15} />
                   </a>

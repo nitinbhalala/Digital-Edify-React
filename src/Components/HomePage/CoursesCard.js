@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaCode } from "react-icons/fa6";
 import { FaStarHalfAlt } from "react-icons/fa";
-import { RiDownloadLine, RiEyeLine } from "react-icons/ri";
+import { RiDownloadLine, RiEyeLine, RiShuffleFill } from "react-icons/ri";
 import { TbClockHour9 } from 'react-icons/tb';
 import WhiteButton from '../WhiteButton';
 import BlackButton from '../BlackButton';
@@ -41,7 +41,7 @@ const CoursesCard = ({ data }) => {
                 </p>
                 <div className="flex justify-center md:justify-start flex-wrap gap-4">
                     <BlackButton name='Curriculum' icon={<RiDownloadLine size={20} />} />
-                    <WhiteButton name='Enroll Now' icon={<RiEyeLine size={20} />} />
+                    <WhiteButton name='Enroll Now' icon={<RiShuffleFill size={20} />} />
                 </div>
             </a>
         </div>
