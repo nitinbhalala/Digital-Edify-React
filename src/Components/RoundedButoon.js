@@ -5,7 +5,7 @@ const RoundedButoon = ({ name, icon, theme }) => {
 
     return (
         <button
-            className={`flex gap-3 rounded-full items-center px-4 py-2 font-semibold 
+            className={`flex gap-3 rounded-full text-xs md:text-sm items-center px-4 py-2 font-semibold 
         ${isGrayTheme ? 'border-[#888888] hover:bg-[#888888] hover:text-white' : 'border-orange-600 hover:bg-pink-700 hover:text-white'} border`}
             style={{
                 boxShadow: isGrayTheme

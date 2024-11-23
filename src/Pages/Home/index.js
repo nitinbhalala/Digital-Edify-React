@@ -43,17 +43,16 @@ const Home = () => {
   }, [textItems.length]);
   return (
     <>
-      <div className="container mx-auto px-5 mt-16 mb-12 justify-items-center">
-        <h4 className="text-2xl lg:text-4xl font-medium text-center">
+      <div className="container mx-auto px-5 mt-16 mb-32 justify-items-center font-poppins">
+        <h4 className="text-2xl lg:text-4xl font-medium text-center text-[#343433]">
           India's #1 Premium Training Institute
         </h4>
         <div className="flex flex-wrap font-bold justify-center gap-3 lg:gap-7 mb-2.5 leading-[45px] lg:leading-snug">
           {textItems.map((item, index) => (
             <h1
               key={index}
-              className={`bg-gradient-to-r ${
-                index === activeIndex ? item.color : "text-black "
-              } text-[50px] lg:text-[115px] font-extrabold `}
+              className={`bg-gradient-to-r ${index === activeIndex ? item.color : "text-black "
+                } text-[50px] lg:text-[115px] font-extrabold `}
             >
               {item.text}
             </h1>

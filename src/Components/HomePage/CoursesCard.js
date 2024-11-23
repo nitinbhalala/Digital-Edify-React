@@ -8,7 +8,7 @@ import BlackButton from '../BlackButton';
 
 const CoursesCard = ({ data }) => {
     return (
-        <div className="p-4 ">
+        <div className="p-4 font-poppins">
             <a
                 // href="https://www.digitaledify.ai/courses/devops-training-certification.html"
                 className="block p-8 rounded-lg border border-[#cccccc4f] bg-white/50  hover:shadow-2xl hover:scale-105 transform transition-all duration-300 cursor-pointer"

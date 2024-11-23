@@ -31,10 +31,6 @@ import oracle from "../../assets/oracle.webp";
 import c360soft from "../../assets/c360soft.webp";
 import jpmore from "../../assets/jpmorgan.webp";
 
-
-
-
-
 const CourseData = [
     {
         courseName: "DevOps Training",
@@ -69,6 +65,7 @@ const CourseData = [
             "React JS training covers UI building, component architecture, state management, hooks, and modern practices.",
     },
 ];
+
 const ProgramData = [
     {
         courseName: "Multi-Cloud DevOps ",
@@ -231,14 +228,14 @@ const Landing = () => {
         <>
 
             <div className="text-center font-poppins">
-                <p className="text-[1.25rem] mb-1">Explore the Digital Edify way</p>
+                <p className="text-[1.25rem] mb-1 ">Explore the Digital Edify way</p>
                 <OneLearnCircle title='Learn' number='1' />
                 <p className="text-xs md:text-base mt-2">Experience the New way of Learning with AI <br />
                     Digital Edify offers best technologies in the work, Curated for your Career Growth</p>
             </div>
 
             <div className="container mx-auto px-2">
-                <p class="text-2xl md:text-3xl font-bold text-center my-16"> Courses</p>
+                <p class="text-2xl md:text-3xl font-bold text-center my-16 font-poppins text-[#343433]"> Courses</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 ">
                     {
                         CourseData.map((item, index) => {
@@ -250,12 +247,12 @@ const Landing = () => {
                 </div>
             </div>
 
-            <div className="my-16">
+            <div className="mt-16 mb-36 flex justify-center">
                 <WhiteButton name="View All Courses" theme='blue' icon={<VscGraph size={20} />} />
             </div>
 
             <div className="container mx-auto px-2">
-                <p class="text-2xl md:text-3xl font-bold text-center my-16">Programs</p>
+                <p class="text-2xl md:text-3xl font-bold text-center my-16 font-poppins text-[#343433]">Programs</p>
                 <div className="grid grid-cols-1 md:grid-cols-2">
                     {
                         ProgramData.map((item, index) => {
@@ -269,10 +266,10 @@ const Landing = () => {
 
             <div className="text-center mt-5">
                 <OneLearnCircle title='Build' number='2' />
-                <p className="text-xs md:text-base mt-2">Work on our Real-time <span className="text-blue-800">Projects , Task Based</span></p>
+                <p className="text-xs md:text-base mt-2 font-poppins">Work on our Real-time <span className="text-blue-800">Projects , Task Based</span></p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 mt-8 w-full container mx-auto px-2">
+            <div className="grid grid-cols-1 md:grid-cols-2 mt-8 w-full container mx-auto px-2 font-poppins">
                 <div className="flex justify-center md:justify-between w-full mx-auto">
                     <div className="bg-white md:mr-10 h-fit">
                         <img
@@ -295,8 +292,8 @@ const Landing = () => {
                             <FaCodepen className="text-gray-600" size={17} />
                         </div>
                     </div>
-                    <h4 className="text-2xl font-bold mb-2">LMS Project</h4>
-                    <p className=" mb-6 w-fit">
+                    <h4 className="text-xl font-bold mb-2 text-[#343433]">LMS Project</h4>
+                    <p className="text-sm mb-6 w-fit">
                         An LMS project develops a digital platform for online learning,featuring course
                         creation, content management, user tracking,assessments, and reporting,
                         aimed at enhancing educational interaction.
@@ -309,7 +306,7 @@ const Landing = () => {
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 w-full container mx-auto px-2">
+            <div className="grid grid-cols-1 md:grid-cols-2 w-full container mx-auto px-2 font-poppins">
                 <div className="flex justify-center md:justify-between w-full mx-auto">
                     <div className="bg-white md:mr-10 h-fit">
                         <img
@@ -332,8 +329,8 @@ const Landing = () => {
                             <FaCodepen className="text-gray-600" size={17} />
                         </div>
                     </div>
-                    <h4 className="text-2xl font-bold mb-2">HRMS Project</h4>
-                    <p className=" mb-6 w-fit">
+                    <h4 className="text-xl font-bold mb-2 text-[#343433]">HRMS Project</h4>
+                    <p className="text-sm mb-6 w-fit">
                         The HRMS project develops a digital system for managing HR functions like employee data, payroll, recruitment, and performance, aiming to streamline processes and enhance organizational efficiency.
                     </p>
 
@@ -344,7 +341,7 @@ const Landing = () => {
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 w-full container mx-auto px-2">
+            <div className="grid grid-cols-1 md:grid-cols-2 w-full container mx-auto px-2 font-poppins">
                 <div className="flex justify-center md:justify-between w-full mx-auto">
                     <div className="bg-white md:mr-10 h-fit">
                         <img
@@ -367,9 +364,9 @@ const Landing = () => {
                             <FaCodepen className="text-gray-600" size={17} />
                         </div>
                     </div>
-                    <h4 className="text-2xl font-bold mb-2">HRMS Project</h4>
-                    <p className=" mb-6 w-fit">
-                        The HRMS project develops a digital system for managing HR functions like employee data, payroll, recruitment, and performance, aiming to streamline processes and enhance organizational efficiency.
+                    <h4 className="text-xl font-bold mb-2 text-[#343433]">CRM Project</h4>
+                    <p className="text-sm mb-6 w-fit">
+                        A CRM project develops a system to manage company interactions with customers, incorporating tools for contact, sales, productivity, and support to enhance service, drive sales, and boost retention.
                     </p>
 
                     <div className="flex md:justify-start justify-center flex-wrap gap-4">
@@ -379,25 +376,26 @@ const Landing = () => {
                 </div>
             </div>
 
-            <div className="text-center mt-10">
-                <OneLearnCircle title='Get Certification' number='3' />
-                <p className="text-xs md:text-base mt-2">Internships and Course certifications for<span className="text-blue-800">Enhanced Skill Validation.</span></p>
-            </div>
-
-            <div className="flex flex-wrap justify-center gap-10 xl:gap-28 w-full mt-16">
-                <div className="flex-row justify-center items-center">
-                    <p class="text-xl md:text-3xl font-bold text-center mb-3">Internship Certificate</p>
-                    <img src={certi1} alt="certi1" className="mx-auto" />
+            <div className="bg-[#FAFAFA] pb-16">
+                <div className="text-center mt-10">
+                    <OneLearnCircle title='Get Certification' number='3' />
+                    <p className="text-xs md:text-base mt-2 font-poppins">Internships and Course certifications for<span className="text-blue-800"> Enhanced Skill Validation.</span></p>
                 </div>
-                <div className="flex-row justify-center items-center">
-                    <p class="text-xl md:text-3xl font-bold text-center mb-3">Course Completion Certificate</p>
-                    <img src={certi1} alt="certi1" className="mx-auto" />
+                <div className="flex flex-wrap justify-center gap-10 xl:gap-28 w-full mt-16 ">
+                    <div className="flex-row justify-center items-center">
+                        <p class="text-xl md:text-3xl font-bold text-center mb-3">Internship Certificate</p>
+                        <img src={certi1} alt="certi1" className="mx-auto" />
+                    </div>
+                    <div className="flex-row justify-center items-center">
+                        <p class="text-xl md:text-3xl font-bold text-center mb-3">Course Completion Certificate</p>
+                        <img src={certi1} alt="certi1" className="mx-auto" />
+                    </div>
                 </div>
             </div>
 
             <div className="text-center mt-20">
                 <OneLearnCircle title='Get Job' number='4' />
-                <p className="text-xs md:text-base mt-2">Our focus on job-readiness <span className="text-blue-800">Github Profile, Linkedin Profile, Resume Prep and Help Apply</span></p>
+                <p className="text-xs md:text-base mt-2 font-poppins">Our focus on job-readiness <span className="text-blue-800">Github Profile, Linkedin Profile, Resume Prep and Help Apply</span></p>
             </div>
 
             <div className="flex justify-between w-full mt-32 relative p-3">
@@ -405,7 +403,7 @@ const Landing = () => {
                     {
                         getJObData.map((item, index) => {
                             return (
-                                <div className="flex justify-center md:justify-between w-full mx-auto">
+                                <div className="flex justify-center md:justify-between w-full mx-auto font-poppins">
                                     <div className="flex-row items-center hidden md:block">
                                         <div className="border-dashed border-gray-400 border-r h-20 w-[8px]"></div>
                                         <div className=" w-[15px] h-[15px] bg-white border border-gray-300 rounded-full z-10"></div>
@@ -429,7 +427,7 @@ const Landing = () => {
             </div>
 
             <div className="max-w-full mx-auto mt-20 py-20 bg-[#fafafa] ">
-                <p className="text-center text-2xl md:text-3xl font-bold mb-24">
+                <p className="text-center text-2xl md:text-3xl font-bold mb-24 font-poppins">
                     <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">
                         IT Engineers
                     </span>{" "}
@@ -440,7 +438,7 @@ const Landing = () => {
                     {engineersData.map((engineer) => (
                         <div
                             key={engineer.id}
-                            className="relative flex flex-col items-center bg-white shadow-xl rounded-sm p-6 w-[285px]"
+                            className="relative flex flex-col items-center bg-white shadow-xl rounded-sm p-6 w-[285px] font-poppins"
                             style={{ boxShadow: "#00000029 0 0 11px" }}
 
                         >
@@ -461,7 +459,7 @@ const Landing = () => {
                             <h4 className="mt-9 font-semibold text-lg text-center">
                                 {engineer.name}
                             </h4>
-                            <h5 className=" text-center mt-1">
+                            <h5 className="text-sm text-center text-gray-700 mt-1">
                                 {engineer.role}
                             </h5>
                             <img
@@ -476,15 +474,15 @@ const Landing = () => {
             </div>
 
             <div className='container mx-auto px-2 mt-16 '>
-                <p class="text-2xl md:text-3xl font-bold text-start w-full "> Upcoming Batch Schedule</p>
+                <p class="text-xl md:text-2xl font-bold text-center lg:text-start w-full font-poppins"> Upcoming Batch Schedule</p>
             </div>
 
-            <div className='flex justify-center gap-8 mt-12 font-poppins'>
-                <div className="flex justify-center gap-8">
+            <div className='flex justify-center flex-wrap gap-8 mt-12 font-poppins'>
+                <div className="flex justify-center flex-wrap gap-8">
                     {
                         batches.map((item, index) => {
                             return (
-                                <div className="bg-white rounded-lg px-8 py-7 pb-8" style={{ boxShadow: "#ddd 0 0 20px " }} >
+                                <div className="bg-white rounded-lg px-6 py-7 pb-8" style={{ boxShadow: "#ddd 0 0 20px " }} >
                                     <h5 className="text-lg font-semibold">{item.title}</h5>
                                     <h6 className="mb-2">{item.schedule}</h6>
                                     <hr />
@@ -492,7 +490,7 @@ const Landing = () => {
                                         <div className='bg-white border p-1.5 rounded-md'>
                                             <AiOutlineCalendar className="text-gray-700" size={17} />
                                         </div>
-                                        <p className="text-sm leading-[16px]">
+                                        <p className="text-sm leading-[16px] text-gray-700">
                                             <strong>{item.time.date}</strong>
                                             <br />
                                             {item.time.day}
@@ -502,7 +500,7 @@ const Landing = () => {
                                         <div className='bg-white border p-1.5 rounded-md'>
                                             <BiStopwatch className="text-gray-700" size={19} />
                                         </div>
-                                        <p className="text-sm leading-[16px]">
+                                        <p className="text-sm leading-[16px] text-gray-700">
                                             {item.time.startTime}
                                             <br />
                                             {item.time.duration}
@@ -514,37 +512,39 @@ const Landing = () => {
                         })
                     }
                 </div>
-                <div className="bg-black rounded-lg p-6 w-[280px]" style={{ boxShadow: "#E7E7E7 0px 2px 20px" }} >
+                <div className="bg-black rounded-lg py-6 w-[280px]" style={{ boxShadow: "#E7E7E7 0px 2px 20px" }} >
                     <p className="text-3xl w-4/5 font-bold text-white text-center mt-5 mb-8 mx-auto">Can’t find a batch you were looking for?</p>
-                    <WhiteButton name=' Get Free Course Demo ' icon={<VscGraph size={17} />} />
+                    <div className="flex justify-center">
+                        <WhiteButton name=' Get Free Course Demo ' icon={<VscGraph size={17} />} />
+                    </div>
                 </div>
             </div>
 
-            <div className="bg-[#fafafa] border-t border-b border-[#eaeaea] w-full pt-5 mt-20 ">
+            <div className="bg-[#fafafa] border-t border-b border-[#eaeaea] w-full pt-5 mt-20 font-poppins">
                 <h2 className="text-xl md:text-2xl font-bold mb-8 text-center">
                     Why Digital Edify
                 </h2>
                 <div className="flex justify-center items-center flex-wrap pb-7">
                     <div className='w-[310px] text-center border-r border-[#eaeaea]'>
-                        <h3 className="text-3xl md:text-4xl font-bold ">100000+</h3>
-                        <p className="mt-2 font-bold">LEARNERS</p>
+                        <h3 className="text-3xl md:text-4xl font-semibold ">100000+</h3>
+                        <p className="mt-2 font-semibold">LEARNERS</p>
                     </div>
                     <div className='w-[310px] text-center border-r border-[#eaeaea]'>
-                        <h3 className="text-3xl md:text-4xl font-bold">10000+</h3>
-                        <p className="mt-2 font-bold">BATCHES</p>
+                        <h3 className="text-3xl md:text-4xl font-semibold">10000+</h3>
+                        <p className="mt-2 font-semibold">BATCHES</p>
                     </div>
                     <div className='w-[310px] text-center border-r border-[#eaeaea]'>
-                        <h3 className="text-3xl md:text-4xl font-bold">10+</h3>
-                        <p className="mt-2 font-bold">YEARS</p>
+                        <h3 className="text-3xl md:text-4xl font-semibold">10+</h3>
+                        <p className="mt-2 font-semibold">YEARS</p>
                     </div>
                     <div className='w-[310px] text-center'>
-                        <h3 className="text-3xl md:text-4xl font-bold">24/7</h3>
-                        <p className="mt-2 font-bold">SUPPORT</p>
+                        <h3 className="text-3xl md:text-4xl font-semibold">24/7</h3>
+                        <p className="mt-2 font-semibold">SUPPORT</p>
                     </div>
                 </div>
             </div>
 
-            <div className="flex justify-between w-full container mx-auto px-3 flex-wrap items-center mt-10">
+            <div className="flex justify-between w-full container mx-auto px-3 flex-wrap items-center mt-10 font-poppins">
                 <div>
                     <p className="text-[45px] font-extrabold mb-3">
                         Learn. Build. Get Job.
@@ -561,12 +561,12 @@ const Landing = () => {
             </div>
 
             <div className="mt-5 bg-[#fafafa] py-20 w-full">
-                <h3 className="text-2xl md:text-3xl font-bold mb-2 text-gray-800 text-center">Our Locations</h3>
-                <p className="text-gray-600 mb-12 text-center">
+                <h3 className="text-2xl md:text-3xl font-bold mb-2 text-gray-800 text-center font-poppins">Our Locations</h3>
+                <p className="text-gray-600 mb-12 text-center font-poppins">
                     Come and chat with us about your goals over a cup of coffee.
                 </p>
 
-                <div className="flex flex-wrap justify-center gap-7 text-center">
+                <div className="flex flex-wrap justify-center gap-7 text-center font-poppins">
                     {locations.map((location) => (
                         <div
                             key={location.id}
@@ -582,14 +582,14 @@ const Landing = () => {
                                 <h5 className="text-lg md:text-xl font-semibold text-[#0040b3] mb-4">
                                     {location.title}
                                 </h5>
-                                <p className="text-[#212529] md:text-lg">{location.description}</p>
+                                <p className="text-[#212529] md:text-base">{location.description}</p>
                             </div>
                         </div>
                     ))}
                 </div>
             </div>
 
-            <div className="bg-white text-black py-12 border-t border-b border-[#DDDDDD] flex w-full justify-center  gap-48 ">
+            <div className="bg-white text-black py-12 border-t border-b border-[#DDDDDD] flex w-full justify-center  gap-48 font-poppins">
 
                 <div>
                     <img src={digitaledify} alt="digitaledify" />
@@ -655,8 +655,8 @@ const Landing = () => {
                 </div>
             </div>
 
-            <div className="text-center mt-3 font-poppins font-semibold">
-                <p className="text-sm">
+            <div className="text-center mt-3 font-poppins mb-4">
+                <p className="text-xs">
                     © Copyright Digital Edify | 2024{' '}
                     <a href="#" className="text-[#281af0] hover:underline">
                         Privacy Policy
