@@ -589,7 +589,7 @@ const Landing = () => {
                 </div>
             </div>
 
-            <div className="bg-white text-black py-12 border-t border-b border-[#DDDDDD] flex w-full justify-center  gap-48 font-poppins">
+            <div className="bg-white text-black py-12 border-t border-b border-[#DDDDDD] flex flex-wrap w-full justify-center  gap-48 font-poppins">
 
                 <div>
                     <img src={digitaledify} alt="digitaledify" />
