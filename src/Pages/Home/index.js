@@ -43,32 +43,36 @@ const Home = () => {
   }, [textItems.length]);
   return (
     <>
-      <div className="container mx-auto px-5 mt-16 mb-32 justify-items-center font-poppins">
-        <h4 className="text-2xl lg:text-4xl font-medium text-center text-[#343433]">
+      <div className=" px-5 mt-8 md:mt-12 lg:mt-16 mb-16 md:mb-32 justify-items-center font-poppins">
+        <h4 className="text-2xl md:text-4xl lg:text-4xl font-medium text-center text-[#343433] leading-9">
           India's #1 Premium Training Institute
         </h4>
-        <div className="flex flex-wrap font-bold justify-center gap-3 lg:gap-7 mb-2.5 leading-[45px] lg:leading-snug">
+        <div className="flex flex-wrap font-bold justify-center gap-3 lg:gap-5 mb-2.5 leading-[45px] md:leading-[130px] mt-7 md:mt-5">
           {textItems.map((item, index) => (
             <h1
               key={index}
               className={`bg-gradient-to-r ${index === activeIndex ? item.color : "text-black "
-                } text-[50px] lg:text-[115px] font-extrabold `}
+                } text-[50px] md:text-[115px] font-extrabold `}
             >
               {item.text}
             </h1>
           ))}
         </div>
-        <p className="mt-5 mb-12 text-base lg:text-lg max-w-xl text-center">
+        <p className="mt-7 md:mt-6 mb-12 text-base md:text-lg max-w-xl text-center leading-8">
           100000+ uplifted through our hybrid classroom & online training,
           enriched by real-time projects and job support.
         </p>
         <div className="flex flex-wrap gap-2 lg:space-x-4 justify-center">
           {/* Join Free Demo Button */}
 
-          <BlackButton
+          {/* <BlackButton
             name="Join Free Demo"
             icon={<MdOutlineLaptop className="text-sm lg:text-xl" />}
-          />
+          /> */}
+          <button className="flex gap-2 lg:gap-3 text-xs lg:text-sm items-center px-2.5 lg:px-4 py-3 lg:py-2 bg-black text-white font-semibold rounded-lg hover:bg-sky-500 min-w-36 lg:min-w-44 justify-center">
+            <MdOutlineLaptop className="text-sm lg:text-xl" />
+            {"Join Free Demo"}
+          </button>
 
           {/* Contact Course Advisor Button */}
           <WhiteButton
@@ -77,39 +81,61 @@ const Home = () => {
           />
         </div>
         <div className="mt-24">
-          <h2 className="text-center mb-2.5 text-lg lg:text-3xl font-extrabold text-[#555]">
+          <h2 className="text-center mb-2.5 text-lg md:text-2xl font-extrabold md:tracking-widest text-[#555]">
             Your Path to a Successful IT Career
           </h2>
-          <p className="text-sm lg:text-lg mb-8 text-center text-[#212529]">
+          <p className="text-[13px] md:text-[15px] lg:text-base mb-2.5 md:mb-5 text-center text-[#212529]">
             Our Alumni Work at Top Compaines
           </p>
-          <div className="hidden lg:flex flex-wrap max-w-7xl justify-center">
-            {images?.map((image) => {
-              return (
+
+          <div>
+            {/* First Row - 5 Images */}
+            <div className="grid grid-cols-5 gap-1 md:gap-12 md:mx-5 justify-items-center items-center">
+              {images.slice(0, 5).map((image, index) => (
                 <img
+                  key={`row1-${index}`}
                   src={image}
-                  className="h-6 w-16 sm:h-8 sm:w-20 lg:h-auto lg:w-auto mt-2.5 mb-5 mx-1 lg:mx-10 filter grayscale-[100%] hover:filter-none "
+                  alt={`Image ${index + 1}`}
+                  className={`object-contain filter grayscale-[100%] hover:filter-none ${index === 0
+                    ? "h-9 md:h-20 w-[120px] md:w-[160px]"
+                    : index === 1
+                      ? "h-9 md:h-16 w-[120px] md:w-[180px]"
+                      : index === 2
+                        ? "h-9 md:h-12 w-[90px] md:w-[130px]"
+                        : index === 3
+                          ? "h-9 md:h-14 w-[90px] md:w-[160px]"
+                          : index === 4
+                            ? " h-9 md:h-14 w-[50px] md:w-[100px]"
+                            : " h-9 md:h-18 w-[150px]"
+                    }`}
                 />
-              );
-            })}
-          </div>
-          <div className="flex max-w-xl sm:gap-3 lg:gap-4 justify-center items-center lg:hidden">
-            {images.slice(0, 5).map((image, index) => (
-              <img
-                key={index}
-                src={image}
-                className="h-6 w-16 sm:h-10 sm:w-28 lg:h-auto lg:w-auto mt-2.5 mb-4 mx-1 lg:mx-10 filter grayscale-[100%] hover:filter-none"
-              />
-            ))}
-          </div>
-          <div className="flex max-w-xl lg:gap-4 justify-center items-center lg:hidden">
-            {images.slice(5, 11).map((image, index) => (
-              <img
-                key={index}
-                src={image}
-                className="h-6 w-14 sm:h-10 sm:w-[105px] lg:h-auto lg:w-auto mt-2.5 mb-5 mx-1 lg:mx-10 filter grayscale-[100%] hover:filter-none"
-              />
-            ))}
+              ))}
+            </div>
+
+            {/* Second Row - 6 Images */}
+            <div className="grid grid-cols-6 gap-1 md:gap-7 justify-items-center items-center">
+              {images.slice(5, 11).map((image, index) => (
+                <img
+                  key={`row2-${index}`}
+                  src={image}
+                  alt={`Image ${index + 6}`}
+                  className={`object-contain filter grayscale-[100%] hover:filter-none ${index === 0
+                    ? "h-10 md:h-18 w-[150px]"
+                    : index === 1
+                      ? "h-10 md:h-16 w-[140px]"
+                      : index === 2
+                        ? "h-10 md:h-14 w-[130px]"
+                        : index === 3
+                          ? "h-10 md:h-20 w-[90px]"
+                          : index === 4
+                            ? "h-10 md:h-12 w-[100px]"
+                            : index === 5
+                              ? "h-10 md:h-12 w-[110px]"
+                              : "h-10 md:h-14 w-[130px]"
+                    }`}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>

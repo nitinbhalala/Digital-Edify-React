@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import img1 from "../../assets/code1.webp";
 import img2 from "../../assets/crm.webp";
 import img3 from "../../assets/hrms.webp";
@@ -72,110 +72,7 @@ const CourseData = [
         description:
             "React JS training covers UI building, component architecture, state management, hooks, and modern practices.",
     },
-    {
-        courseName: "Software Testing Training",
-        duration: "2 Months",
-        liveProjects: "5 Live Projects",
-        rating: "4.8/5",
-        description:
-            "Testing training covers software quality assurance, covering various testing methodologies to ensure software reliability.",
-    },
-    {
-        courseName: "Full Stack Training",
-        duration: "2 Months",
-        liveProjects: "5 Live Projects",
-        rating: "4.8/5",
-        description:
-            "Full Stack Training focuses on both front-end and back-end development, enabling them to create complete web applications.",
-    },
-    {
-        courseName: "Power BI Training",
-        duration: "2 Months",
-        liveProjects: "5 Live Projects",
-        rating: "4.9/5",
-        description:
-            "Power BI training emphasises data analysis and visualisation, creating interactive reports and dashboards.",
-    },
-    {
-        courseName: "Business Analyst Training",
-        duration: "2 Months",
-        liveProjects: "5 Live Projects",
-        rating: "4.7/5",
-        description:
-            "BA training focuses on business process analysis, requirement gathering, and stakeholder management for effective business outcomes.",
-    },
-    {
-        courseName: "Azure Cloud Training",
-        duration: "2 Months",
-        liveProjects: "5 Live Projects",
-        rating: "4.8/5",
-        description:
-            "Azure training focuses on cloud computing with Azure core services, security, and best practices.",
-    },
-    {
-        courseName: "Azure DevOps Training",
-        duration: "2 Months",
-        liveProjects: "5 Live Projects",
-        rating: "4.9/5",
-        description:
-            "Azure DevOps Training focuses on expertise in Microsoft's DevOps platform, for implementing efficient workflows and tools.",
-    },
-    {
-        courseName: "Azure Data Engineering",
-        duration: "2 Months",
-        liveProjects: "5 Live Projects",
-        rating: "4.8/5",
-        description:
-            "Azure Data Engineering Training focuses on enabling learners to build and optimize data pipelines, implement data solutions, and manage data in the Azure ecosystem.",
-    },
-    {
-        courseName: "AWS Cloud",
-        duration: "2 Months",
-        liveProjects: "5 Live Projects",
-        rating: "4.8/5",
-        description:
-            "AWS Cloud Training focuses on providing expertise in AWS cloud solutions, architecture design, and implementation of secure and scalable applications.",
-    },
-    {
-        courseName: "AI Training",
-        duration: "2 Months",
-        liveProjects: "5 Live Projects",
-        rating: "4.8/5",
-        description:
-            "AI Training focuses on the fundamentals of artificial intelligence, covering machine learning, neural networks, and AI-based solution development.",
-    },
-    {
-        courseName: "AWS Data Engineer",
-        duration: "2 Months",
-        liveProjects: "5 Live Projects",
-        rating: "4.8/5",
-        description:
-            "AWS Data Engineer Training focuses on data pipeline development, data storage solutions, and managing big data workloads using AWS.",
-    },
-    {
-        courseName: "Data Science Training",
-        duration: "2 Months",
-        liveProjects: "5 Live Projects",
-        rating: "4.8/5",
-        description:
-            "Data Science Training focuses on mastering data analysis, statistical modeling, machine learning techniques, and deriving insights from data.",
-    },
-    {
-        courseName: "UI/UX Design Training",
-        duration: "2 Months",
-        liveProjects: "5 Live Projects",
-        rating: "4.8/5",
-        description:
-            "UI/UX Design Training focuses on understanding user needs, creating intuitive designs, and enhancing user experience through design principles and tools.",
-    },
-    {
-        courseName: "GCP Data Engineering ",
-        duration: "2 Months",
-        liveProjects: "5 Live Projects",
-        rating: "4.8/5",
-        description:
-            " GCP Data Engineering on both front-end and back-end development, enabling them to create",
-    },
+
 ];
 
 const ProgramData = [
@@ -336,6 +233,32 @@ const batches = [
 ];
 
 const Landing = () => {
+
+    const [activeIndex, setActiveIndex] = useState(0);
+
+    const textItems = [
+        {
+            text: "Learn.",
+            color: "from-[#006dbd] to-[#002cd4] bg-clip-text text-transparent",
+        },
+        {
+            text: "Build.",
+            color: "from-[#5e00c8] to-[#ac008e] bg-clip-text text-transparent",
+        },
+        {
+            text: "Get Job.",
+            color: "from-[#ac008e] to-[#cd0064] bg-clip-text text-transparent",
+        },
+    ];
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setActiveIndex((prevIndex) => (prevIndex + 1) % textItems.length);
+        }, 1000); // Changes every 3 seconds
+
+        return () => clearInterval(interval); // Cleanup interval on unmount
+    }, [textItems.length]);
+
     return (
         <>
             <div className="text-center font-poppins">
@@ -349,6 +272,7 @@ const Landing = () => {
             </div>
 
             <div className="container mx-auto px-2 relative">
+                <div className="absolute -left-40 top-64 w-72 sm:w-[600px] h-[500px] rounded-full z-[-1] bg-[rgba(255,41,41,.059)] shadow-[0_0_200px_rgba(255,41,41,.141)] opacity-80" />
                 <p class="text-2xl md:text-3xl font-bold text-center my-16 font-poppins text-[#343433]">
                     {" "}
                     Courses
@@ -368,7 +292,9 @@ const Landing = () => {
                 />
             </div>
 
-            <div className="container mx-auto px-2">
+            <div className="container mx-auto px-2 relative">
+                <div className="absolute left-0 top-0 sm:-left-80 sm:-top-52 w-72 sm:w-[600px] h-[500px] rounded-full z-[-1] bg-[rgba(255,41,41,.059)] shadow-[0_0_200px_rgba(255,41,41,.141)] opacity-80" />
+                <div className="absolute top-28 sm:-left-36 sm:top-48 w-72 sm:w-[600px] h-[500px] rounded-full z-[-1] bg-[rgba(255,41,41,.059)] shadow-[0_0_200px_rgba(255,41,41,.141)] opacity-80" />
                 <p class="text-2xl md:text-3xl font-bold text-center my-16 font-poppins text-[#343433]">
                     Programs
                 </p>
@@ -379,7 +305,10 @@ const Landing = () => {
                 </div>
             </div>
 
-            <div className="text-center mt-5">
+            <div className="text-center mt-5 relative">
+                <div className="absolute left-0 top-0 lg:-left-1 lg:-top-10 w-72 sm:w-[600px] h-[500px] rounded-full z-[-1] bg-[rgba(255,41,41,.059)] shadow-[0_0_200px_rgba(255,41,41,.141)] opacity-80" />
+                <div className="absolute hidden lg:block top-28 lg:left-40 sm:top-[420px] w-72 sm:w-[600px] h-[500px] rounded-full z-[-1] bg-[rgba(255,41,41,.059)] shadow-[0_0_200px_rgba(255,41,41,.141)] opacity-80" />
+
                 <OneLearnCircle title="Build" number="2" />
                 <p className="text-xs md:text-base mt-2 font-poppins">
                     Work on our Real-time{" "}
@@ -532,21 +461,23 @@ const Landing = () => {
                 </div>
                 <div className="flex flex-wrap justify-center gap-10 xl:gap-28 w-full mt-16 ">
                     <div className="flex-row justify-center items-center">
-                        <p class="text-xl md:text-3xl font-bold text-center mb-3">
+                        <p class="text-xl md:text-3xl font-bold text-center mb-3 text-[#343433]">
                             Internship Certificate
                         </p>
-                        <img src={certi1} alt="certi1" className="mx-auto" />
+                        <img src={certi1} alt="certi1" className="mx-auto w-4/5 lg:w-full" />
                     </div>
                     <div className="flex-row justify-center items-center">
-                        <p class="text-xl md:text-3xl font-bold text-center mb-3">
+                        <p class="text-xl md:text-3xl font-bold text-center mb-3 text-[#343433]">
                             Course Completion Certificate
                         </p>
-                        <img src={certi1} alt="certi1" className="mx-auto" />
+                        <img src={certi1} alt="certi1" className="mx-auto w-4/5 lg:w-full" />
                     </div>
                 </div>
             </div>
 
-            <div className="text-center mt-20">
+            <div className="text-center mt-10 md:mt-20 relative">
+                <div className="absolute left-20 top-96 lg:left-52 lg:-top-10 w-72 sm:w-[600px] h-[500px] rounded-full z-[-1] bg-[rgba(255,41,41,.059)] shadow-[0_0_200px_rgba(255,41,41,.141)] opacity-80" />
+                <div className="absolute hidden lg:block top-28 lg:left-10 lg:top-72 w-72 sm:w-[600px] h-[500px] rounded-full z-[-1] bg-[rgba(255,41,41,.059)] shadow-[0_0_200px_rgba(255,41,41,.141)] opacity-80" />
                 <OneLearnCircle title="Get Job" number="4" />
                 <p className="text-xs md:text-base mt-2 font-poppins">
                     Our focus on job-readiness{" "}
@@ -556,8 +487,8 @@ const Landing = () => {
                 </p>
             </div>
 
-            <div className="flex justify-between w-full mt-32 relative p-3">
-                <div className=" md:ml-10 xl:ml-48 z-10">
+            <div className="flex justify-between w-full mt-10 md:mt-32 relative p-3">
+                <div className=" md:ml-10 xl:ml-80 z-10">
                     {getJObData.map((item, index) => {
                         return (
                             <div className="flex justify-center md:justify-between w-full mx-auto font-poppins">
@@ -569,7 +500,7 @@ const Landing = () => {
                                 <div className="ps-7 pt-8">
                                     <div className="flex items-center ">
                                         <div className="bg-white border p-1.5 rounded-md">
-                                            <FaCodepen className="text-gray-600" size={17} />
+                                            {item.icon}
                                         </div>
                                     </div>
                                     <p className="text-lg md:text-[22px] font-bold mt-5">
@@ -580,6 +511,9 @@ const Landing = () => {
                             </div>
                         );
                     })}
+                    <div className="ml-7 md:ml-12 mt-10">
+                        <WhiteButton name='Contact Course Advisor' icon={<CgImage size={17} />} />
+                    </div>
                 </div>
                 <img
                     src={global}
@@ -682,7 +616,7 @@ const Landing = () => {
                     className="bg-black rounded-lg py-6 w-[280px]"
                     style={{ boxShadow: "#E7E7E7 0px 2px 20px" }}
                 >
-                    <p className="text-3xl w-4/5 font-bold text-white text-center mt-5 mb-8 mx-auto">
+                    <p className="text-xl md:text-3xl w-4/5 font-bold text-white text-center mt-5 mb-8 mx-auto">
                         Can’t find a batch you were looking for?
                     </p>
                     <div className="flex justify-center">
@@ -720,16 +654,23 @@ const Landing = () => {
 
             <div className="flex justify-between w-full container mx-auto px-3 flex-wrap items-center mt-10 font-poppins">
                 <div>
-                    <p className="text-[45px] font-extrabold mb-3">
-                        Learn. Build. Get Job.
-                    </p>
-                    <p className=" mb-8 text-start">
+                    <div className="flex flex-wrap font-bold justify-center sm:justify-start gap-3 lg:gap-7 mb-2.5 leading-[45px] lg:leading-snug">
+                        {textItems.map((item, index) => (
+                            <h1
+                                key={index}
+                                className={`bg-gradient-to-r ${index === activeIndex ? item.color : "text-black "
+                                    } text-3xl sm:text-4xl lg:text-[45px] font-extrabold `}
+                            >
+                                {item.text}
+                            </h1>
+                        ))}
+                    </div>
+                    <p className=" mb-8 text-center sm:text-start sm:max-w-md lg:max-w-lg">
                         100000+ uplifted through our hybrid classroom & online training,
-                        <br />
                         enriched by real-time projects and job support.
                     </p>
                 </div>
-                <div className="space-y-2">
+                <div className="w-full sm:w-auto justify-items-center sm:justify-items-end  space-y-2">
                     <BlackButton name="Free Demo" icon={<VscGraph size={17} />} />
                     <WhiteButton name="Get In Touch" icon={<VscGraph size={17} />} />
                 </div>
@@ -754,13 +695,13 @@ const Landing = () => {
                             <img
                                 src={location.image}
                                 alt={location.title}
-                                className="rounded-t-lg object-cover w-full h-[14rem] font-[1.25rem]"
+                                className="rounded-t-lg object-cover w-full h-[14rem] font-[1.25rem] hidden md:block"
                             />
                             <div className="p-[30px]">
                                 <h5 className="text-lg md:text-xl font-semibold text-[#0040b3] mb-4">
                                     {location.title}
                                 </h5>
-                                <p className="text-[#212529] md:text-base">
+                                <p className="text-[#212529] text-sm md:text-base">
                                     {location.description}
                                 </p>
                             </div>
@@ -769,68 +710,71 @@ const Landing = () => {
                 </div >
             </div >
 
-            <div className="bg-white text-black py-12 border-t border-b border-[#DDDDDD] flex flex-wrap w-full justify-center  gap-48 font-poppins">
-                <div>
-                    <img src={digitaledify} alt="digitaledify" />
-                    <p className="mt-4 font-poppins">Follow us on</p>
-                    <div className="flex space-x-4 mt-2">
-                        <a href="#" aria-label="Facebook">
-                            <RiFacebookFill size={27} />
-                        </a>
-                        <a href="#" aria-label="Twitter">
-                            <FaTwitter size={27} />
-                        </a>
-                        <a href="#" aria-label="LinkedIn">
-                            <FaLinkedinIn size={27} />
-                        </a>
-                        <a href="#" aria-label="Instagram">
-                            <FaInstagram size={27} />
-                        </a>
-                        <a href="#" aria-label="WhatsApp">
-                            <MdOutlineWhatsapp size={27} />
-                        </a>
+            <div className=" px-1  bg-white text-black py-12 border-t border-b border-[#DDDDDD] w-full gap-10 md:gap-10 lg:gap-20 xl:gap-48 font-poppins">
+                <div className="container md:flex md:justify-center">
+
+                    <div className="w-fit mx-auto">
+                        <img src={digitaledify} alt="digitaledify" className="mx-auto" />
+                        <p className="mt-4 font-poppins text-center">Follow us on</p>
+                        <div className="flex space-x-4 mt-2">
+                            <a href="#" aria-label="Facebook">
+                                <RiFacebookFill size={27} />
+                            </a>
+                            <a href="#" aria-label="Twitter">
+                                <FaTwitter size={27} />
+                            </a>
+                            <a href="#" aria-label="LinkedIn">
+                                <FaLinkedinIn size={27} />
+                            </a>
+                            <a href="#" aria-label="Instagram">
+                                <FaInstagram size={27} />
+                            </a>
+                            <a href="#" aria-label="WhatsApp">
+                                <MdOutlineWhatsapp size={27} />
+                            </a>
+                        </div>
                     </div>
-                </div>
 
-                <div>
-                    <h2 className="font-semibold text-xl mb-4">Digital Edify</h2>
-                    <ul className="space-y-4">
-                        <li className="bg-white text-gray-600 border border-[#c9c9c9] rounded text-center w-fit px-2 py-[1px] ">
-                            <a href="#" className="hover:underline">
-                                Online Pay
-                            </a>
-                        </li>
-                        <li className="bg-white text-gray-600 border border-[#c9c9c9] rounded text-center w-fit px-2 py-[1px] ">
-                            <a href="#" className="hover:underline">
-                                Razor Pay
-                            </a>
-                        </li>
-                        <li className="bg-white text-gray-600 border border-[#c9c9c9] rounded text-center w-fit px-2 py-[1px] ">
-                            <a href="#" className="hover:underline">
-                                Privacy Policy
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                    <div className="w-fit mx-auto mt-8 md:mt-0">
+                        <h2 className="font-semibold text-xl mb-4 text-center md:text-start">Digital Edify</h2>
+                        <ul className="space-y-4">
+                            <li className="bg-white hover:bg-gray-700 hover:text-white text-gray-600 border border-[#c9c9c9] rounded text-center w-fit px-2 py-[1px]  mx-auto md:mx-0">
+                                <a href="#" className="">
+                                    Online Pay
+                                </a>
+                            </li>
+                            <li className="bg-white hover:bg-gray-700 hover:text-white mx-auto md:mx-0 text-gray-600 border border-[#c9c9c9] rounded text-center w-fit px-2 py-[1px] ">
+                                <a href="#" className="">
+                                    Razor Pay
+                                </a>
+                            </li>
+                            <li className="bg-white hover:bg-gray-700 hover:text-white mx-auto md:mx-0 text-gray-600 border border-[#c9c9c9] rounded text-center w-fit px-2 py-[1px] ">
+                                <a href="#" className="">
+                                    Privacy Policy
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
 
-                <div>
-                    <h2 className="font-semibold text-xl mb-2.5 font-poppins">Company</h2>
-                    <ul>
-                        <li>
-                            <a href="#" className="hover:underline">
-                                About Us
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                    <div className="w-fit mx-auto mt-8 md:mt-0">
+                        <h2 className="font-semibold text-xl mb-2.5 font-poppins text-center md:text-start">Company</h2>
+                        <ul>
+                            <li className="text-center md:text-start">
+                                <a href="#" className="hover:text-orange-500">
+                                    About Us
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
 
-                <div>
-                    <h2 className="font-semibold text-xl mb-2.5">Reach Us</h2>
-                    <ul className="space-y-2">
-                        <li>Phone: +91 9515175554</li>
-                        <li>Email: hello@digitaledify.ai</li>
-                        <li>WhatsApp: +91 9515175554</li>
-                    </ul>
+                    <div className="w-fit mx-auto mt-8 md:mt-0">
+                        <h2 className="font-semibold text-xl mb-2.5 text-center md:text-start">Reach Us</h2>
+                        <ul className="space-y-2">
+                            <li className="text-center md:text-start">Phone: +91 9515175554</li>
+                            <li className="text-center md:text-start">Email: hello@digitaledify.ai</li>
+                            <li className="text-center md:text-start">WhatsApp: +91 9515175554</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 

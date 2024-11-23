@@ -4,6 +4,7 @@ import { FaAngleDown, FaBars } from "react-icons/fa6";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { FaTimes } from "react-icons/fa";
 import StartNowModal from "./HomePage/StartNowModal";
+import { LuChevronDown } from "react-icons/lu";
 
 const Header = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(true);
@@ -37,7 +38,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white border-b top-0 lg:-left-2 right-0 z-50">
+    <header className="sticky bg-white border-b top-0 lg:-left-2 right-0 z-50">
       <div className="container mx-auto ">
         <div className="flex items-center justify-between px-8 py-3 pb-2 lg:p-0 lg:px-0">
           {/* Logo */}
@@ -68,12 +69,12 @@ const Header = () => {
                   onMouseLeave={handleMouseLeave}
                 >
                   <a
-                    className={`font-normal py-5 text-base font-sans uppercase flex gap-2 items-center cursor-pointer ${isDropdownOpen === 1
-                        ? "border-b border-b-[#F06292]"
-                        : "border-0"
+                    className={`font-normal py-7 text-sm font-poppins uppercase flex gap-2 items-center cursor-pointer ${isDropdownOpen === 1
+                      ? "border-b border-b-[#F06292]"
+                      : "border-0"
                       } `}
                   >
-                    Courses <FaAngleDown size={15} />
+                    Courses <LuChevronDown size={15} />
                   </a>
                   {isDropdownOpen === 1 && (
                     <div className="absolute top-[57px] -left-2 mt-2 px-5 bg-[#fafafa] z-10 shadow-lg rounded-lg p-4 w-max">
@@ -333,12 +334,12 @@ const Header = () => {
                   onMouseLeave={handleMouseLeave}
                 >
                   <a
-                    className={`font-normal text-base font-sans uppercase flex gap-2 items-center cursor-pointer py-5 ${isDropdownOpen === 2
-                        ? "border-b border-b-[#F06292]"
-                        : "border-0"
+                    className={`font-normal text-sm font-poppins uppercase flex gap-2 items-center cursor-pointer py-7 ${isDropdownOpen === 2
+                      ? "border-b border-b-[#F06292]"
+                      : "border-0"
                       }`}
                   >
-                    Programs <FaAngleDown size={15} />
+                    Programs <LuChevronDown size={15} />
                   </a>
                   {isDropdownOpen === 2 && (
                     <div className="absolute top-[57px] -left-2 mt-2 bg-[#fafafa] z-10 shadow-lg rounded-lg p-4 w-max">
@@ -447,12 +448,12 @@ const Header = () => {
                   onMouseLeave={handleMouseLeave}
                 >
                   <a
-                    className={`font-normal text-base font-sans uppercase flex gap-2 items-center cursor-pointer py-5 ${isDropdownOpen === 3
-                        ? "border-b border-b-[#F06292]"
-                        : "border-0"
+                    className={`font-normal text-sm font-poppins uppercase flex gap-2 items-center cursor-pointer py-7 ${isDropdownOpen === 3
+                      ? "border-b border-b-[#F06292]"
+                      : "border-0"
                       }`}
                   >
-                    Services <FaAngleDown size={15} />
+                    Services <LuChevronDown size={15} />
                   </a>
                   {isDropdownOpen === 3 && (
                     <div className="absolute top-[57px] -left-2 mt-2 bg-[#fafafa] z-10 shadow-lg rounded-lg p-4 w-max">
@@ -535,12 +536,12 @@ const Header = () => {
                   onMouseLeave={handleMouseLeave}
                 >
                   <a
-                    className={`font-normal text-base font-sans uppercase flex gap-2 items-center cursor-pointer py-5 ${isDropdownOpen === 4
-                        ? "border-b border-b-[#F06292]"
-                        : "border-0"
+                    className={`font-normal text-sm font-poppins uppercase flex gap-2 items-center cursor-pointer py-7 ${isDropdownOpen === 4
+                      ? "border-b border-b-[#F06292]"
+                      : "border-0"
                       }`}
                   >
-                    Resources <FaAngleDown size={15} />
+                    Resources <LuChevronDown size={15} />
                   </a>
                   {isDropdownOpen === 4 && (
                     <div className="absolute top-[57px] -left-2 mt-2 bg-[#fafafa] z-10 shadow-lg rounded-lg p-4 w-max">
@@ -584,12 +585,12 @@ const Header = () => {
                   onMouseLeave={handleMouseLeave}
                 >
                   <a
-                    className={`font-normal text-base font-sans uppercase flex gap-2 items-center cursor-pointer py-5 ${isDropdownOpen === 5
-                        ? "border-b border-b-[#F06292]"
-                        : "border-0"
+                    className={`font-normal text-sm font-poppins uppercase flex gap-2 items-center cursor-pointer py-7 ${isDropdownOpen === 5
+                      ? "border-b border-b-[#F06292]"
+                      : "border-0"
                       }`}
                   >
-                    Company <FaAngleDown size={15} />
+                    Company <LuChevronDown size={15} />
                   </a>
                   {isDropdownOpen === 5 && (
                     <div className="absolute top-[57px] -left-2 mt-2 bg-[#fafafa] z-10 shadow-lg rounded-lg p-4 w-max">
@@ -617,10 +618,10 @@ const Header = () => {
               </ul>
             </div>
             <div className="flex gap-5 h-fit ">
-              <button className="bg-white text-base border border-black py-2 px-6 rounded-3xl hover:text-blue-800 hover:border-blue-800">
+              <button className="bg-white font-poppins text-[15px] xl:text-base border border-black py-2 px-6 rounded-3xl hover:text-blue-800 hover:border-blue-800">
                 Login
               </button>
-              <button className="text-white text-base bg-sky-700 py-2 px-6 rounded-3xl  hover:bg-pink-700" onClick={() => openModal()}>
+              <button className="text-white font-poppins text-[15px] xl:text-base bg-[#015DBE] py-2 px-6 rounded-3xl  hover:bg-pink-700" onClick={() => openModal()}>
                 Start Now
               </button>
             </div>
