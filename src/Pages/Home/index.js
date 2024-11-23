@@ -62,12 +62,12 @@ const Home = () => {
           100000+ uplifted through our hybrid classroom & online training,
           enriched by real-time projects and job support.
         </p>
-        <div className="flex space-x-4">
+        <div className="flex flex-wrap gap-2 lg:space-x-4 justify-center">
           {/* Join Free Demo Button */}
 
           <BlackButton
             name="Join Free Demo"
-            icon={<MdOutlineLaptop className="text-xs lg:text-xl" />}
+            icon={<MdOutlineLaptop className="text-sm lg:text-xl" />}
           />
 
           {/* Contact Course Advisor Button */}
