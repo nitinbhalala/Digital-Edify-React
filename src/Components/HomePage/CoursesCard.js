@@ -11,7 +11,9 @@ const CoursesCard = ({ data }) => {
         <div className="p-4 ">
             <a
                 // href="https://www.digitaledify.ai/courses/devops-training-certification.html"
-                className="block p-8 rounded-lg border border-[#ffeee4] bg-white/50  hover:shadow-xl hover:scale-105 transform transition-all duration-300 cursor-pointer"
+                className="block p-8 rounded-lg border border-[#cccccc4f] bg-white/50  hover:shadow-2xl hover:scale-105 transform transition-all duration-300 cursor-pointer"
+            // style={{ boxShadow: "#cccccc3b 0 0 15px", }}
+
             >
                 <h5 className="text-xl font-bold text-[#343433]">{data.courseName}</h5>
                 <div className="flex flex-wrap gap-4 py-4">
