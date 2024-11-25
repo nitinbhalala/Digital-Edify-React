@@ -2,7 +2,7 @@ import React from 'react'
 
 const OneLearnCircle = ({ title, number, mainTitle, discription }) => {
     return (
-        <div class="font-poppins">
+        <div class="font-poppins mt-7">
             <div className="text-center font-poppins">
                 {mainTitle}
                 <div className="w-[1px] h-14 md:h-[120px] self-center pr-[1px] mx-auto bg-gradient-to-b from-white to-[#9a1fb8]"></div>
