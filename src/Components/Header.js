@@ -5,11 +5,13 @@ import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { FaTimes } from "react-icons/fa";
 import StartNowModal from "./HomePage/StartNowModal";
 import { LuChevronDown } from "react-icons/lu";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(true);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const navigate =useNavigate()
 
   useEffect(() => {
     if (isOpen) {
@@ -38,20 +40,21 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky bg-white border-b top-0 lg:-left-2 right-0 z-50">
+    <header className="sticky top-0 right-0 z-50 bg-white border-b lg:-left-2">
       <div className="container mx-auto ">
         <div className="flex items-center justify-between px-8 py-3 pb-2 lg:p-0 lg:px-0">
           {/* Logo */}
           <div >
             <img
+            onClick={() => navigate("/")}
               src={digitaledify}
               alt="Digital Edify - Best AWS, DevOps, Python, Digital Marketing Training Institute"
               title="Digital Edify - Best AWS, DevOps, Python, Digital Marketing Training Institute"
-              className="h-14"
+              className="cursor-pointer h-14"
             />
           </div>
           {/* Mobile Menu Icon */}
-          <div className="lg:hidden z-20">
+          <div className="z-20 lg:hidden">
             <button onClick={toggleMobileMenu} aria-label="Toggle Menu">
               {isMobileMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
             </button>
@@ -78,10 +81,10 @@ const Header = () => {
                   </a>
                   {isDropdownOpen === 1 && (
                     <div className="absolute top-[57px] -left-2 mt-2 px-5 bg-[#fafafa] z-10 shadow-lg rounded-lg p-4 w-max">
-                      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
+                      <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-3">
                         {/* Application Stack */}
                         <div className="w-60">
-                          <h5 className="font-bold mb-3 text-sky-600">
+                          <h5 className="mb-3 font-bold text-sky-600">
                             Application Stack
                           </h5>
                           <ul className="space-y-2">
@@ -89,6 +92,7 @@ const Header = () => {
                               <a
                                 href="#"
                                 className="flex items-center text-gray-600 hover:text-blue-500 hover:gap-2"
+                                onClick={() => navigate("/course")}
                               >
                                 <MdKeyboardDoubleArrowRight
                                   color="#ca0067"
@@ -180,7 +184,7 @@ const Header = () => {
                         </div>
                         {/* Platform Stack */}
                         <div className="w-60">
-                          <h5 className="font-bold mb-3 text-sky-600">
+                          <h5 className="mb-3 font-bold text-sky-600">
                             Platform Stack
                           </h5>
                           <ul className="space-y-2">
@@ -240,7 +244,7 @@ const Header = () => {
                         </div>
                         {/* AI Data Stack */}
                         <div className="w-60">
-                          <h5 className="font-bold mb-3 text-sky-600">
+                          <h5 className="mb-3 font-bold text-sky-600">
                             AI Data Stack
                           </h5>
                           <ul className="space-y-2">
