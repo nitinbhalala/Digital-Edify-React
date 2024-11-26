@@ -36,3 +36,40 @@
     transform: rotate(360deg);
   }
 }
+.list-unstyled {
+    padding-left: 0;
+    list-style: none
+}
+.abutBg{
+  background-image: url("../src/assets/abutbg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-list{ padding-top: 20px;}
+
+.about-list .xb-item--inner::before {
+  position: absolute;
+  width: 45px;
+  height: 105px;
+  border-radius: 30px;
+  background-color: #ffffff;
+  content: "";
+  top: -6px;
+  left: 0px;
+  z-index: -1;
+  border-top-right-radius: 0;
+  transform: rotate(-45deg);
+}
+
+.about-list .xb-item--number.color-2 {
+  background-color: #00CC99;
+}
+
+.about-list .xb-item--number.color-3 {
+  background-color: #0091FF;
+}
+
+.about-list .xb-item--number.color-4 {
+  background-color: #FFBD0F;
+}
+

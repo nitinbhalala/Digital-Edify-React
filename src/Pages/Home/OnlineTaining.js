@@ -51,7 +51,7 @@ const OnlineTaining = () => {
                 </p>
             </div>
             <div className="w-full sm:w-auto justify-items-center sm:justify-items-end  space-y-2">
-                <BlackButton name="Free Demo" icon={<VscGraph size={17} />} />
+                <BlackButton name=" Free Demo " icon={<VscGraph size={17} />} />
                 <WhiteButton name="Get In Touch" icon={<VscGraph size={17} />} />
             </div>
         </div>

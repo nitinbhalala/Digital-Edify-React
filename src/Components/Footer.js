@@ -3,8 +3,10 @@ import { FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa6'
 import { MdOutlineWhatsapp } from 'react-icons/md'
 import { RiFacebookFill } from 'react-icons/ri'
 import digitaledify from "../assets/digitaledify.png";
+import { useNavigate } from 'react-router-dom';
 
 const Footer = () => {
+    const navigate = useNavigate()
     return (
         <div>
             <div className=" px-1  bg-white text-black py-12 border-t border-b border-[#DDDDDD] w-full gap-10 md:gap-10 lg:gap-20 xl:gap-48 font-poppins">
@@ -57,9 +59,12 @@ const Footer = () => {
                         <h2 className="font-semibold text-xl mb-2.5 font-poppins text-center md:text-start">Company</h2>
                         <ul>
                             <li className="text-center md:text-start">
-                                <a href="#" className="hover:text-orange-500">
+                                <p
+                                    className="hover:text-orange-500 cursor-pointer"
+                                    onClick={() => navigate("/about_us")}
+                                >
                                     About Us
-                                </a>
+                                </p>
                             </li>
                         </ul>
                     </div>
