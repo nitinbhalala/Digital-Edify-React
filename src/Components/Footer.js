@@ -14,19 +14,19 @@ const Footer = () => {
                         <img src={digitaledify} alt="digitaledify" className="mx-auto" />
                         <p className="mt-4 font-poppins text-center">Follow us on</p>
                         <div className="flex space-x-4 mt-2">
-                            <a href="#" aria-label="Facebook">
+                            <a href="#" className='hover:text-blue-500' aria-label="Facebook">
                                 <RiFacebookFill size={27} />
                             </a>
-                            <a href="#" aria-label="Twitter">
+                            <a href="#" className='hover:text-blue-500' aria-label="Twitter">
                                 <FaTwitter size={27} />
                             </a>
-                            <a href="#" aria-label="LinkedIn">
+                            <a href="#" className='hover:text-blue-500' aria-label="LinkedIn">
                                 <FaLinkedinIn size={27} />
                             </a>
-                            <a href="#" aria-label="Instagram">
+                            <a href="#" className='hover:text-blue-500' aria-label="Instagram">
                                 <FaInstagram size={27} />
                             </a>
-                            <a href="#" aria-label="WhatsApp">
+                            <a href="#" className='hover:text-blue-500' aria-label="WhatsApp">
                                 <MdOutlineWhatsapp size={27} />
                             </a>
                         </div>
