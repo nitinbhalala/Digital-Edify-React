@@ -1,7 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react'
 import arrow from "../../assets/demand.webp"
 import * as echarts from "echarts";
-const WhyJavaTraining = () => {
+const WhyJavaTraining = ({title}) => {
+console.log("🚀 ~ WhyJavaTraining ~ title:", title)
 
     const data = [
         {
@@ -130,7 +131,7 @@ const WhyJavaTraining = () => {
 
     return (
         <div className="container mx-auto font-poppins mt-20 px-2">
-            <p className='text-xl md:text-3xl font-semibold text-[#343433] text-center mb-10'>Why Java Training With Digital Edify?</p>
+            <p className='text-xl md:text-3xl font-semibold text-[#343433] text-center mb-10'>{title}</p>
             <div className="flex-row md:flex items-center mx-auto w-fit md:w-full justify-center md:justify-between md:border-b border-[#DDDDDD] mb-12">
                 {data.map((item) => (
                     <p

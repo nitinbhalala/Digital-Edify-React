@@ -358,8 +358,10 @@ const Header = () => {
                         <ul className="space-y-2">
                           <li>
                             <a
-                              href="#"
-                              className="flex items-center text-gray-600 hover:text-blue-500 hover:gap-2"
+                              onClick={() =>
+                                navigate("/programs/full_stack_java")
+                              }
+                              className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                             >
                               <MdKeyboardDoubleArrowRight
                                 color="#ca0067"
@@ -371,8 +373,10 @@ const Header = () => {
                           </li>
                           <li>
                             <a
-                              href="#"
-                              className="flex items-center text-gray-600 hover:text-blue-500 hover:gap-2"
+                              onClick={() =>
+                                navigate("/programs/full_stack_python")
+                              }
+                              className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                             >
                               <MdKeyboardDoubleArrowRight
                                 color="#ca0067"
@@ -384,8 +388,10 @@ const Header = () => {
                           </li>
                           <li>
                             <a
-                              href="#"
-                              className="flex items-center text-gray-600 hover:text-blue-500 hover:gap-2"
+                               onClick={() =>
+                                navigate("/programs/full_stack_mern")
+                              }
+                              className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                             >
                               <MdKeyboardDoubleArrowRight
                                 color="#ca0067"
@@ -397,8 +403,10 @@ const Header = () => {
                           </li>
                           <li>
                             <a
-                              href="#"
-                              className="flex items-center text-gray-600 hover:text-blue-500 hover:gap-2"
+                              onClick={() =>
+                                navigate("/programs/full_stack_ai_data_science")
+                              }
+                              className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                             >
                               <MdKeyboardDoubleArrowRight
                                 color="#ca0067"
@@ -410,8 +418,10 @@ const Header = () => {
                           </li>
                           <li>
                             <a
-                              href="#"
-                              className="flex items-center text-gray-600 hover:text-blue-500 hover:gap-2"
+                              onClick={() =>
+                                navigate("/programs/multi_cloud_devops")
+                              }
+                              className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                             >
                               <MdKeyboardDoubleArrowRight
                                 color="#ca0067"
@@ -423,8 +433,10 @@ const Header = () => {
                           </li>
                           <li>
                             <a
-                              href="#"
-                              className="flex items-center text-gray-600 hover:text-blue-500 hover:gap-2"
+                              onClick={() =>
+                                navigate("/programs/multi_cloud_data_engineering")
+                              }
+                              className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                             >
                               <MdKeyboardDoubleArrowRight
                                 color="#ca0067"
@@ -436,8 +448,10 @@ const Header = () => {
                           </li>
                           <li>
                             <a
-                              href="#"
-                              className="flex items-center text-gray-600 hover:text-blue-500 hover:gap-2"
+                              onClick={() =>
+                                navigate("/programs/ai_data_analyst")
+                              }
+                              className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                             >
                               <MdKeyboardDoubleArrowRight
                                 color="#ca0067"
@@ -474,7 +488,7 @@ const Header = () => {
                           <li>
                             <a
                               href="#"
-                              className="flex items-center text-gray-600 hover:text-blue-500 hover:gap-2"
+                              className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                             >
                               <MdKeyboardDoubleArrowRight
                                 color="#ca0067"
@@ -487,7 +501,7 @@ const Header = () => {
                           <li>
                             <a
                               href="#"
-                              className="flex items-center text-gray-600 hover:text-blue-500 hover:gap-2"
+                              className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                             >
                               <MdKeyboardDoubleArrowRight
                                 color="#ca0067"
@@ -500,7 +514,7 @@ const Header = () => {
                           <li>
                             <a
                               href="#"
-                              className="flex items-center text-gray-600 hover:text-blue-500 hover:gap-2"
+                              className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                             >
                               <MdKeyboardDoubleArrowRight
                                 color="#ca0067"
@@ -513,7 +527,7 @@ const Header = () => {
                           <li>
                             <a
                               href="#"
-                              className="flex items-center text-gray-600 hover:text-blue-500 hover:gap-2"
+                              className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                             >
                               <MdKeyboardDoubleArrowRight
                                 color="#ca0067"
@@ -526,7 +540,7 @@ const Header = () => {
                           <li>
                             <a
                               href="#"
-                              className="flex items-center text-gray-600 hover:text-blue-500 hover:gap-2"
+                              className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                             >
                               <MdKeyboardDoubleArrowRight
                                 color="#ca0067"
@@ -563,7 +577,7 @@ const Header = () => {
                           <li>
                             <a
                               href="#"
-                              className="flex items-center text-gray-600 hover:text-blue-500 hover:gap-2"
+                              className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                             >
                               <MdKeyboardDoubleArrowRight
                                 color="#ca0067"
@@ -576,7 +590,7 @@ const Header = () => {
                           <li>
                             <a
                               href="#"
-                              className="flex items-center text-gray-600 hover:text-blue-500 hover:gap-2"
+                              className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                             >
                               <MdKeyboardDoubleArrowRight
                                 color="#ca0067"
@@ -612,8 +626,8 @@ const Header = () => {
                         <ul className="space-y-2">
                           <li>
                             <a
-                              href="#"
-                              className="flex items-center text-gray-600 hover:text-blue-500 hover:gap-2"
+                              onClick={() => navigate("/about_us")}
+                              className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                             >
                               <MdKeyboardDoubleArrowRight
                                 color="#ca0067"

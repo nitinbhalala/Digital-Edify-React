@@ -3,9 +3,7 @@ import rating from "../../assets/rating.webp";
 import { MdCheck } from "react-icons/md";
 import { LuUserPlus } from "react-icons/lu";
 import { PiClockCountdown } from "react-icons/pi";
-import WhyJavaTraining from "./WhyJavaTraining";
 import Compaines from "../Home/Compaines";
-import Accordion from "./Accordion";
 import OneLearnCircle from "../../Components/HomePage/OneLearnCircle";
 import LmsProject from "../Home/LmsProject";
 import Certificate from "../Home/Certificate";
@@ -13,18 +11,20 @@ import GetJob from "../Home/GetJob";
 import GitHubProfile from "../Home/GitHubProfile";
 import ItEngineers from "../Home/ItEngineers";
 import UpcomingBatch from "../Home/UpcomingBatch";
-import WhyDigitalEdify from "../Home/WhyDigitalEdify";
 import OnlineTaining from "../Home/OnlineTaining";
 import OurLocations from "../Home/OurLocations";
 import LogoGrid from "../../Components/Course/LogoGrid";
 import { useParams } from "react-router-dom";
-import { courseData } from "../../utils/CourseData";
+import { programsData } from "../../utils/CourseData";
 import StartNowModal from "../../Components/HomePage/StartNowModal";
+import WhyJavaTraining from "../Course/WhyJavaTraining";
+import Accordion from "../Course/Accordion";
+import WhyDigitalEdify from "../Home/WhyDigitalEdify";
 
-const Course = () => {
+const Programs = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { name } = useParams();
-  const Fundamentals = courseData?.filter((i) => i?.course === name)?.[0];
+  const Fundamentals = programsData?.filter((i) => i?.course === name)?.[0];
 
   const Data2 = [
     "Online & ClassRoom Real-Time training",
@@ -207,11 +207,10 @@ const Course = () => {
       <OnlineTaining />
 
       <OurLocations />
-      
 
       <StartNowModal isOpen={isOpen} setIsOpen={setIsOpen} />
     </div>
   );
 };
 
-export default Course;
+export default Programs;
