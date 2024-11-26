@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import rating from "../../assets/rating.webp";
 import { MdCheck } from "react-icons/md";
 import { LuUserPlus } from "react-icons/lu";
@@ -19,8 +19,10 @@ import OurLocations from "../Home/OurLocations";
 import LogoGrid from "../../Components/Course/LogoGrid";
 import { useParams } from "react-router-dom";
 import { courseData } from "../../utils/CourseData";
+import StartNowModal from "../../Components/HomePage/StartNowModal";
 
 const Course = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const { name } = useParams();
   const Fundamentals = courseData?.filter((i) => i?.course === name)?.[0];
 
@@ -116,14 +118,14 @@ const Course = () => {
 
             <div className="flex justify-center md:justify-start flex-wrap mt-3 gap-3">
               <button
-                href="#"
+                onClick={() => setIsOpen(!isOpen)}
                 aria-label="Java Training"
                 className="bg-[#1554BB] text-sm md:text-base text-white px-7 py-2.5 rounded-full font-poppins font-medium"
               >
                 SCHEDULE ONLINE DEMO
               </button>
               <button
-                href="#"
+                onClick={() => setIsOpen(!isOpen)}
                 aria-label="Java Training"
                 className="bg-white border text-sm md:text-base border-[#1554BB] text-[#1554BB] px-7 py-2.5 rounded-full font-poppins font-medium"
               >
@@ -205,6 +207,9 @@ const Course = () => {
       <OnlineTaining />
 
       <OurLocations />
+      
+
+      <StartNowModal isOpen={isOpen} setIsOpen={setIsOpen} />
     </div>
   );
 };

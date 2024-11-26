@@ -13,20 +13,6 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    if (isOpen) {
-      document.body.classList.add("overflow-hidden");
-    } else {
-      document.body.classList.remove("overflow-hidden");
-    }
-    return () => {
-      document.body.classList.remove("overflow-hidden");
-    };
-  }, [isOpen]);
-
-  const openModal = () => setIsOpen(true);
-  const closeModal = () => setIsOpen(false);
-
   const handleMouseEnter = (data) => {
     setIsDropdownOpen(data);
   };
@@ -197,9 +183,7 @@ const Header = () => {
                           <ul className="space-y-2">
                             <li>
                               <a
-                               onClick={() =>
-                                navigate("/course/devops")
-                              }
+                                onClick={() => navigate("/course/devops")}
                                 className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                               >
                                 <MdKeyboardDoubleArrowRight
@@ -212,9 +196,7 @@ const Header = () => {
                             </li>
                             <li>
                               <a
-                                 onClick={() =>
-                                  navigate("/course/azure_devops")
-                                }
+                                onClick={() => navigate("/course/azure_devops")}
                                 className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                               >
                                 <MdKeyboardDoubleArrowRight
@@ -227,9 +209,7 @@ const Header = () => {
                             </li>
                             <li>
                               <a
-                                 onClick={() =>
-                                  navigate("/course/aws_cloud")
-                                }
+                                onClick={() => navigate("/course/aws_cloud")}
                                 className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                               >
                                 <MdKeyboardDoubleArrowRight
@@ -242,9 +222,7 @@ const Header = () => {
                             </li>
                             <li>
                               <a
-                                onClick={() =>
-                                  navigate("/course/azure_cloud")
-                                }
+                                onClick={() => navigate("/course/azure_cloud")}
                                 className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                               >
                                 <MdKeyboardDoubleArrowRight
@@ -311,7 +289,9 @@ const Header = () => {
                             <li>
                               <a
                                 onClick={() =>
-                                  navigate("/course/ai_training_and_certification")
+                                  navigate(
+                                    "/course/ai_training_and_certification"
+                                  )
                                 }
                                 className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                               >
@@ -340,9 +320,7 @@ const Header = () => {
                             </li>
                             <li>
                               <a
-                                onClick={() =>
-                                  navigate("/course/power_bi")
-                                }
+                                onClick={() => navigate("/course/power_bi")}
                                 className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                               >
                                 <MdKeyboardDoubleArrowRight
@@ -658,14 +636,14 @@ const Header = () => {
               </button>
               <button
                 className="text-white font-poppins text-[15px] xl:text-base bg-[#015DBE] py-2 px-6 rounded-3xl  hover:bg-pink-700"
-                onClick={() => openModal()}
+                onClick={() => setIsOpen(!isOpen)}
               >
                 Start Now
               </button>
             </div>
           </div>
         </div>
-        {isOpen && <StartNowModal closeModal={closeModal} />}
+        <StartNowModal isOpen={isOpen} setIsOpen={setIsOpen} />
       </div>
     </header>
   );
