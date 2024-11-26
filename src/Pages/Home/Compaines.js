@@ -15,7 +15,7 @@ const Compaines = () => {
     const images = [P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, P12];
 
     return (
-        <div className='px-5 mt-8 md:mt-12 lg:mt-16 mb-16 md:mb-32 justify-items-center font-poppins'>
+        <div className='px-5 mt-8 md:mt-12 lg:mt-16 mb-16 md:mb-16 justify-items-center font-poppins'>
             <div className="grid grid-cols-5 gap-1 md:gap-12 md:mx-5 justify-items-center items-center">
                 {images.slice(0, 5).map((image, index) => (
                     <img

@@ -17,12 +17,14 @@ import m16 from "../assets/Compaines/githubgl.png";
 import m17 from "../assets/Compaines/seleniu.webp";
 
 import javabanner from "../assets/javabanner.webp";
+import uiuxbanner from "../assets/uiuximage.jpg";
+
 
 export const courseData = [
   {
     course: "java",
-    headerTitle:"Java Training & Certification",
-    headerImage:javabanner,
+    headerTitle: "Java Training & Certification",
+    headerImage: javabanner,
     title: "Java Course Curriculum",
     subTitle: "It stretches your mind, think better and create even better.",
     courseList: [
@@ -559,9 +561,304 @@ export const courseData = [
   },
   {
     course: "ui_ux_design",
-    headerTitle:"UI/UX Design Course Training",
-    headerImage:javabanner,
+    headerTitle: "UI/UX Design Course Training",
+    headerImage: uiuxbanner,
     title: "UI/UX Design Course Curriculum",
     subTitle: "It stretches your mind, think better and create even better.",
+    courseList: [
+      "Foundations of Design",
+      "Design Thinking",
+      "Figma for UX",
+      "UX Portfolio",
+      "Resume Preparation",
+    ],
+    accordionData: [
+      {
+        maintitle: "UI/UX Design Course",
+        subdata: [
+          {
+            module: "Module 1",
+            title: " Introduction to UI/UX Design",
+            topics: [
+              {
+                description: "Understanding Fundamentals : Learn the basics of UI (User Interface) and UX (User Experience) design.",
+              },
+              {
+                description: "Differentiating Principles : Understand the differences and interdependencies between UI and UX design principles.",
+              },
+              {
+                description:
+                  "User-Centered Design : Introduction to user-centered design principles that prioritize the user's needs and experience.",
+              },
+              {
+                description:
+                  "Design Tools Overview : Get acquainted with popular design tools and software used in the industry.",
+              },
+
+            ],
+          },
+          {
+            module: "Module 2",
+            title: " Figma Basics: Interface and Tools",
+            topics: [
+              {
+                description: "Figma Interface : Explore Figma’s Layers panel, Properties panel, Toolbar, and Canvas.",
+              },
+              {
+                description: "Frames vs. Shapes : Understand the differences and appropriate uses of Frames and Shapes in Figma.",
+              },
+              {
+                description:
+                  "Basic Tools : Learn to use Selection, Drawing, Text, and Shape tools.",
+              },
+              {
+                description:
+                  "Figma Shortcuts : Introduction to keyboard shortcuts that enhance workflow efficiency.",
+              },
+
+            ],
+          },
+          {
+            module: "Module 3",
+            title: " Advanced Figma Techniques",
+            topics: [
+              {
+                description: "Auto Layout : Understand the purpose, benefits, and usage of Auto Layout.",
+              },
+              {
+                description: "Auto Layout Features : Learn resizing constraints, padding, and spacing.",
+              },
+              {
+                description:
+                  "Responsive Design : Practice creating responsive designs using Auto Layout.",
+              },
+              {
+                description:
+                  "Command Line Interface",
+              },
+              {
+                description:
+                  "Components : Understand the concept of components and their importance; create and use master components and instances.",
+              },
+              {
+                description:
+                  "Component Variants : Explore variants for handling design variations and states.",
+              },
+              {
+                description:
+                  "Best Practices : Organizing and managing components and variants effectively.",
+              },
+
+            ],
+          },
+          {
+            module: "Module 4",
+            title: "Design Systems and Component Libraries",
+            topics: [
+              {
+                description: "Introduction to Design Systems : Understand their role in maintaining design consistency.",
+              },
+              {
+                description: "Creating Design Systems in Figma : Organize styles, components, and assets efficiently.",
+              },
+              {
+                description:
+                  "Component Libraries : Build and manage libraries for efficient design reuse.",
+              },
+              {
+                description:
+                  "Dynamic Content Handling : Implement Auto Layout in component design.",
+              },
+            ],
+          },
+          {
+            module: "Module 5",
+            title: "Prototyping with Advanced Features",
+            topics: [
+              {
+
+                description: "Interactive Prototypes : Utilize components and variants for creating interactive designs.",
+              },
+              {
+                description: "Advanced Prototyping Features : Learn features such as overlays and interactive transitions.",
+              },
+              {
+                description:
+                  "User Testing : Conduct user testing on dynamic components and prototypes.",
+              },
+
+            ],
+          },
+          {
+            module: "Module 6",
+            title: " Visual Design Principles and UX Laws",
+            topics: [
+              {
+                name: "Part 1: Visual Design Principles",
+                description: "Fundamentals of Visual Design : Delve into typography, color theory, layout, and imagery.",
+              },
+              {
+                description: "Creating Engaging Experiences : Understand how these principles contribute to user engagement.",
+              },
+              {
+                description:
+                  "Hands-On Exercises : Apply visual design principles in Figma through exercises and projects.",
+              },
+              {
+                name: "Part 2: UX Laws and Guidelines",
+                description: "Key UX Laws : Overview of Hick's Law, Fitts's Law, and Gestalt Principles.",
+              },
+              {
+                description: "Influence on User Behavior : Discuss how these laws affect user behavior and perception.",
+              },
+              {
+                description:
+                  "Figma Prototypes Analysis : Analyze design choices based on UX laws and guidelines.",
+              },
+
+            ],
+          },
+        ],
+      },
+      {
+        maintitle: "Core JavaUX Portfolio Curriculum",
+        subdata: [
+          {
+            module: "Module 1",
+            title: "  Introduction to Design Thinking",
+            topics: [
+              {
+                description: "Definition and Principles : Learn what Design Thinking is and its core principles.",
+              },
+              {
+                description: "Iterative Process : Understand the iterative nature of the Design Thinking process.",
+              },
+              {
+                description:
+                  "Industry Applications : Explore how Design Thinking is applied across various industries.",
+              },
+              {
+                description:
+                  "Foundational Element : Introduction to empathy as a crucial element in Design Thinking.",
+              },
+            ],
+          },
+          {
+            module: "Module 2",
+            title: "Empathize Phase",
+            topics: [
+              {
+                description: "Purpose and Methods : Understand the purpose and methods of the Empathize phase.",
+              },
+              {
+                description: "User Research Techniques : Conduct interviews, observations, and surveys to gather insights.",
+              },
+              {
+                description:
+                  "Empathy Maps and Personas : Develop these tools based on user research findings.",
+              },
+              {
+                description:
+                  "Practice Exercises : Hands-on exercises to practice empathy-building skills.",
+              },
+            ],
+          },
+          {
+            module: "Module 3",
+            title: "Define Phase",
+            topics: [
+              {
+                description: "Framing the Problem Statement : Learn to articulate a clear problem statement.",
+              },
+              {
+                description: "Synthesizing Data : Techniques for synthesizing user research data into actionable insights.",
+              },
+              {
+                description:
+                  "Brainstorming Solutions : Introduction to brainstorming techniques for generating solutions.",
+              },
+
+            ],
+          },
+          {
+            module: "Module 4",
+            title: " Ideate Phase",
+            topics: [
+              {
+                description: "Generating Creative Solutions : Understand the purpose of the Ideate phase.",
+              },
+              {
+                description: "Divergent Thinking : Techniques for brainstorming, mind mapping, and sketching.",
+              },
+              {
+                description:
+                  "Encouraging Creativity : Encourage wild ideas and fostering a suspension of judgment.",
+              },
+              {
+                description:
+                  "Collaborative Exercises : Team-based ideation exercises to enhance creativity.",
+              },
+
+            ],
+          },
+          {
+            module: "Module 5",
+            title: "  Prototype Phase",
+            topics: [
+              {
+                description: "Building Tangible Solutions : Understanding rapid prototyping techniques.",
+              },
+              {
+                description: "Building Tangible Solutions : Understanding rapid prototyping techniques.",
+              },
+              {
+                description:
+                  "Iterative Process : Emphasize the importance of iteration and feedback in prototyping.",
+              },
+
+            ],
+          },
+          {
+            module: "Module 6",
+            title: "Test Phase ",
+            topics: [
+              {
+                description: "Gathering Feedback : Techniques for usability testing and collecting user feedback.",
+              },
+              {
+                description: "Analyzing Results : Learn to analyze test results and identify areas for improvement.",
+              },
+              {
+                description:
+                  "Prototype Iteration : Iteratively refine prototypes based on user feedback.",
+              },
+
+            ],
+          },
+          {
+            module: "Module 7",
+            title: " Integrating Design Thinking into Practice ",
+            topics: [
+              {
+                description: "Organizational Strategies : Strategies for integrating Design Thinking into an organization’s culture.",
+              },
+              {
+                description: "Overcoming Challenges : Address common challenges in implementing Design Thinking.",
+              },
+              {
+                description:
+                  "Case Studies : Examine successful Design Thinking projects.",
+              },
+              {
+                description:
+                  "Lifelong Learning : Develop a mindset for continuous learning and innovation through Design Thinking.",
+              },
+
+            ],
+          },
+        ],
+      },
+
+    ],
   }
 ];

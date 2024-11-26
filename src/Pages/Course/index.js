@@ -23,7 +23,7 @@ import { courseData } from "../../utils/CourseData";
 const Course = () => {
   const { name } = useParams();
   const Fundamentals = courseData?.filter((i) => i?.course === name)?.[0];
-  
+
   const Data2 = [
     "Online & ClassRoom Real-Time training",
     "Project & Task Based Learning",
@@ -153,7 +153,7 @@ const Course = () => {
 
       <Compaines />
 
-      <div className="bg-[#F5F5F5] pt-16">
+      <div className="bg-[#F5F5F5] pt-8">
         <div className="container mx-auto px-2">
           <OneLearnCircle
             title="Learn"

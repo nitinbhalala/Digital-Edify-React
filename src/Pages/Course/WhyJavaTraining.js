@@ -15,9 +15,9 @@ const WhyJavaTraining = () => {
             chartData: [
                 { label: "Min (8L)", value: 13 },
                 { label: "Min (10L)", value: 15 },
-                { label: "Min (13L)", value: 23 },
-                { label: "Avg (17L)", value: 16 },
-                { label: "Max (40L)", value: 13 },
+                { label: "Avg (16L)", value: 23 },
+                { label: "Max (20L)", value: 16 },
+                { label: "Max (30L)", value: 13 },
             ],
         },
         {
@@ -31,9 +31,9 @@ const WhyJavaTraining = () => {
             chartData: [
                 { label: "Min (8L)", value: 13 },
                 { label: "Min (10L)", value: 15 },
-                { label: "Min (13L)", value: 23 },
-                { label: "Avg (17L)", value: 16 },
-                { label: "Max (40L)", value: 13 },
+                { label: "Avg (16L)", value: 23 },
+                { label: "Max (20L)", value: 16 },
+                { label: "Max (30L)", value: 13 },
             ],
         },
         {
@@ -47,9 +47,9 @@ const WhyJavaTraining = () => {
             chartData: [
                 { label: "Min (8L)", value: 13 },
                 { label: "Min (10L)", value: 15 },
-                { label: "Min (13L)", value: 23 },
-                { label: "Avg (17L)", value: 16 },
-                { label: "Max (40L)", value: 13 },
+                { label: "Avg (16L)", value: 23 },
+                { label: "Max (20L)", value: 16 },
+                { label: "Max (30L)", value: 13 },
             ],
         },
         {
@@ -63,9 +63,9 @@ const WhyJavaTraining = () => {
             chartData: [
                 { label: "Min (8L)", value: 13 },
                 { label: "Min (10L)", value: 15 },
-                { label: "Min (13L)", value: 23 },
-                { label: "Avg (17L)", value: 16 },
-                { label: "Max (40L)", value: 13 },
+                { label: "Avg (16L)", value: 23 },
+                { label: "Max (20L)", value: 16 },
+                { label: "Max (30L)", value: 13 },
             ],
         },
         {
@@ -79,9 +79,9 @@ const WhyJavaTraining = () => {
             chartData: [
                 { label: "Min (8L)", value: 13 },
                 { label: "Min (10L)", value: 15 },
-                { label: "Min (13L)", value: 23 },
-                { label: "Avg (17L)", value: 16 },
-                { label: "Max (40L)", value: 13 },
+                { label: "Avg (16L)", value: 23 },
+                { label: "Max (20L)", value: 16 },
+                { label: "Max (30L)", value: 13 },
             ],
         },
     ];
