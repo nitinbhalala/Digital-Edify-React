@@ -3,6 +3,7 @@ import { FaChevronDown, FaChevronUp } from "react-icons/fa6";
 import { RiArrowRightDoubleLine } from "react-icons/ri";
 
 const Accordion = ({ data }) => {
+    console.log("🚀 ~ Accordion ~ data:", data)
     const [openIndex, setOpenIndex] = useState(null);
 
     const toggleAccordion = (index) => {
@@ -11,7 +12,7 @@ const Accordion = ({ data }) => {
 
     return (
         <>
-            {data?.map((section, sectionIndex) => (
+            {data?.accordionData?.map((section, sectionIndex) => (
                 <div key={sectionIndex} className="mb-6 md:w-4/5 mx-auto">
                     <div className="bg-[#2953B4] rounded-xl text-white font-poppins md:text-xl font-medium text-center py-3">
                         {section?.maintitle}

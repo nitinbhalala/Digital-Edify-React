@@ -6,7 +6,7 @@ import Course from "../Pages/Course";
 const AppRoutes = () => (
   <Routes>
     <Route path="/" element={<Home />} />
-    <Route path="/course" element={<Course />} />
+    <Route path="/course/:name" element={<Course />} />
     <Route path="*" element={<Home />} />
   </Routes>
 );

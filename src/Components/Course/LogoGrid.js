@@ -3,7 +3,7 @@ import React from "react";
 const LogoGrid = ({ logos }) => {
     return (
         <div className="flex justify-center items-center flex-wrap space-x-5 space-y-7 pb-10">
-            {logos.map((logo) => (
+            {logos?.map((logo) => (
                 <div
                     key={logo.id}
                     className="flex justify-center items-center"
