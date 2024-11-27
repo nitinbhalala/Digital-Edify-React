@@ -388,7 +388,7 @@ const Header = () => {
                           </li>
                           <li>
                             <a
-                               onClick={() =>
+                              onClick={() =>
                                 navigate("/programs/full_stack_mern")
                               }
                               className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
@@ -434,7 +434,9 @@ const Header = () => {
                           <li>
                             <a
                               onClick={() =>
-                                navigate("/programs/multi_cloud_data_engineering")
+                                navigate(
+                                  "/programs/multi_cloud_data_engineering"
+                                )
                               }
                               className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                             >
@@ -487,7 +489,9 @@ const Header = () => {
                         <ul className="space-y-2">
                           <li>
                             <a
-                              href="#"
+                              onClick={() =>
+                                navigate("/services/class_training")
+                              }
                               className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                             >
                               <MdKeyboardDoubleArrowRight
@@ -500,7 +504,9 @@ const Header = () => {
                           </li>
                           <li>
                             <a
-                              href="#"
+                              onClick={() =>
+                                navigate("/services/online_training")
+                              }
                               className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                             >
                               <MdKeyboardDoubleArrowRight
@@ -513,7 +519,9 @@ const Header = () => {
                           </li>
                           <li>
                             <a
-                              href="#"
+                              onClick={() =>
+                                navigate("/services/weekend_training")
+                              }
                               className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                             >
                               <MdKeyboardDoubleArrowRight
@@ -526,7 +534,9 @@ const Header = () => {
                           </li>
                           <li>
                             <a
-                              href="#"
+                              onClick={() =>
+                                navigate("/services/corporate_training")
+                              }
                               className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                             >
                               <MdKeyboardDoubleArrowRight
@@ -539,7 +549,9 @@ const Header = () => {
                           </li>
                           <li>
                             <a
-                              href="#"
+                              onClick={() =>
+                                navigate("/services/one_to_one_training")
+                              }
                               className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                             >
                               <MdKeyboardDoubleArrowRight
@@ -576,7 +588,7 @@ const Header = () => {
                         <ul className="space-y-2">
                           <li>
                             <a
-                              href="#"
+                              onClick={() => navigate("/blogs")}
                               className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                             >
                               <MdKeyboardDoubleArrowRight
@@ -589,7 +601,7 @@ const Header = () => {
                           </li>
                           <li>
                             <a
-                              href="#"
+                              onClick={() => navigate("/demos")}
                               className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                             >
                               <MdKeyboardDoubleArrowRight

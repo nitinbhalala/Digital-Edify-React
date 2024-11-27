@@ -21,6 +21,13 @@ import uiuxbanner from "../assets/uiuximage.jpg";
 import pythonbanr from "../assets/pythonbanr.webp";
 import reactbanr from "../assets/reactbanr.webp";
 
+//services
+import classTraining from "../assets/Services/class-training.jpg";
+import onlineTraining from "../assets/Services/onlinetraining.webp";
+import weekendTraining from "../assets/Services/projecthub.jpg";
+import corporateTraining from "../assets/Services/corporate.webp";
+import oneToOneTraining from "../assets/Services/onetoone.jpg";
+
 export const courseData = [
   {
     course: "java",
@@ -2404,7 +2411,648 @@ export const courseData = [
       { id: 17, src: m17 },
     ],
   },
+
+  {
+    course: "azure_data_engineering",
+    headerTitle: "Azure Data Engineering Training & Certification",
+    headerImage: javabanner,
+    courseTitle: "Why Azure Data Engineering With Digital Edify?",
+    title: "Azure Data Engineer Course Curriculum",
+    subTitle: "It stretches your mind, think better and create even better.",
+    courseList: [
+      "Azure Data Engineering Fundamentals",
+      "Azure Data Factory & Synapse Analytics",
+      "Azure Data Lake & Stream Analytics",
+      "Azure Databricks & Spark",
+      "SQL for Data Analysis",
+      "Python for Data Analysis",
+      "Data Cloud & DevOps",
+    ],
+    accordionData: [
+      {
+        maintitle: "Azure Data Engineer Fundamentals",
+        subdata: [
+          {
+            module: "Module 1",
+            title: "Fundamentals of Data Engineering",
+            topics: [
+              {
+                description: [
+                  "What is Data Engineering",
+                  "Data Engineer Roles & Responsibilities",
+                  "Difference Between ETL Developer & Data Engineer",
+                  "Types of Data",
+                  "Steaming Vs Batch Data",
+                ],
+              },
+            ],
+          },
+          {
+            module: "Module 2",
+            title: "Introduction to Azure Cloud Services",
+            topics: [
+              {
+                description: [
+                  "Cloud Introduction and Azure Basics",
+                  "Azure Implementation Models: IaaS, PaaS, SaaS",
+                  "Overview of Azure Data Engineer Role",
+                  "Understanding Azure Storage Components",
+                  "Introduction to Azure ETL & Streaming Components",
+                ],
+              },
+            ],
+          },
+          {
+            module: "Module 3",
+            title: "Azure SQL Database Essentials",
+            topics: [
+              {
+                description: [
+                  "Azure SQL Server and Database Deployment",
+                  "DTU vs. DWU: Understanding Performance Levels",
+                  "Managing Firewall Rules and Secure SSMS Connections",
+                  "Azure Account and Subscription Management",
+                ],
+              },
+            ],
+          },
+          {
+            module: "Module 4",
+            title: "Azure Resources and Data Integration Basics",
+            topics: [
+              {
+                description: [
+                  "Azure Resources and Resource Types",
+                  "Introduction to Azure Data Factory (ADF) and Azure Synapse Analytics",
+                  "Basic Concepts of Data Movement and Processing",
+                ],
+              },
+            ],
+          },
+        ],
+      },
+      {
+        maintitle: "Azure Data Factory & Synapse Analytics",
+        subdata: [
+          {
+            module: "Module 1",
+            title: "Deep Dive into Azure Synapse Analytics",
+            topics: [
+              {
+                description: [
+                  "Synapse SQL Pools (Data Warehousing) and Massively Parallel Processing (MPP)",
+                  "Data Movement with DMS and SQL Pool Management",
+                  "Table Creations, Distributions, and Indexing for Performance",
+                ],
+              },
+            ],
+          },
+          {
+            module: "Module 2",
+            title: "Mastering Data Factory Pipelines",
+            topics: [
+              {
+                description: [
+                  "Azure Data Factory Pipeline Architecture and Integration Runtime",
+                  "Constructing ETL Pipelines with DIU Considerations",
+                  "Data Flow Activities and Monitoring",
+                ],
+              },
+            ],
+          },
+          {
+            module: "Module 3",
+            title: "Advanced Data Integration Techniques",
+            topics: [
+              {
+                description: [
+                  "Incremental Data Loading and Handling On-Premise Data Sources",
+                  "Advanced ADF Features: Data Flows, ETL Logging, and Performance Tuning",
+                  "Implementing CDC with ADF for Real-Time Data Capture",
+                ],
+              },
+            ],
+          },
+          {
+            module: "Module 4",
+            title: "Synapse Analytics and Big Data Analytics",
+            topics: [
+              {
+                description: [
+                  "Topics",
+                  "Integrating Spark with Synapse Analytics for Big Data Processing",
+                  "Utilizing Python Notebooks and Spark Pools for Data Analysis",
+                  "Performance Optimization and Data Transformation Techniques",
+                ],
+              },
+            ],
+          },
+          {
+            module: "Module 5",
+            title: "Security, Compliance, and Workflow in Azure",
+            topics: [
+              {
+                description: [
+                  "Topics",
+                  "Security Measures with Azure Active Directory and Role-Based Access Control",
+                  "Managing Parameters and Security in Synapse and ADF Pipelines",
+                  "Utilizing Azure OpenDatasets and Parquet Files for Advanced Analytics",
+                ],
+              },
+            ],
+          },
+        ],
+      },
+      {
+        maintitle: "Azure Data Lake & Stream Analytics",
+        subdata: [
+          {
+            module: "Module 1",
+            title: "Introduction to Azure Storage and Data Lake",
+            topics: [
+              {
+                description: [
+                  "Azure Storage Essentials: Files, Tables, and Queues",
+                  "Introduction to Azure Data Lake Storage Gen2 (ADLS Gen2)",
+                  "Configuring and Managing Storage Accounts",
+                  "Hierarchical Namespace (HNS) and its Advantages",
+                ],
+              },
+            ],
+          },
+          {
+            module: "Module 2",
+            title: "Operating Azure Storage Solutions",
+            topics: [
+              {
+                description: [
+                  "Managing BLOB Storage: Binary Large Objects Explained",
+                  "Utilizing Azure Storage Explorer for Efficient Storage Management",
+                  "Directory and File Operations in Azure Data Lake",
+                  "Best Practices for Organizing Data in ADLS Gen2",
+                ],
+              },
+            ],
+          },
+          {
+            module: "Module 3",
+            title: "Security and Access Management in Azure Storage",
+            topics: [
+              {
+                description: [
+                  "Implementing Security Measures in Azure Data Lake Storage",
+                  "Access Control with Shared Access Signatures (SAS) and Access Control Lists (ACLs)",
+                  "Role-Based Access Control (RBAC) in Azure Storage",
+                  "Encryption, Authentication, and Compliance Features",
+                ],
+              },
+            ],
+          },
+          {
+            module: "Module 4",
+            title: "Data Migration and Integration Strategies",
+            topics: [
+              {
+                description: [
+                  "Strategies for SQL Database Migrations to Azure",
+                  "Integrating Azure SQL with Data Lake Storage",
+                  "Utilizing Azure Data Factory for Data Movement and Transformation",
+                  "Data Migration Tools and Techniques",
+                ],
+              },
+            ],
+          },
+          {
+            module: "Module 5",
+            title: "Implementing Advanced Storage Features",
+            topics: [
+              {
+                description: [
+                  "Advanced Concepts in Azure Table Storage",
+                  "Data Replication and Geo-Redundancy Options",
+                  "Optimizing Storage Costs and Performance",
+                  "Leveraging Data Lake for Big Data Analytics",
+                ],
+              },
+            ],
+          },
+          {
+            module: "Module 6",
+            title: "Real-Time Data Processing with Azure Stream Analytics",
+            topics: [
+              {
+                description: [
+                  "Fundamentals of Azure Stream Analytics",
+                  "Developing Stream Analytics Jobs for Real-Time Insights",
+                  "Integrating IoT Devices with Azure for Data Streaming",
+                  "Processing and Analyzing Streaming Data",
+                ],
+              },
+            ],
+          },
+          {
+            module: "Module 7",
+            title: "Event Hubs and Event-Driven Architecture",
+            topics: [
+              {
+                description: [
+                  "Understanding Azure Event Hubs for Large-Scale Event Processing",
+                  "Configuring Event Hubs and Event Hub Namespaces",
+                  "Connecting Event Hubs with Azure Stream Analytics",
+                  "Patterns for Real-Time and Event-Driven Data Processing",
+                ],
+              },
+            ],
+          },
+          {
+            module: "Module 8",
+            title: "Monitoring, Performance Tuning, and Disaster Recovery",
+            topics: [
+              {
+                description: [
+                  "Monitoring Azure Storage and Stream Analytics Resources",
+                  "Performance Tuning for Azure Data Services",
+                  "Implementing Disaster Recovery Strategies",
+                  "Using Azure Monitor and Key Vaults for Operational Excellence",
+                ],
+              },
+            ],
+          },
+        ],
+      },
+      {
+        maintitle: "Azure Databricks & Spark",
+        subdata: [
+          {
+            module: "Module 1",
+            title: "Introduction to Azure Databricks and Spark",
+            topics: [
+              {
+                description: [
+                  "Azure Cloud Overview: Understanding SaaS, PaaS, IaaS",
+                  "Introduction to Azure Databricks: Configuration, Compute Resources, and Workspace Usage",
+                  "Spark Clusters in Azure Databricks: Configurations, Types, and Resource Management",
+                  "Databricks File System (DBFS): Utilizing Files and Tables with Spark",
+                ],
+              },
+            ],
+          },
+          {
+            module: "Module 2",
+            title: "Data Processing with Databricks",
+            topics: [
+              {
+                description: [
+                  "Integrating Python with Spark: PySpark Basics",
+                  "Data Loading Techniques: Using PySpark for Data Ingestion and Processing",
+                  "Utilizing SQL in Databricks: Creating and Managing Spark Databases and Tables",
+                  "Advanced Data Transformation: Working with DataFrames and Spark SQL for Data Analytics",
+                ],
+              },
+            ],
+          },
+          {
+            module: "Module 3",
+            title: "Integrating Azure Data Lake Storage with Databricks",
+            topics: [
+              {
+                description: [
+                  "Configuring Azure Data Lake Storage (ADLS) for use with Databricks",
+                  "Data Management: Reading and Writing Data to ADLS using PySpark and Scala",
+                  "Secure Data Access: Managing Access and Security between Databricks and ADLS",
+                ],
+              },
+            ],
+          },
+          {
+            module: "Module 4",
+            title: "Developing Scalable Data Pipelines",
+            topics: [
+              {
+                description: [
+                  "Understanding Databricks Architecture: Driver and Worker Nodes, RDDs, and DAGs",
+                  "Building and Monitoring Databricks Jobs: Scheduling, Task Management, and Optimization",
+                  "Implementing Delta Lake for Reliable Data Lakes: ACID Transactions and Performance Tuning",
+                ],
+              },
+            ],
+          },
+          {
+            module: "Module 5",
+            title: "Advanced Analytics and Machine Learning",
+            topics: [
+              {
+                description: [
+                  "Machine Learning Fundamentals in Databricks: Using MLlib for Predictive Modeling",
+                  "Data Exploration and Visualization: Leveraging Notebooks for Insights",
+                  "Advanced Analytic Techniques: Utilizing Scala and Python for Complex Data Analysis",
+                ],
+              },
+            ],
+          },
+          {
+            module: "Module 6",
+            title: "Security and Governance in Azure Databricks",
+            topics: [
+              {
+                description: [
+                  "Databricks Security: Integrating with Azure Active Directory (AD)",
+                  "Managing Permissions: Workspace, Notebooks, and Data Security",
+                  "Compliance and Data Governance: Best Practices in Databricks Environments",
+                ],
+              },
+            ],
+          },
+          {
+            module: "Module 7",
+            title: "Real-Time Data Processing and Streaming",
+            topics: [
+              {
+                description: [
+                  "Streaming Data with Databricks: Concepts and Practical Applications",
+                  "Integrating Azure Event Hubs with Databricks for Real-Time Analytics",
+                  "Processing Live Data Streams: Building and Deploying Stream Analytics Solutions",
+                ],
+              },
+            ],
+          },
+          {
+            module: "Module 8",
+            title: "Integration and Deployment",
+            topics: [
+              {
+                description: [
+                  "Automating Workflows with Azure Logic Apps and Databricks",
+                  "CI/CD for Databricks: Automation and Version Control Integration",
+                  "Deployment Strategies: Best Practices for Production Deployments in Azure",
+                ],
+              },
+            ],
+          },
+        ],
+      },
+      {
+        maintitle: "Python for Data Engineer",
+        subdata: [
+          {
+            module: "Module 1",
+            title: "Python Programming Fundamentals",
+            topics: [
+              {
+                name: "1. Introduction to Python",
+                description: [
+                  "Overview of Python's history, key features, and comparison with other languages.",
+                  "Setting up the Python environment, writing your first program.",
+                  "Core Programming Concepts: Variables, data types, conditional statements, loops, control flow.",
+                  "Introduction to strings, string manipulation, and basic functions.",
+                ],
+              },
+            ],
+          },
+          {
+            module: "Module 2",
+            title: " Advanced Python Concepts and Collections",
+            topics: [
+              {
+                name: "1. Deep Dive into Collections",
+                description: [
+                  "Understanding lists, tuples, dictionaries, sets, and frozen sets.",
+                  "Functions, methods, and comprehensions for collections.",
+                ],
+              },
+              {
+                name: "2. Functional Programming in Python",
+                description:
+                  "Exploring function arguments, anonymous functions, and special functions (map, reduce, filter)",
+              },
+              {
+                name: "3. Object-Oriented Programming (OOP)",
+                description: [
+                  "Classes, objects, constructors, destructors, inheritance, polymorphism.",
+                  "Encapsulation, data hiding, magic methods, and operator overloading.",
+                ],
+              },
+            ],
+          },
+          {
+            module: "Module 3",
+            title: "Exception Handling and File Management in Python",
+            topics: [
+              {
+                name: "1. Mastering Exception Handling",
+                description:
+                  "Exception handling mechanisms, try & finally clauses, user-defined exceptions.",
+              },
+              {
+                name: "2. File Handling Essentials",
+                description:
+                  "Basics of file operations, handling Excel and CSV files.",
+              },
+              {
+                name: "3. Database Programming",
+                description:
+                  "Introduction to database connections and operations with MySQL.",
+              },
+            ],
+          },
+          {
+            module: "Module 4",
+            title: "Developing Web Applications with Python",
+            topics: [
+              {
+                name: "1. Getting Started with Flask",
+                description:
+                  "Setting up Flask, creating simple applications, routing, and middleware.",
+              },
+              {
+                name: "2. Exploring Django",
+                description:
+                  "Introduction to Django, MVC model, views, URL mapping.",
+              },
+            ],
+          },
+          {
+            module: "Module 5",
+            title: "Automation, GUI Programming, and Version Control",
+            topics: [
+              {
+                name: "1. Automation and Scripting",
+                description:
+                  "Enhancing file handling, database automation, and web scraping with BeautifulSoup.",
+              },
+              {
+                name: "2. GUI Development with TKinter",
+                description:
+                  "Basics of TKinter for developing desktop applications.",
+              },
+              {
+                name: "3. Version Control with Git",
+                description:
+                  "Managing projects with Git, understanding repository management, commits, merging, and basic Git commands.",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        maintitle: "Data Cloud & DevOps",
+        subdata: [
+          {
+            module: "Module 1",
+            title: "Introduction to Cloud Computing and DevOps for Data",
+            topics: [
+              {
+                description: [
+                  "Cloud Computing Fundamentals: Overview of cloud service models (IaaS, PaaS, SaaS) and deployment models (public, private, hybrid).",
+                  "Basics of DevOps: Understanding the DevOps culture, practices, and its significance in cloud environments.",
+                  "Data on the Cloud: Exploring cloud storage solutions, databases, and big data services provided by major cloud providers (AWS, Azure, Google Cloud).",
+                  "Introduction to Infrastructure as Code (IaC): Concepts and tools for managing infrastructure through code.",
+                ],
+              },
+            ],
+          },
+          {
+            module: "Module 2",
+            title: "Cloud Data Storage and Databases",
+            topics: [
+              {
+                description: [
+                  "Cloud Storage Solutions: Differences between object storage, file storage, and block storage. Use cases for each.",
+                  "Cloud Databases: Overview of relational and NoSQL database services in the cloud (e.g., AWS RDS, Azure SQL Database, Google Cloud Firestore).",
+                  "Data Warehousing and Big Data Solutions: Introduction to cloud-based data warehousing services (e.g., Amazon Redshift, Google BigQuery, Azure Synapse Analytics).",
+                  "Data Migration to Cloud: Strategies and tools for migrating data to cloud environments.",
+                ],
+              },
+            ],
+          },
+          {
+            module: "Module 3",
+            title: "Automating Data Pipelines with DevOps Practices",
+            topics: [
+              {
+                description: [
+                  "Automated Data Pipelines: Designing and implementing automated data pipelines using cloud services.",
+                  "Continuous Integration and Continuous Delivery (CI/CD) for Data: Applying CI/CD practices to data pipeline development, including version control, testing, and deployment strategies.",
+                  "Monitoring and Logging: Tools and practices for monitoring cloud resources and data pipelines, understanding logs and metrics for troubleshooting.",
+                  "Infrastructure as Code (IaC) for Data Systems: Using IaC tools (e.g., Terraform, CloudFormation) to provision and manage cloud data infrastructure.",
+                ],
+              },
+            ],
+          },
+          {
+            module: "Module 4",
+            title: "Advanced Topics in Data Cloud and DevOps",
+            topics: [
+              {
+                description: [
+                  "Serverless Data Processing: Leveraging serverless architectures for data processing tasks (e.g., AWS Lambda, Azure Functions).",
+                  "Containerization and Data Services: Using containers (e.g., Docker, Kubernetes) for deploying and scaling data applications and services in the cloud.",
+                  "Machine Learning and AI in the Cloud: Introduction to cloud-based machine learning services and integrating AI capabilities into data pipelines.",
+                  "Data Analytics and Visualization: Tools and services for analyzing and visualizing data directly in the cloud (e.g., Amazon QuickSight, Google Data Studio, Power BI on Azure).",
+                ],
+              },
+            ],
+          },
+        ],
+      },
+      {
+        maintitle: "SQL for Data Engineer",
+        subdata: [
+          {
+            module: "Module 1",
+            title: "SQL Fundamentals",
+            topics: [
+              {
+                description: [
+                  "Introduction to Databases and SQL: Understanding relational databases and the role of SQL.",
+                  "SQL Syntax Overview: Keywords, statements, and clauses.",
+                  "Basic SQL Commands: SELECT, FROM, WHERE, and ORDER BY.",
+                  "Filtering Data: Using conditions to retrieve specific data (AND, OR, NOT).",
+                ],
+              },
+            ],
+          },
+          {
+            module: "Module 2",
+            title: "Working with Multiple Tables",
+            topics: [
+              {
+                description: [
+                  "Understanding Table Relationships: Primary keys, foreign keys, and the importance of relationships in databases.",
+                  "Join Operations: INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL JOIN.",
+                  "Subqueries and Nested Queries: Using subqueries in the SELECT, FROM, and WHERE clauses.",
+                  "Aggregating Data: Using GROUP BY and aggregate functions (COUNT, SUM, AVG, MIN, MAX).",
+                ],
+              },
+            ],
+          },
+          {
+            module: "Module 3",
+            title: "Advanced Data Manipulation",
+            topics: [
+              {
+                description: [
+                  "Data Manipulation Commands: INSERT, UPDATE, DELETE.",
+                  "Managing Tables: Creating and altering tables (CREATE TABLE, ALTER TABLE, DROP TABLE.)",
+                  "Advanced Filtering Techniques: Using LIKE, IN, BETWEEN, and wildcard characters.",
+                  "Working with Dates and Times: Understanding and manipulating date and time data.",
+                ],
+              },
+            ],
+          },
+          {
+            module: "Module 4",
+            title: "Complex Queries and Optimization",
+            topics: [
+              {
+                description: [
+                  "Advanced SQL Functions: String functions, mathematical functions, and date functions.",
+                  "Window Functions: Overviews of ROW_NUMBER, RANK, DENSE_RANK, LEAD, LAG, and their applications.",
+                  "Query Performance Optimization: Indexes, query planning, and execution paths.",
+                  "Common Table Expressions (CTEs): Writing cleaner and more readable queries with WITH clause.",
+                ],
+              },
+            ],
+          },
+          {
+            module: "Module 5",
+            title: "SQL for Data Analysis Specifics",
+            topics: [
+              {
+                description: [
+                  "Analytical SQL for Reporting: Building complex queries to answer analytical questions.",
+                  "Pivoting Data: Transforming rows to columns (PIVOT) and columns to rows (UNPIVOT).",
+                  "Data Warehousing Concepts: Introduction to data warehousing practices and how they apply to SQL querying.",
+                  "Integrating SQL with Data Analysis Tools: Connecting SQL databases with tools like Excel, Power BI, and Python for deeper data analysis.",
+                ],
+              },
+            ],
+          },
+        ],
+      },
+    ],
+    imageData: [
+      { id: 1, src: m1 },
+      { id: 2, src: m2 },
+      { id: 3, src: m3 },
+      { id: 4, src: m4 },
+      { id: 5, src: m5 },
+      { id: 6, src: m6 },
+      { id: 7, src: m7 },
+      { id: 8, src: m8 },
+      { id: 9, src: m9 },
+      { id: 10, src: m10 },
+      { id: 11, src: m11 },
+      { id: 12, src: m12 },
+      { id: 13, src: m13 },
+      { id: 14, src: m14 },
+      { id: 15, src: m15 },
+      { id: 16, src: m16 },
+      { id: 17, src: m17 },
+    ],
+  },
 ];
+
 export const programsData = [
   {
     course: "full_stack_java",
@@ -2612,7 +3260,6 @@ export const programsData = [
           },
         ],
       },
-
       {
         maintitle: "Foundations of Web Development",
         subdata: [
@@ -2659,76 +3306,53 @@ export const programsData = [
                 ],
               },
             ],
-          },
-          {
-            module: "Module 2",
-            title: "Advanced Data Handling",
-            topics: [
+            intro2: "Module 3: Advanced HTML Features",
+            topics2: [
               {
-                name: "1. Deep dive into the Collections framework",
+                name: "1. Modern HTML Elements",
+                description:
+                  "Exploring semantic elements like ' Article ', 'Section', and 'Nav'.",
               },
               {
-                name: "2. Using generics in Java",
+                name: "2. Dynamic HTML with APIs",
+                description:
+                  "A brief overview of HTML5 APIs enhancing interactivity and web functionality.",
               },
               {
-                name: "3. Introduction to Stream API and lambda expressions",
-              },
-              {
-                name: "4. File I/O operations and understanding the New I/O (NIO)",
-              },
-            ],
-          },
-          {
-            module: "Module 3",
-            title: "Java Enterprise Essentials",
-            topics: [
-              {
-                name: "1. Database interactions using JDBC",
-              },
-              {
-                name: "2. Introduction to Servlets and JSP",
-              },
-              {
-                name: "3. Overview of Maven as a build and dependency management tool",
-              },
-              {
-                name: "4. Advanced enterprise patterns and practices",
+                name: "3. Reusable Web Components",
+                description:
+                  "Introduction to HTML templates, custom elements, and shadow DOM.",
               },
             ],
-          },
-          {
-            module: "Module 4",
-            title: "Working with Hibernate and ORM",
-            topics: [
+            intro3: "Module 4: Accessibility and HTML Best Practices",
+            topics3: [
               {
-                name: "1. ORM concepts and integration with Hibernate",
+                name: "1. Enhancing Web Accessibility",
+                description:
+                  "Utilizing ARIA roles and proper HTML structure to support all users.",
               },
               {
-                name: "2. Configuration, session management, and advanced querying with Hibernate",
-              },
-              {
-                name: "3. Advanced mapping techniques in Hibernate",
-              },
-              {
-                name: "4. Performance tuning and caching mechanisms",
+                name: "2. Maintaining HTML Standards",
+                description:
+                  "Importance of validating HTML code and adhering to web standards for cross-browser compatibility.",
               },
             ],
-          },
-          {
-            module: "Module 5",
-            title: "Introduction to Spring Framework",
-            topics: [
+            intro4: "Module 5: Performance, Security, and Staying Current",
+            topics4: [
               {
-                name: "1. Core principles of IoC and DI in Spring",
+                name: "1. Optimizing Performance",
+                description:
+                  "Techniques for optimizing web page loading times, such as image optimization and lazy loading.",
               },
               {
-                name: "2. Building web applications with Spring MVC",
+                name: "2. Web Security Fundamentals",
+                description:
+                  "Best practices for embedding content and managing user-generated content to prevent common security vulnerabilities.",
               },
               {
-                name: "3. Data access with Spring Data",
-              },
-              {
-                name: "4. Introduction to aspect-oriented programming with Spring AOP",
+                name: "3. Keeping Up with HTML Evolution",
+                description:
+                  "Resources and strategies for staying updated with HTML developments and future trends.",
               },
             ],
           },
@@ -2755,6 +3379,7 @@ export const programsData = [
       { id: 17, src: m17 },
     ],
   },
+
   {
     course: "full_stack_python",
     headerTitle: "Master Full-Stack Python Development with Expert Guidance",
@@ -5617,6 +6242,275 @@ export const programsData = [
       { id: 15, src: m15 },
       { id: 16, src: m16 },
       { id: 17, src: m17 },
+    ],
+  },
+];
+
+export const servicesData = [
+  {
+    course: "class_training",
+    pageName: "Class Room Training",
+    headerImage: classTraining,
+    imagePosition: "br",
+    boldDescription: "Welcome to Digital Edify's Classroom Training — ",
+    description:
+      "where learning meets innovation. Our classroom programs are designed to provide you with an immersive, interactive, and engaging educational experience.",
+    keyword: [
+      "Personalized Attention",
+      "Interactive Sessions",
+      "Networking Opportunities",
+      "Advanced Classrooms",
+      "Group Projects",
+      "Collaborative Spaces",
+    ],
+    title: "Why Choose Classroom Training?",
+    subTitle:
+      "Choosing the right learning environment is crucial for your success. Here's why our classroom training stands out:",
+    bulletPoints: [
+      {
+        title: "Personalized Attention",
+        description:
+          "Benefit from face-to-face interactions with instructors who are committed to your learning journey.",
+      },
+      {
+        title: "Interactive Sessions",
+        description:
+          "Engage in dynamic discussions, collaborative projects, and immediate feedback loops.",
+      },
+      {
+        title: "Networking Opportunities:",
+        description:
+          "Connect with like-minded peers and industry professionals.",
+      },
+      {
+        title: "Engaging Discussions",
+        description:
+          "Participate in thought-provoking conversations that stimulate critical thinking.",
+      },
+      {
+        title: "Advanced Classrooms",
+        description:
+          "Modern, spacious classrooms with ergonomic seating and cutting-edge presentation tools.",
+      },
+      {
+        title: "Group Projects",
+        description:
+          "Work collaboratively on assignments that mirror real-world scenarios.",
+      },
+      {
+        title: "Immediate Feedback",
+        description:
+          "Receive instant insights and guidance to enhance your understanding.",
+      },
+      {
+        title: "Collaborative Spaces",
+        description:
+          "Dedicated areas for group study, brainstorming, and project development.",
+      },
+    ],
+  },
+  {
+    course: "online_training",
+    pageName: "Online Training",
+    headerImage: onlineTraining,
+    imagePosition: "bl",
+    boldDescription: "Welcome to Digital Edify's Online Training — ",
+    description:
+      "where flexibility meets excellence. Our online programs are designed to provide you with a convenient, interactive, and engaging educational experience from the comfort of your home or office.",
+    keyword: [
+      "Flexible Scheduling",
+      "Interactive Sessions",
+      "Global Networking Opportunities",
+      "Accessible Learning Resources",
+      "Virtual Group Projects",
+      "Personalized Mentorship",
+    ],
+    title: "Why Choose Online Training?",
+    subTitle:
+      "Choosing the right mode of learning is crucial for your success. Here's why our online training stands out:",
+    bulletPoints: [
+      {
+        title: "Flexible Scheduling",
+        description:
+          "Learn at your own pace with access to live and recorded sessions that fit your schedule.",
+      },
+      {
+        title: "Interactive Sessions",
+        description:
+          "Engage in dynamic online discussions, collaborative projects, and receive immediate feedback.",
+      },
+      {
+        title: "Global Networking Opportunities",
+        description:
+          "Connect with like-minded peers and industry professionals from around the world.",
+      },
+      {
+        title: "Accessible Learning Resources",
+        description:
+          "Gain 24/7 access to course materials, recordings, and our digital library.",
+      },
+      {
+        title: "Virtual Group Projects",
+        description:
+          "Collaborate on assignments that simulate real-world scenarios through our online platforms.",
+      },
+      {
+        title: "Personalized Mentorship",
+        description:
+          "Receive one-on-one guidance from instructors committed to your learning journey.",
+      },
+    ],
+  },
+  {
+    course: "weekend_training",
+    pageName: "Weekend Training",
+    headerImage: weekendTraining,
+    imagePosition: "rl",
+    boldDescription: "Welcome to Digital Edify's Weekend Training — ",
+    description:
+      "where flexibility meets excellence. Our weekend programs are designed specifically for working professionals and individuals with busy weekday schedules. Experience an immersive, interactive, and engaging educational journey without disrupting your weekday commitments.",
+    keyword: [
+      "Flexible Scheduling",
+      "Interactive Sessions",
+      "Networking Opportunities",
+      "Experienced Instructors",
+      "Group Projects",
+      "Collaborative Learning",
+    ],
+    title: "Why Choose Weekend Training?",
+    subTitle:
+      "Choosing the right training schedule is crucial for your success. Here's why our weekend training stands out:",
+    bulletPoints: [
+      {
+        title: "Flexible Scheduling",
+        description:
+          "Balance your work-life commitments by attending classes on weekends without sacrificing quality education.",
+      },
+      {
+        title: "Interactive Sessions",
+        description:
+          "Engage in dynamic discussions, collaborative projects, and receive immediate feedback, just like our weekday programs.",
+      },
+      {
+        title: "Networking Opportunities",
+        description:
+          "Connect with like-minded professionals and expand your industry network during weekend classes.",
+      },
+      {
+        title: "Experienced Instructors",
+        description:
+          "Learn from trainers who specialize in weekend teaching, understanding the unique needs of weekend learners.",
+      },
+      {
+        title: "Group Projects",
+        description:
+          "Collaborate on assignments that simulate real-world scenarios, enhancing teamwork and problem-solving skills.",
+      },
+      {
+        title: "Immediate Feedback",
+        description:
+          "Receive instant insights and guidance to enhance your understanding and accelerate your learning process.",
+      },
+      {
+        title: "Collaborative Learning",
+        description:
+          "Participate in group activities and discussions that promote a deeper comprehension of the material.",
+      },
+      {
+        title: "Personal Mentorship",
+        description:
+          "Benefit from one-on-one guidance to address your individual learning needs and career aspirations.",
+      },
+    ],
+  },
+  {
+    course: "corporate_training",
+    pageName: "Corporate Training",
+    headerImage: corporateTraining,
+    imagePosition: "tr",
+    boldDescription: "Welcome to Digital Edify's Corporate Training — ",
+    description:
+      "where tailored solutions meet excellence. Our corporate programs are designed to empower your team with the skills and knowledge necessary to drive your organization's success.",
+    keyword: [
+      "Customized Programs",
+      "Experienced Instructors",
+      "Flexible Scheduling",
+      "Practical Application",
+      "Industry-Relevant Curriculum",
+      "Ongoing Support",
+    ],
+    title: "Why Choose Corporate Training?",
+    subTitle:
+      "Investing in your team's development is crucial for organizational growth. Here's why our corporate training stands out:",
+    bulletPoints: [
+      {
+        title: "Customized Programs",
+        description: "Receive training solutions tailored to your organization's specific needs and goals.",
+      },
+      {
+        title: "Experienced Instructors",
+        description: "Benefit from industry experts who bring real-world insights to the training sessions.",
+      },
+      {
+        title: "Flexible Scheduling",
+        description: "Choose training schedules that fit your company's timelines and operational demands.",
+      },
+      {
+        title: "Practical Application",
+        description: "Engage in hands-on exercises and projects that directly relate to your business challenges.",
+      },
+      {
+        title: "Industry-Relevant Curriculum",
+        description: "Stay ahead with content that reflects the latest trends and technologies in your industry.",
+      },
+      {
+        title: "Ongoing Support",
+        description: "Access continuous resources and assistance even after the training concludes to ensure sustained success.",
+      },
+    ],
+  },
+  {
+    course: "one_to_one_training",
+    pageName: "One-To-One Training",
+    headerImage: oneToOneTraining,
+    imagePosition: "br",
+    boldDescription: "Welcome to Digital Edify's Weekend Training — ",
+    description: "where personalized learning meets excellence. Our one-on-one programs are designed to provide you with a tailored, interactive, and engaging educational experience that focuses entirely on your individual needs.",
+    keyword: [
+      "Personalized Curriculum",
+      "Flexible Scheduling",
+      "Dedicated Instructor",
+      "Customized Learning Pace",
+      "Direct Feedback",
+      "Enhanced Focus",
+    ],
+    title: "Why Choose One-on-One Training?",
+    subTitle: "Selecting the right training format is crucial for your success. Here's why our one-on-one training stands out:",
+    bulletPoints: [
+      {
+        title: "Personalized Curriculum",
+        description: "Receive a customized learning plan that targets your specific goals and areas for improvement.",
+      },
+      {
+        title: "Flexible Scheduling",
+        description: "Set your own schedule to learn at times that are most convenient for you.",
+      },
+      {
+        title: "Dedicated Instructor",
+        description: "Benefit from the undivided attention of an expert instructor committed to your success.",
+      },
+      {
+        title: "Customized Learning Pace",
+        description: "Progress through the material at a speed that matches your learning style.",
+      },
+      {
+        title: "Direct Feedback",
+        description: "Get immediate, tailored feedback to enhance your understanding and skills.",
+      },
+      {
+        title: "Enhanced Focus",
+        description: "Minimize distractions and maximize learning efficiency with a personalized setting.",
+      },
     ],
   },
 ];

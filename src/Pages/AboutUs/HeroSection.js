@@ -13,7 +13,7 @@ const HeroSection = ({ name, disc, boldDisc }) => {
     ]
 
     return (
-        <div className=" py-12 border-t border-b border-gray-300 font-poppins"
+        <div className=" py-12 border-t border-b border-gray-300 font-poppins subbanner"
             style={{
                 backgroundImage: 'url("../src/assets/abutbg.jpg")',
                 backgroundRepeat: 'no-repeat',

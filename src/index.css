@@ -156,3 +156,32 @@ code {
   background-color: #FFBD0F;
 }
 
+
+.subbanner {
+  padding: 50px 0;
+  background-color: #f1f9ff8f;
+  position: relative;
+  border-top: 1px solid #ddddddad;
+  border-bottom: 1px solid #ddddddad;
+}
+
+.subbanner:after {
+  background-image: url("../src/assets/linepattren.png");
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  content: "";
+  opacity: 0.5;
+}
+
+.subbanner .container {
+  position: relative;
+  z-index: 2;
+}
+
+.subbanner .row {
+  align-items: center;
+}
+
