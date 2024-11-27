@@ -184,7 +184,7 @@ const Programs = () => {
           <LogoGrid logos={Fundamentals?.imageData} />
 
           {(name === "full_stack_python" || name === "full_stack_mern") && (
-            <div className="flex gap-8 justify-center mt-10 pb-24">
+            <div className="flex gap-8 justify-center mt-10 pb-24 uppercase">
               <div className="flex">
                 <div className="px-5 py-4 bg-[#1554BB] w-fit text-white">
                   <IoMdCloudDownload size={30} />

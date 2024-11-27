@@ -141,7 +141,7 @@ const Course = () => {
                 src={Fundamentals?.headerImage}
                 alt="DevOps"
                 title="DevOps"
-                className="w-full rounded-md"
+                className="w-full rounded-md h-fit"
                 loading="lazy"
               />
             )}
@@ -177,20 +177,22 @@ const Course = () => {
 
           <Accordion data={Fundamentals} />
 
-          <p className="text-2xl md:text-4xl text-[#343433] font-semibold font-poppins text-center mt-5 mb-10">
-            TOOlS & PLATFORMS
-          </p>
+          {Fundamentals?.imageData?.length > 0 && (
+            <p className="text-2xl md:text-4xl text-[#343433] font-semibold font-poppins text-center mt-5 mb-10">
+              TOOlS & PLATFORMS
+            </p>
+          )}
 
           <LogoGrid logos={Fundamentals?.imageData} />
         </div>
       </div>
 
-      {(name === "ui_ux_design" ||
-        name === "full_stack_developer" ||
+      {(name === "full_stack_developer" ||
+        name === "salesforce" ||
         name === "devops" ||
         name === "ai_training_and_certification" ||
         name === "data_science_training") && (
-        <div className="flex gap-8 justify-center mt-10 pb-24">
+        <div className="flex gap-8 justify-center mt-10 pb-24 uppercase">
           <div className="flex">
             <div className="px-5 py-4 bg-[#1554BB] w-fit text-white">
               <IoMdCloudDownload size={30} />
