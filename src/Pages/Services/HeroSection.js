@@ -1,17 +1,9 @@
 import React from "react";
 import { MdCheck } from "react-icons/md";
-import blog7 from "../../assets/blog7.jpg";
 
 const HeroSection = ({ serviceData }) => {
   return (
-    <div
-      className=" py-12 border-t border-b border-gray-300 font-poppins subbanner"
-      style={{
-        backgroundImage: 'url("../src/assets/abutbg.jpg")',
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-      }}
-    >
+    <div className=" py-12 border-t border-b border-gray-300 font-poppins subbanner">
       <div className="container mx-auto z-10 px-4">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-7/12">

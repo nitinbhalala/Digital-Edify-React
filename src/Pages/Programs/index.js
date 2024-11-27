@@ -20,6 +20,7 @@ import StartNowModal from "../../Components/HomePage/StartNowModal";
 import WhyJavaTraining from "../Course/WhyJavaTraining";
 import Accordion from "../Course/Accordion";
 import WhyDigitalEdify from "../Home/WhyDigitalEdify";
+import { IoMdCloudDownload } from "react-icons/io";
 
 const Programs = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -181,6 +182,23 @@ const Programs = () => {
           </p>
 
           <LogoGrid logos={Fundamentals?.imageData} />
+
+          {(name === "full_stack_python" || name === "full_stack_mern") && (
+            <div className="flex gap-8 justify-center mt-10 pb-24">
+              <div className="flex">
+                <div className="px-5 py-4 bg-[#1554BB] w-fit text-white">
+                  <IoMdCloudDownload size={30} />
+                </div>
+                <div className="text-lg flex flex-col leading-6 pt-2 px-8 shadow-xl bg-white">
+                  <strong>Download</strong>
+                  <em>curriculum</em>
+                </div>
+              </div>
+              <div className="px-8 py-[18px] bg-[#1554BB] w-fit text-white">
+                SCHEDULE A DEMO
+              </div>
+            </div>
+          )}
         </div>
       </div>
 

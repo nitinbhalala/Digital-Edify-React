@@ -233,6 +233,19 @@ const Header = () => {
                                 Azure Cloud
                               </a>
                             </li>
+                            <li>
+                              <a
+                                onClick={() => navigate("/course/salesforce")}
+                                className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
+                              >
+                                <MdKeyboardDoubleArrowRight
+                                  color="#ca0067"
+                                  className="font-normal"
+                                  size={18}
+                                />
+                                Salesforce
+                              </a>
+                            </li>
                           </ul>
                         </div>
                         {/* AI Data Stack */}
@@ -656,8 +669,16 @@ const Header = () => {
                 </li>
               </ul>
             </div>
-            <div className="flex gap-5 h-fit ">
-              <button className="bg-white font-poppins text-[15px] xl:text-base border border-black py-2 px-6 rounded-3xl hover:text-blue-800 hover:border-blue-800">
+            <div className="flex gap-5 h-fit">
+              <button
+                onClick={() =>
+                  window.open(
+                    "https://digitallync.us.auth0.com/u/login?state=hKFo2SBFWFN5eGxGcEFlRG1TcmNNVmZiVWZNRDNWdzNpZEpwR6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIDd6cjdTcWVUYlFXbTRnM080X0llVG9ranNJQUNkZ09Bo2NpZNkgZzQxSlFXRGtURTRmS0FsN0wwZEZ5Q21TaW5YWExHcWg",
+                    "_blank"
+                  )
+                }
+                className="bg-white font-poppins text-[15px] xl:text-base border border-black py-2 px-6 rounded-3xl hover:text-blue-800 hover:border-blue-800"
+              >
                 Login
               </button>
               <button

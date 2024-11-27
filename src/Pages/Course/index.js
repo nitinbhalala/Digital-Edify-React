@@ -20,6 +20,7 @@ import LogoGrid from "../../Components/Course/LogoGrid";
 import { useParams } from "react-router-dom";
 import { courseData } from "../../utils/CourseData";
 import StartNowModal from "../../Components/HomePage/StartNowModal";
+import { IoMdCloudDownload } from "react-icons/io";
 
 const Course = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -184,6 +185,27 @@ const Course = () => {
         </div>
       </div>
 
+      {(name === "ui_ux_design" ||
+        name === "full_stack_developer" ||
+        name === "devops" ||
+        name === "ai_training_and_certification" ||
+        name === "data_science_training") && (
+        <div className="flex gap-8 justify-center mt-10 pb-24">
+          <div className="flex">
+            <div className="px-5 py-4 bg-[#1554BB] w-fit text-white">
+              <IoMdCloudDownload size={30} />
+            </div>
+            <div className="text-lg flex flex-col leading-6 pt-2 px-8 shadow-xl bg-white">
+              <strong>Download</strong>
+              <em>curriculum</em>
+            </div>
+          </div>
+          <div className="px-8 py-[18px] bg-[#1554BB] w-fit text-white">
+            SCHEDULE A DEMO
+          </div>
+        </div>
+      )}
+
       <OneLearnCircle title="Build" number="2" />
       <p className="text-xs md:text-base mt-2 font-poppins text-center">
         Work on our Real-time{" "}
@@ -207,7 +229,6 @@ const Course = () => {
       <OnlineTaining />
 
       <OurLocations />
-      
 
       <StartNowModal isOpen={isOpen} setIsOpen={setIsOpen} />
     </div>

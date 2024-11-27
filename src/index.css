@@ -123,11 +123,7 @@ code {
     padding-left: 0;
     list-style: none
 }
-.abutBg{
-  background: url("./assets/abutbg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
 .about-list{ padding-top: 20px;}
 
 .about-list .xb-item--inner::before {
