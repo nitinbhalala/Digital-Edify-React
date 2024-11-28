@@ -775,7 +775,7 @@ export const courseData = [
         ],
       },
       {
-        maintitle: "Core JavaUX Portfolio Curriculum",
+        maintitle: "UX Portfolio Curriculum",
         subdata: [
           {
             module: "Module 1",
@@ -2539,7 +2539,7 @@ export const courseData = [
           {
             module: "Module 1",
             title: "Building Blocks of Web Design - HTML",
-            intro: "TModule 1: Introduction to HTML",
+            intro: "1: Introduction to HTML",
             topics: [
               {
                 name: "1. Basics of HTML",
@@ -7804,7 +7804,7 @@ export const courseData = [
     ],
     accordionData: [
       {
-        maintitle: "Foundations Of IT",
+        maintitle: "Fundamentals of IT",
         subdata: [
           {
             module: "Module 1",
@@ -7906,42 +7906,42 @@ export const courseData = [
                   "Understanding different distributions and the architecture of Linux.",
               },
               {
-                name: "Command Line Interface (CLI) & Filesystem",
+                name: "3. Command Line Interface (CLI) & Filesystem",
                 description:
                   "Mastering the CLI and navigating the Linux filesystem.",
               },
               {
-                name: "3. File Management and vi Editor",
+                name: "4. File Management and vi Editor",
                 description:
                   "Managing files and editing them using the vi editor.",
               },
               {
-                name: "4. Archives and Package Management",
+                name: "5. Archives and Package Management",
                 description:
                   "Utilizing tar, zip utilities, and managing packages in Linux.",
               },
               {
-                name: "5. System Installation and Package Managers",
+                name: "6. System Installation and Package Managers",
                 description:
                   "Installing software on Ubuntu, using .deb files, and the APT package manager.",
               },
               {
-                name: "6. Users, Groups, and Permissions",
+                name: "7. Users, Groups, and Permissions",
                 description:
                   "Managing users and groups, and configuring permissions.",
               },
               {
-                name: "7. Networking Basics: IP Address, Protocols, & Ports",
+                name: "8. Networking Basics: IP Address, Protocols, & Ports",
                 description:
                   "Networking Basics: IP Address, Protocols, & Ports",
               },
               {
-                name: "8. Firewalls and Security Measures",
+                name: "9. Firewalls and Security Measures",
                 description:
                   "Configuring firewalls and understanding basic security measures.",
               },
               {
-                name: "9. Load Balancers",
+                name: "10. Load Balancers",
                 description:
                   "Basics of load balancing in a Linux environment for optimizing performance and reliability.",
               },
@@ -10489,7 +10489,7 @@ export const courseData = [
                   "Exploring function arguments, anonymous functions, and special functions (map, reduce, filter).",
               },
               {
-                name: "Object-Oriented Programming (OOP)",
+                name: "3. Object-Oriented Programming (OOP)",
                 description: [
                   "Classes, objects, constructors, destructors, inheritance, polymorphism.",
                   "Encapsulation, data hiding, magic methods, and operator overloading.",
@@ -11119,7 +11119,7 @@ export const courseData = [
                   "Exploring function arguments, anonymous functions, and special functions (map, reduce, filter).",
               },
               {
-                name: "Object-Oriented Programming (OOP)",
+                name: "3. Object-Oriented Programming (OOP)",
                 description: [
                   "Classes, objects, constructors, destructors, inheritance, polymorphism.",
                   "Encapsulation, data hiding, magic methods, and operator overloading.",
@@ -13363,7 +13363,6 @@ export const programsData = [
             topics: [
               {
                 name: "1. History and key features of Java",
-                description: ["1", "2"],
               },
               {
                 name: "2. Java compared to other programming languages",
@@ -14941,7 +14940,7 @@ export const programsData = [
                   "Leveraging modules for efficient code organization and reusability",
               },
               {
-                name: "3. Web Storage",
+                name: "4. Web Storage",
                 description:
                   "Strategies for using Local Storage & Session Storage to enhance user experience",
               },
@@ -15966,7 +15965,7 @@ export const programsData = [
                   "Leveraging modules for efficient code organization and reusability",
               },
               {
-                name: "3. Web Storage",
+                name: "4. Web Storage",
                 description:
                   "Strategies for using Local Storage & Session Storage to enhance user experience",
               },
@@ -16554,72 +16553,7 @@ export const programsData = [
                 ],
               },
             ],
-            intro1: "Module 2: Enhancing Web Pages with Forms and Multimedia",
-            topics1: [
-              {
-                name: "1. Interactive Forms",
-                description: [
-                  "Crafting forms for data collection with a variety of input types.",
-                  "Basics of form validation and ensuring accessible form design.",
-                ],
-              },
-              {
-                name: "2. Embedding Multimedia",
-                description: [
-                  "Incorporating audio and video elements.",
-                  "Embedding external resources with ' iframe ' and other tags.",
-                ],
-              },
-            ],
-            intro2: "Module 3: Advanced HTML Features",
-            topics2: [
-              {
-                name: "1. Modern HTML Elements",
-                description:
-                  "Exploring semantic elements like ' Article ', 'Section', and 'Nav'.",
-              },
-              {
-                name: "2. Dynamic HTML with APIs",
-                description:
-                  "A brief overview of HTML5 APIs enhancing interactivity and web functionality.",
-              },
-              {
-                name: "3. Reusable Web Components",
-                description:
-                  "Introduction to HTML templates, custom elements, and shadow DOM.",
-              },
-            ],
-            intro3: "Module 4: Accessibility and HTML Best Practices",
-            topics3: [
-              {
-                name: "1. Enhancing Web Accessibility",
-                description:
-                  "Utilizing ARIA roles and proper HTML structure to support all users.",
-              },
-              {
-                name: "2. Maintaining HTML Standards",
-                description:
-                  "Importance of validating HTML code and adhering to web standards for cross-browser compatibility.",
-              },
-            ],
-            intro4: "Module 5: Performance, Security, and Staying Current",
-            topics4: [
-              {
-                name: "1. Optimizing Performance",
-                description:
-                  "Best practices for embedding content and managing user-generated content to prevent common security vulnerabilities.",
-              },
-              {
-                name: "2. Web Security Fundamentals",
-                description:
-                  "Importance of validating HTML code and adhering to web standards for cross-browser compatibility.",
-              },
-              {
-                name: "3. Keeping Up with HTML Evolution",
-                description:
-                  "Resources and strategies for staying updated with HTML developments and future trends.",
-              },
-            ],
+
           },
           {
             module: "Module 2",
@@ -16633,147 +16567,7 @@ export const programsData = [
                 ],
               },
             ],
-            intro1: "Module 2: Styling and the Box Model",
-            topics1: [
-              {
-                name: "1. Understanding the Box Model",
-                description: [
-                  "In-depth look at content, padding, border, and margin.",
-                  "Box-sizing: border-box vs. content-box.",
-                  "Visualizing the box model with browser developer tools.",
-                ],
-              },
 
-              {
-                name: "2. Typography and Text Styling",
-                description: [
-                  "Font families, web-safe fonts, and @font-face rule.",
-                  "Text styling properties: weight, style, spacing, shadow.",
-                  "Web typography best practices for readability and accessibility.",
-                ],
-              },
-              {
-                name: "3. Units, Values, and Colors",
-                description: [
-                  "Absolute vs. Relative units: When and why to use each.",
-                  "Color models in CSS: RGB, RGBA, HSL, HSLA, and Hexadecimal.",
-                  "Implementing custom properties (CSS Variables) for theme management.",
-                ],
-              },
-              {
-                name: "4. Specificity, Inheritance, and the Cascade",
-                description: [
-                  "How CSS determines which rules apply: Specificity hierarchy. Inheritance and how it affects styling.",
-                  "The role of the cascade in resolving style conflicts.",
-                  "Strategies to organize and structure CSS to minimize specificity conflicts.",
-                ],
-              },
-            ],
-            intro2: "Module 3: Advanced Styling Techniques",
-            topics2: [
-              {
-                name: "1. Visual Effects ,",
-                description: [
-                  "Implementing box-shadow and text-shadow for depth and visual interest.",
-                  "Using border-radius for rounded corners.",
-                  "Gradient backgrounds: Linear and radial gradients.",
-                ],
-              },
-
-              {
-                name: "2. Background Techniques",
-                description: [
-                  "Complex background images and patterns.",
-                  "Controlling background size, position, and repetition.",
-                  "Multi-layer backgrounds and their use cases.",
-                ],
-              },
-              {
-                name: "3. Advanced Border and Outline Styling",
-                description: [
-                  "Border images for intricate border designs.",
-                  "Styling and animating outlines as focus indicators.",
-                ],
-              },
-              {
-                name: "4. Layout Control with Overflow and Margin Collapsing",
-                description: [
-                  "Controlling content overflow: scroll, hidden, and auto.",
-                  "Understanding when and why margin collapsing occurs.",
-                  "Strategies to prevent unwanted margin collapsing.",
-                ],
-              },
-            ],
-            intro3: "Module 4: CSS Layouts and Positioning",
-            topics3: [
-              {
-                name: "1. The Display Property",
-                description: [
-                  "The Display Property",
-                  "Newer display values: flex, grid, and contents.",
-                ],
-              },
-
-              {
-                name: "2. CSS Positioning Techniques",
-                description: [
-                  "Detailed scenarios for using each positioning value.",
-                  "Creating sticky headers and footers.",
-                  "Overlaying content with absolute positioning.",
-                ],
-              },
-              {
-                name: "3. Floating Elements and Clearing Floats",
-                description: [
-                  "The role of floats in CSS layout history.",
-                  "Techniques for clearing floats: clearfix hack and overflow method.",
-                  "When to use floats in modern CSS.",
-                ],
-              },
-              {
-                name: "4. Handling Overflow",
-                description: [
-                  "Techniques for managing content overflow in containers.",
-                  "Design patterns for scrollable elements.",
-                ],
-              },
-            ],
-            intro4: "Module 5: Responsive Design and Advanced CSS Features",
-            topics4: [
-              {
-                name: "1. Flexbox and Grid Layouts",
-                description: [
-                  "Detailed guide to Flexbox: Properties for containers and items.",
-                  "Grid Layout: Defining grid containers, grid items, and grid areas.",
-                  "Use cases and practical examples: When to use Flexbox vs. Grid.",
-                ],
-              },
-
-              {
-                name: "2. Responsive Design Techniques",
-                description: [
-                  "Media Queries: Syntax and breakpoints.",
-                  "Mobile-first vs. Desktop-first strategies.",
-                  "Responsive images and videos: Techniques for adaptive media.",
-                ],
-              },
-              {
-                name: "3. Animations and Transitions",
-                description: [
-                  "Creating smooth transitions between states.",
-                  "Keyframe animations: Building complex animations with @keyframes.",
-                  "Performance considerations for CSS animations.",
-                ],
-              },
-              {
-                name: "4. Advanced Responsive Design",
-                description: [
-                  "Implementing responsive typography.",
-                  "Strategies for accessible, responsive forms.",
-                  "Advanced layout patterns: Masonry, column-drop, and >",
-                ],
-              },
-            ],
           },
           {
             module: "Module 3",
@@ -16801,86 +16595,7 @@ export const programsData = [
                 ],
               },
             ],
-            intro1: "Topic 2: Advanced JavaScript Features",
-            topics1: [
-              {
-                name: "1. Deep Dive into Functions and Scope",
-                description:
-                  "Exploring further into Functions and Scope beyond the basics",
-              },
-              {
-                name: "2. Asynchronous JavaScript",
-                description:
-                  "Introduction To AJAX, Callbacks, Promises, Async/Await",
-              },
-              {
-                name: "3. Execution Context, Scope Chain, and Error Handling",
-                description:
-                  "Execution Context and Scope Chain, Error Handling (try...catch)",
-              },
-              {
-                name: "4. Modules and Regular Expressions",
-                description:
-                  "Modules and Import/Export, Introduction to Regular Expressions",
-              },
-              {
-                name: "5. Local Storage and Session Storage",
-                description:
-                  "Utilizing Web Storage APIs for storing data locally",
-              },
-            ],
-            intro2: "Topic 3: Working with the Document Object Model (DOM)",
-            topics2: [
-              {
-                name: "1. DOM Basics",
-                description: "DOM Tree, Nodes, Manipulation",
-              },
-              {
-                name: "2. Event Handling",
-                description: "Event Listeners & Event Delegation",
-              },
-              {
-                name: "3. Advanced DOM Manipulation",
-                description:
-                  "DOM Traversal, createElement, appendChild, insertBefore",
-              },
-            ],
-            intro3: "Topic 4: Asynchronous Programming and APIs",
-            topics3: [
-              {
-                name: "1. Asynchronous JavaScript Revisited",
-                description:
-                  "A comprehensive look into AJAX, Fetch API, Promises, and Async/Await",
-              },
-              {
-                name: "2. Working with APIs",
-                description:
-                  "Understanding Web APIs, Making HTTP requests using the Fetch API, Handling responses and working with JSON, Error handling with Fetch API",
-              },
-            ],
-            intro4: "Topic 5: Modern JavaScript Development",
-            topics4: [
-              {
-                name: "1. Advanced Function Usage",
-                description:
-                  "A deeper exploration of JavaScript's functional programming aspects",
-              },
-              {
-                name: "2. Error Handling and Regular Expressions",
-                description:
-                  "Advanced techniques for managing errors and utilizing regular expressions for data validation",
-              },
-              {
-                name: "3. JavaScript Modules",
-                description:
-                  "Leveraging modules for efficient code organization and reusability",
-              },
-              {
-                name: "3. Web Storage",
-                description:
-                  "Strategies for using Local Storage & Session Storage to enhance user experience",
-              },
-            ],
+
           },
           {
             module: "Module 5",
@@ -17535,72 +17250,7 @@ export const programsData = [
                 ],
               },
             ],
-            intro1: "Module 2: Enhancing Web Pages with Forms and Multimedia",
-            topics1: [
-              {
-                name: "1. Interactive Forms",
-                description: [
-                  "Crafting forms for data collection with a variety of input types.",
-                  "Basics of form validation and ensuring accessible form design.",
-                ],
-              },
-              {
-                name: "2. Embedding Multimedia",
-                description: [
-                  "Incorporating audio and video elements.",
-                  "Embedding external resources with ' iframe ' and other tags.",
-                ],
-              },
-            ],
-            intro2: "Module 3: Advanced HTML Features",
-            topics2: [
-              {
-                name: "1. Modern HTML Elements",
-                description:
-                  "Exploring semantic elements like ' Article ', 'Section', and 'Nav'.",
-              },
-              {
-                name: "2. Dynamic HTML with APIs",
-                description:
-                  "A brief overview of HTML5 APIs enhancing interactivity and web functionality.",
-              },
-              {
-                name: "3. Reusable Web Components",
-                description:
-                  "Introduction to HTML templates, custom elements, and shadow DOM.",
-              },
-            ],
-            intro3: "Module 4: Accessibility and HTML Best Practices",
-            topics3: [
-              {
-                name: "1. Enhancing Web Accessibility",
-                description:
-                  "Utilizing ARIA roles and proper HTML structure to support all users.",
-              },
-              {
-                name: "2. Maintaining HTML Standards",
-                description:
-                  "Importance of validating HTML code and adhering to web standards for cross-browser compatibility.",
-              },
-            ],
-            intro4: "Module 5: Performance, Security, and Staying Current",
-            topics4: [
-              {
-                name: "1. Optimizing Performance",
-                description:
-                  "Best practices for embedding content and managing user-generated content to prevent common security vulnerabilities.",
-              },
-              {
-                name: "2. Web Security Fundamentals",
-                description:
-                  "Importance of validating HTML code and adhering to web standards for cross-browser compatibility.",
-              },
-              {
-                name: "3. Keeping Up with HTML Evolution",
-                description:
-                  "Resources and strategies for staying updated with HTML developments and future trends.",
-              },
-            ],
+
           },
           {
             module: "Module 2",
@@ -17618,147 +17268,7 @@ export const programsData = [
                 ],
               },
             ],
-            intro1: "Module 2: Styling and the Box Model",
-            topics1: [
-              {
-                name: "1. Understanding the Box Model",
-                description: [
-                  "In-depth look at content, padding, border, and margin.",
-                  "Box-sizing: border-box vs. content-box.",
-                  "Visualizing the box model with browser developer tools.",
-                ],
-              },
 
-              {
-                name: "2. Typography and Text Styling",
-                description: [
-                  "Font families, web-safe fonts, and @font-face rule.",
-                  "Text styling properties: weight, style, spacing, shadow.",
-                  "Web typography best practices for readability and accessibility.",
-                ],
-              },
-              {
-                name: "3. Units, Values, and Colors",
-                description: [
-                  "Absolute vs. Relative units: When and why to use each.",
-                  "Color models in CSS: RGB, RGBA, HSL, HSLA, and Hexadecimal.",
-                  "Implementing custom properties (CSS Variables) for theme management.",
-                ],
-              },
-              {
-                name: "4. Specificity, Inheritance, and the Cascade",
-                description: [
-                  "How CSS determines which rules apply: Specificity hierarchy. Inheritance and how it affects styling.",
-                  "The role of the cascade in resolving style conflicts.",
-                  "Strategies to organize and structure CSS to minimize specificity conflicts.",
-                ],
-              },
-            ],
-            intro2: "Module 3: Advanced Styling Techniques",
-            topics2: [
-              {
-                name: "1. Visual Effects ,",
-                description: [
-                  "Implementing box-shadow and text-shadow for depth and visual interest.",
-                  "Using border-radius for rounded corners.",
-                  "Gradient backgrounds: Linear and radial gradients.",
-                ],
-              },
-
-              {
-                name: "2. Background Techniques",
-                description: [
-                  "Complex background images and patterns.",
-                  "Controlling background size, position, and repetition.",
-                  "Multi-layer backgrounds and their use cases.",
-                ],
-              },
-              {
-                name: "3. Advanced Border and Outline Styling",
-                description: [
-                  "Border images for intricate border designs.",
-                  "Styling and animating outlines as focus indicators.",
-                ],
-              },
-              {
-                name: "4. Layout Control with Overflow and Margin Collapsing",
-                description: [
-                  "Controlling content overflow: scroll, hidden, and auto.",
-                  "Understanding when and why margin collapsing occurs.",
-                  "Strategies to prevent unwanted margin collapsing.",
-                ],
-              },
-            ],
-            intro3: "Module 4: CSS Layouts and Positioning",
-            topics3: [
-              {
-                name: "1. The Display Property",
-                description: [
-                  "The Display Property",
-                  "Newer display values: flex, grid, and contents.",
-                ],
-              },
-
-              {
-                name: "2. CSS Positioning Techniques",
-                description: [
-                  "Detailed scenarios for using each positioning value.",
-                  "Creating sticky headers and footers.",
-                  "Overlaying content with absolute positioning.",
-                ],
-              },
-              {
-                name: "3. Floating Elements and Clearing Floats",
-                description: [
-                  "The role of floats in CSS layout history.",
-                  "Techniques for clearing floats: clearfix hack and overflow method.",
-                  "When to use floats in modern CSS.",
-                ],
-              },
-              {
-                name: "4. Handling Overflow",
-                description: [
-                  "Techniques for managing content overflow in containers.",
-                  "Design patterns for scrollable elements.",
-                ],
-              },
-            ],
-            intro4: "Module 5: Responsive Design and Advanced CSS Features",
-            topics4: [
-              {
-                name: "1. Flexbox and Grid Layouts",
-                description: [
-                  "Detailed guide to Flexbox: Properties for containers and items.",
-                  "Grid Layout: Defining grid containers, grid items, and grid areas.",
-                  "Use cases and practical examples: When to use Flexbox vs. Grid.",
-                ],
-              },
-
-              {
-                name: "2. Responsive Design Techniques",
-                description: [
-                  "Media Queries: Syntax and breakpoints.",
-                  "Mobile-first vs. Desktop-first strategies.",
-                  "Responsive images and videos: Techniques for adaptive media.",
-                ],
-              },
-              {
-                name: "3. Animations and Transitions",
-                description: [
-                  "Creating smooth transitions between states.",
-                  "Keyframe animations: Building complex animations with @keyframes.",
-                  "Performance considerations for CSS animations.",
-                ],
-              },
-              {
-                name: "4. Advanced Responsive Design",
-                description: [
-                  "Implementing responsive typography.",
-                  "Strategies for accessible, responsive forms.",
-                  "Advanced layout patterns: Masonry, column-drop, and >",
-                ],
-              },
-            ],
           },
           {
             module: "Module 3",
@@ -18259,11 +17769,11 @@ export const programsData = [
         ],
       },
       {
-        maintitle: "Azure Cloud",
+        maintitle: "Azure Cloud 12",
         subdata: [
           {
             module: "Module 1",
-            title: "AWS Cloud Fundamentals",
+            title: "Azure Cloud Fundamentals",
             topics: [
               {
                 description: [
@@ -18284,22 +17794,22 @@ export const programsData = [
           },
           {
             module: "Module 2",
-            title: "AWS Cloud Networking",
+            title: "Azure Cloud Networking",
             topics: [
               {
                 description: [
-                  "AWS Regions",
-                  "AWS Availability Zones",
-                  "VPC Components",
-                  "Internet Gateway",
-                  "Subnets",
-                  "Route Tables",
-                  "Network Access Control List",
-                  "NACL",
-                  "Security Group",
-                  "VPC Requirement",
-                  "VPC Subnetting",
-                  "Build Custom VPC",
+                  "Azure Regions",
+                  "Azure Availability Zones",
+                  "Azure VNET Components",
+                  "Creating a Virtual Network",
+                  "Virtual Network Peering",
+                  "Azure Bastion",
+                  "Azure Load Balancer",
+                  // "NACL",
+                  // "Security Group",
+                  // "VPC Requirement",
+                  // "VPC Subnetting",
+                  // "Build Custom VPC",
                 ],
               },
             ],
@@ -18943,7 +18453,7 @@ export const programsData = [
         ],
       },
       {
-        maintitle: "zure Data Factory & Synapse Analytics",
+        maintitle: "Azure Data Factory & Synapse Analytics",
         subdata: [
           {
             module: "Module 1",
@@ -18958,72 +18468,7 @@ export const programsData = [
                 ],
               },
             ],
-            intro1: "Module 2: Enhancing Web Pages with Forms and Multimedia",
-            topics1: [
-              {
-                name: "1. Interactive Forms",
-                description: [
-                  "Crafting forms for data collection with a variety of input types.",
-                  "Basics of form validation and ensuring accessible form design.",
-                ],
-              },
-              {
-                name: "2. Embedding Multimedia",
-                description: [
-                  "Incorporating audio and video elements.",
-                  "Embedding external resources with ' iframe ' and other tags.",
-                ],
-              },
-            ],
-            intro2: "Module 3: Advanced HTML Features",
-            topics2: [
-              {
-                name: "1. Modern HTML Elements",
-                description:
-                  "Exploring semantic elements like ' Article ', 'Section', and 'Nav'.",
-              },
-              {
-                name: "2. Dynamic HTML with APIs",
-                description:
-                  "A brief overview of HTML5 APIs enhancing interactivity and web functionality.",
-              },
-              {
-                name: "3. Reusable Web Components",
-                description:
-                  "Introduction to HTML templates, custom elements, and shadow DOM.",
-              },
-            ],
-            intro3: "Module 4: Accessibility and HTML Best Practices",
-            topics3: [
-              {
-                name: "1. Enhancing Web Accessibility",
-                description:
-                  "Utilizing ARIA roles and proper HTML structure to support all users.",
-              },
-              {
-                name: "2. Maintaining HTML Standards",
-                description:
-                  "Importance of validating HTML code and adhering to web standards for cross-browser compatibility.",
-              },
-            ],
-            intro4: "Module 5: Performance, Security, and Staying Current",
-            topics4: [
-              {
-                name: "1. Optimizing Performance",
-                description:
-                  "Best practices for embedding content and managing user-generated content to prevent common security vulnerabilities.",
-              },
-              {
-                name: "2. Web Security Fundamentals",
-                description:
-                  "Importance of validating HTML code and adhering to web standards for cross-browser compatibility.",
-              },
-              {
-                name: "3. Keeping Up with HTML Evolution",
-                description:
-                  "Resources and strategies for staying updated with HTML developments and future trends.",
-              },
-            ],
+
           },
           {
             module: "Module 2",
@@ -19037,147 +18482,7 @@ export const programsData = [
                 ],
               },
             ],
-            intro1: "Module 2: Styling and the Box Model",
-            topics1: [
-              {
-                name: "1. Understanding the Box Model",
-                description: [
-                  "In-depth look at content, padding, border, and margin.",
-                  "Box-sizing: border-box vs. content-box.",
-                  "Visualizing the box model with browser developer tools.",
-                ],
-              },
 
-              {
-                name: "2. Typography and Text Styling",
-                description: [
-                  "Font families, web-safe fonts, and @font-face rule.",
-                  "Text styling properties: weight, style, spacing, shadow.",
-                  "Web typography best practices for readability and accessibility.",
-                ],
-              },
-              {
-                name: "3. Units, Values, and Colors",
-                description: [
-                  "Absolute vs. Relative units: When and why to use each.",
-                  "Color models in CSS: RGB, RGBA, HSL, HSLA, and Hexadecimal.",
-                  "Implementing custom properties (CSS Variables) for theme management.",
-                ],
-              },
-              {
-                name: "4. Specificity, Inheritance, and the Cascade",
-                description: [
-                  "How CSS determines which rules apply: Specificity hierarchy. Inheritance and how it affects styling.",
-                  "The role of the cascade in resolving style conflicts.",
-                  "Strategies to organize and structure CSS to minimize specificity conflicts.",
-                ],
-              },
-            ],
-            intro2: "Module 3: Advanced Styling Techniques",
-            topics2: [
-              {
-                name: "1. Visual Effects ,",
-                description: [
-                  "Implementing box-shadow and text-shadow for depth and visual interest.",
-                  "Using border-radius for rounded corners.",
-                  "Gradient backgrounds: Linear and radial gradients.",
-                ],
-              },
-
-              {
-                name: "2. Background Techniques",
-                description: [
-                  "Complex background images and patterns.",
-                  "Controlling background size, position, and repetition.",
-                  "Multi-layer backgrounds and their use cases.",
-                ],
-              },
-              {
-                name: "3. Advanced Border and Outline Styling",
-                description: [
-                  "Border images for intricate border designs.",
-                  "Styling and animating outlines as focus indicators.",
-                ],
-              },
-              {
-                name: "4. Layout Control with Overflow and Margin Collapsing",
-                description: [
-                  "Controlling content overflow: scroll, hidden, and auto.",
-                  "Understanding when and why margin collapsing occurs.",
-                  "Strategies to prevent unwanted margin collapsing.",
-                ],
-              },
-            ],
-            intro3: "Module 4: CSS Layouts and Positioning",
-            topics3: [
-              {
-                name: "1. The Display Property",
-                description: [
-                  "The Display Property",
-                  "Newer display values: flex, grid, and contents.",
-                ],
-              },
-
-              {
-                name: "2. CSS Positioning Techniques",
-                description: [
-                  "Detailed scenarios for using each positioning value.",
-                  "Creating sticky headers and footers.",
-                  "Overlaying content with absolute positioning.",
-                ],
-              },
-              {
-                name: "3. Floating Elements and Clearing Floats",
-                description: [
-                  "The role of floats in CSS layout history.",
-                  "Techniques for clearing floats: clearfix hack and overflow method.",
-                  "When to use floats in modern CSS.",
-                ],
-              },
-              {
-                name: "4. Handling Overflow",
-                description: [
-                  "Techniques for managing content overflow in containers.",
-                  "Design patterns for scrollable elements.",
-                ],
-              },
-            ],
-            intro4: "Module 5: Responsive Design and Advanced CSS Features",
-            topics4: [
-              {
-                name: "1. Flexbox and Grid Layouts",
-                description: [
-                  "Detailed guide to Flexbox: Properties for containers and items.",
-                  "Grid Layout: Defining grid containers, grid items, and grid areas.",
-                  "Use cases and practical examples: When to use Flexbox vs. Grid.",
-                ],
-              },
-
-              {
-                name: "2. Responsive Design Techniques",
-                description: [
-                  "Media Queries: Syntax and breakpoints.",
-                  "Mobile-first vs. Desktop-first strategies.",
-                  "Responsive images and videos: Techniques for adaptive media.",
-                ],
-              },
-              {
-                name: "3. Animations and Transitions",
-                description: [
-                  "Creating smooth transitions between states.",
-                  "Keyframe animations: Building complex animations with @keyframes.",
-                  "Performance considerations for CSS animations.",
-                ],
-              },
-              {
-                name: "4. Advanced Responsive Design",
-                description: [
-                  "Implementing responsive typography.",
-                  "Strategies for accessible, responsive forms.",
-                  "Advanced layout patterns: Masonry, column-drop, and >",
-                ],
-              },
-            ],
           },
           {
             module: "Module 3",
@@ -19439,18 +18744,18 @@ export const programsData = [
                   "Processing Live Data Streams: Building and Deploying Stream Analytics Solutions",
                 ],
               },
-              {
-                name: "Hands On",
-                description: [
-                  "Creating EBS Volumes",
-                  "Attaching EBS Volumes",
-                  "Create a Custom AMI",
-                  "Copy AMI To Other Regions",
-                  "Backing Up Volumes - EBS Snapshots",
-                  "Recovering Volumes - EBS Snapshots",
-                  "Copy Snapshots to other regions",
-                ],
-              },
+              // {
+              //   name: "Hands On",
+              //   description: [
+              //     "Creating EBS Volumes",
+              //     "Attaching EBS Volumes",
+              //     "Create a Custom AMI",
+              //     "Copy AMI To Other Regions",
+              //     "Backing Up Volumes - EBS Snapshots",
+              //     "Recovering Volumes - EBS Snapshots",
+              //     "Copy Snapshots to other regions",
+              //   ],
+              // },
             ],
           },
           {
@@ -19464,15 +18769,15 @@ export const programsData = [
                   "Deployment Strategies: Best Practices for Production Deployments in Azure",
                 ],
               },
-              {
-                name: "Hands On",
-                description: [
-                  "Provision EFS File System",
-                  "Configuring Firewalls For EFS Access",
-                  "Shared File Access across Multiple Instances",
-                  "Shared File Access across Multiple Availability Zones",
-                ],
-              },
+              // {
+              //   name: "Hands On",
+              //   description: [
+              //     "Provision EFS File System",
+              //     "Configuring Firewalls For EFS Access",
+              //     "Shared File Access across Multiple Instances",
+              //     "Shared File Access across Multiple Availability Zones",
+              //   ],
+              // },
             ],
           },
         ],
@@ -19844,19 +19149,19 @@ export const programsData = [
               },
             ],
           },
-          {
-            module: "Module 4",
-            title: "Azure Resources and Data Integration Basics",
-            topics: [
-              {
-                description: [
-                  "Azure Resources and Resource Types",
-                  "Introduction to Azure Data Factory (ADF) and Azure Synapse Analytics",
-                  "Basic Concepts of Data Movement and Processing",
-                ],
-              },
-            ],
-          },
+          // {
+          //   module: "Module 4",
+          //   title: "Azure Resources and Data Integration Basics",
+          //   topics: [
+          //     {
+          //       description: [
+          //         "Azure Resources and Resource Types",
+          //         "Introduction to Azure Data Factory (ADF) and Azure Synapse Analytics",
+          //         "Basic Concepts of Data Movement and Processing",
+          //       ],
+          //     },
+          //   ],
+          // },
         ],
       },
       {
@@ -19876,72 +19181,7 @@ export const programsData = [
                 ],
               },
             ],
-            intro1: "Module 2: Enhancing Web Pages with Forms and Multimedia",
-            topics1: [
-              {
-                name: "1. Interactive Forms",
-                description: [
-                  "Crafting forms for data collection with a variety of input types.",
-                  "Basics of form validation and ensuring accessible form design.",
-                ],
-              },
-              {
-                name: "2. Embedding Multimedia",
-                description: [
-                  "Incorporating audio and video elements.",
-                  "Embedding external resources with ' iframe ' and other tags.",
-                ],
-              },
-            ],
-            intro2: "Module 3: Advanced HTML Features",
-            topics2: [
-              {
-                name: "1. Modern HTML Elements",
-                description:
-                  "Exploring semantic elements like ' Article ', 'Section', and 'Nav'.",
-              },
-              {
-                name: "2. Dynamic HTML with APIs",
-                description:
-                  "A brief overview of HTML5 APIs enhancing interactivity and web functionality.",
-              },
-              {
-                name: "3. Reusable Web Components",
-                description:
-                  "Introduction to HTML templates, custom elements, and shadow DOM.",
-              },
-            ],
-            intro3: "Module 4: Accessibility and HTML Best Practices",
-            topics3: [
-              {
-                name: "1. Enhancing Web Accessibility",
-                description:
-                  "Utilizing ARIA roles and proper HTML structure to support all users.",
-              },
-              {
-                name: "2. Maintaining HTML Standards",
-                description:
-                  "Importance of validating HTML code and adhering to web standards for cross-browser compatibility.",
-              },
-            ],
-            intro4: "Module 5: Performance, Security, and Staying Current",
-            topics4: [
-              {
-                name: "1. Optimizing Performance",
-                description:
-                  "Best practices for embedding content and managing user-generated content to prevent common security vulnerabilities.",
-              },
-              {
-                name: "2. Web Security Fundamentals",
-                description:
-                  "Importance of validating HTML code and adhering to web standards for cross-browser compatibility.",
-              },
-              {
-                name: "3. Keeping Up with HTML Evolution",
-                description:
-                  "Resources and strategies for staying updated with HTML developments and future trends.",
-              },
-            ],
+
           },
           {
             module: "Module 2",
@@ -19956,147 +19196,7 @@ export const programsData = [
                 ],
               },
             ],
-            intro1: "Module 2: Styling and the Box Model",
-            topics1: [
-              {
-                name: "1. Understanding the Box Model",
-                description: [
-                  "In-depth look at content, padding, border, and margin.",
-                  "Box-sizing: border-box vs. content-box.",
-                  "Visualizing the box model with browser developer tools.",
-                ],
-              },
 
-              {
-                name: "2. Typography and Text Styling",
-                description: [
-                  "Font families, web-safe fonts, and @font-face rule.",
-                  "Text styling properties: weight, style, spacing, shadow.",
-                  "Web typography best practices for readability and accessibility.",
-                ],
-              },
-              {
-                name: "3. Units, Values, and Colors",
-                description: [
-                  "Absolute vs. Relative units: When and why to use each.",
-                  "Color models in CSS: RGB, RGBA, HSL, HSLA, and Hexadecimal.",
-                  "Implementing custom properties (CSS Variables) for theme management.",
-                ],
-              },
-              {
-                name: "4. Specificity, Inheritance, and the Cascade",
-                description: [
-                  "How CSS determines which rules apply: Specificity hierarchy. Inheritance and how it affects styling.",
-                  "The role of the cascade in resolving style conflicts.",
-                  "Strategies to organize and structure CSS to minimize specificity conflicts.",
-                ],
-              },
-            ],
-            intro2: "Module 3: Advanced Styling Techniques",
-            topics2: [
-              {
-                name: "1. Visual Effects ,",
-                description: [
-                  "Implementing box-shadow and text-shadow for depth and visual interest.",
-                  "Using border-radius for rounded corners.",
-                  "Gradient backgrounds: Linear and radial gradients.",
-                ],
-              },
-
-              {
-                name: "2. Background Techniques",
-                description: [
-                  "Complex background images and patterns.",
-                  "Controlling background size, position, and repetition.",
-                  "Multi-layer backgrounds and their use cases.",
-                ],
-              },
-              {
-                name: "3. Advanced Border and Outline Styling",
-                description: [
-                  "Border images for intricate border designs.",
-                  "Styling and animating outlines as focus indicators.",
-                ],
-              },
-              {
-                name: "4. Layout Control with Overflow and Margin Collapsing",
-                description: [
-                  "Controlling content overflow: scroll, hidden, and auto.",
-                  "Understanding when and why margin collapsing occurs.",
-                  "Strategies to prevent unwanted margin collapsing.",
-                ],
-              },
-            ],
-            intro3: "Module 4: CSS Layouts and Positioning",
-            topics3: [
-              {
-                name: "1. The Display Property",
-                description: [
-                  "The Display Property",
-                  "Newer display values: flex, grid, and contents.",
-                ],
-              },
-
-              {
-                name: "2. CSS Positioning Techniques",
-                description: [
-                  "Detailed scenarios for using each positioning value.",
-                  "Creating sticky headers and footers.",
-                  "Overlaying content with absolute positioning.",
-                ],
-              },
-              {
-                name: "3. Floating Elements and Clearing Floats",
-                description: [
-                  "The role of floats in CSS layout history.",
-                  "Techniques for clearing floats: clearfix hack and overflow method.",
-                  "When to use floats in modern CSS.",
-                ],
-              },
-              {
-                name: "4. Handling Overflow",
-                description: [
-                  "Techniques for managing content overflow in containers.",
-                  "Design patterns for scrollable elements.",
-                ],
-              },
-            ],
-            intro4: "Module 5: Responsive Design and Advanced CSS Features",
-            topics4: [
-              {
-                name: "1. Flexbox and Grid Layouts",
-                description: [
-                  "Detailed guide to Flexbox: Properties for containers and items.",
-                  "Grid Layout: Defining grid containers, grid items, and grid areas.",
-                  "Use cases and practical examples: When to use Flexbox vs. Grid.",
-                ],
-              },
-
-              {
-                name: "2. Responsive Design Techniques",
-                description: [
-                  "Media Queries: Syntax and breakpoints.",
-                  "Mobile-first vs. Desktop-first strategies.",
-                  "Responsive images and videos: Techniques for adaptive media.",
-                ],
-              },
-              {
-                name: "3. Animations and Transitions",
-                description: [
-                  "Creating smooth transitions between states.",
-                  "Keyframe animations: Building complex animations with @keyframes.",
-                  "Performance considerations for CSS animations.",
-                ],
-              },
-              {
-                name: "4. Advanced Responsive Design",
-                description: [
-                  "Implementing responsive typography.",
-                  "Strategies for accessible, responsive forms.",
-                  "Advanced layout patterns: Masonry, column-drop, and >",
-                ],
-              },
-            ],
           },
           {
             module: "Module 3",
@@ -20470,6 +19570,22 @@ export const programsData = [
             ],
           },
           {
+            module: "Module 4",
+            title: "Developing Web Applications with Python",
+            topics: [
+              {
+                nane: "1. Getting Started with Flask",
+                description:
+                  "Setting up Flask, creating simple applications, routing, and middleware.",
+              },
+              {
+                nane: "2. Exploring Django",
+                description:
+                  "Introduction to Django, MVC model, views, URL mapping.",
+              },
+            ],
+          },
+          {
             module: "Module 5",
             title: "Automation, GUI Programming, and Version Control",
             topics: [
@@ -20487,22 +19603,6 @@ export const programsData = [
                 nane: "3. Version Control with Git",
                 description:
                   "Managing projects with Git, understanding repository management, commits, merging, and basic Git commands.",
-              },
-            ],
-          },
-          {
-            module: "Module 4",
-            title: "Developing Web Applications with Python",
-            topics: [
-              {
-                nane: "1. Getting Started with Flask",
-                description:
-                  "Setting up Flask, creating simple applications, routing, and middleware.",
-              },
-              {
-                nane: "2. Exploring Django",
-                description:
-                  "Introduction to Django, MVC model, views, URL mapping.",
               },
             ],
           },
@@ -20775,20 +19875,6 @@ export const programsData = [
           },
           {
             module: "Module 4",
-            title: "Developing Web Applications with Python",
-            topics: [
-              {
-                description: [
-                  "Getting Started with Flask",
-                  "Setting up Flask, creating simple applications, routing, and middleware.",
-                  "Exploring Django",
-                  "Introduction to Django, MVC model, views, URL mapping.",
-                ],
-              },
-            ],
-          },
-          {
-            module: "Module 5",
             title: "Advanced Topics in Data Cloud and DevOps",
             topics: [
               {
