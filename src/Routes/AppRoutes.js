@@ -6,7 +6,7 @@ import Programs from "../Pages/Programs";
 import Services from "../Pages/Services";
 import DemoPage from "../Pages/DemoPage";
 import Blogs from "../Pages/Blogs";
-import AboutUs from "../Pages/AboutUs/Index";
+import AboutUs from "../Pages/AboutUs";
 
 const AppRoutes = () => (
   <Routes>

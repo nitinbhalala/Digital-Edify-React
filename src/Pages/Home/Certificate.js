@@ -1,6 +1,6 @@
 import React from 'react'
 import OneLearnCircle from '../../Components/HomePage/OneLearnCircle'
-import certi1 from "../../assets/certificateim.jpg";
+import certi1 from "../../assets/certificateim.webp";
 
 const Certificate = () => {
     return (
