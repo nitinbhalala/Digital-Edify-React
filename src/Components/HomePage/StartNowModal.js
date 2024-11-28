@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 
 const StartNowModal = ({ isOpen, setIsOpen }) => {
   const [formData, setFormData] = useState({
@@ -24,6 +26,10 @@ const StartNowModal = ({ isOpen, setIsOpen }) => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
+  };
+
+  const handlePhoneChange = (value) => {
+    setFormData({ ...formData, phone: value });
   };
 
   const handleSubmit = (e) => {
@@ -74,22 +80,17 @@ const StartNowModal = ({ isOpen, setIsOpen }) => {
                 >
                   Phone <span className="text-red-500">*</span>
                 </label>
-                <div className="flex gap-4">
-                  <input
-                    type="text"
-                    value="91"
-                    className="w-16 p-2 border border-gray-300 outline-0 bg-[#f5f8fa] rounded-[3px]"
-                  />
-                  <input
-                    type="text"
-                    id="phone"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    className="flex-1 block w-full p-2 border border-gray-300 rounded-[3px] outline-0 bg-[#f5f8fa]"
-                    required
-                  />
-                </div>
+                <PhoneInput
+                  country={"in"}
+                  value={formData.phone}
+                  onChange={handlePhoneChange}
+                  inputProps={{
+                    name: "phone",
+                    required: true,
+                  }}
+                  className="w-full"
+                  enableSearch
+                />
               </div>
 
               {/* Email Field */}

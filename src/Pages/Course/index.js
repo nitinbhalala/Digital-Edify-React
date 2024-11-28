@@ -26,7 +26,7 @@ const Course = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { name } = useParams();
   const Fundamentals = courseData?.filter((i) => i?.course === name)?.[0];
-
+  const HeaderData = Fundamentals?.courseHeader;
   const Data2 = [
     "Online & ClassRoom Real-Time training",
     "Project & Task Based Learning",
@@ -148,7 +148,7 @@ const Course = () => {
           </div>
         </div>
       </div>
-      <WhyJavaTraining title={Fundamentals?.courseTitle} />
+      <WhyJavaTraining title={Fundamentals?.courseTitle} headerTitle={HeaderData} />
 
       <p className="text-xl md:text-3xl font-semibold text-[#343433] text-center mb-10 font-poppins mt-16">
         Our Alumni Work at Top Companies
@@ -192,21 +192,21 @@ const Course = () => {
         name === "devops" ||
         name === "ai_training_and_certification" ||
         name === "data_science_training") && (
-        <div className="flex gap-8 justify-center mt-10 pb-24 uppercase">
-          <div className="flex">
-            <div className="px-5 py-4 bg-[#1554BB] w-fit text-white">
-              <IoMdCloudDownload size={30} />
+          <div className="flex gap-8 justify-center mt-10 pb-24 uppercase">
+            <div className="flex">
+              <div className="px-5 py-4 bg-[#1554BB] w-fit text-white">
+                <IoMdCloudDownload size={30} />
+              </div>
+              <div className="text-lg flex flex-col leading-6 pt-2 px-8 shadow-xl bg-white">
+                <strong>Download</strong>
+                <em>curriculum</em>
+              </div>
             </div>
-            <div className="text-lg flex flex-col leading-6 pt-2 px-8 shadow-xl bg-white">
-              <strong>Download</strong>
-              <em>curriculum</em>
+            <div className="px-8 py-[18px] bg-[#1554BB] w-fit text-white">
+              SCHEDULE A DEMO
             </div>
           </div>
-          <div className="px-8 py-[18px] bg-[#1554BB] w-fit text-white">
-            SCHEDULE A DEMO
-          </div>
-        </div>
-      )}
+        )}
 
       <OneLearnCircle title="Build" number="2" />
       <p className="text-xs md:text-base mt-2 font-poppins text-center">

@@ -26,7 +26,7 @@ const Programs = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { name } = useParams();
   const Fundamentals = programsData?.filter((i) => i?.course === name)?.[0];
-
+  const HeaderData = Fundamentals?.courseHeader;
   const Data2 = [
     "Online & ClassRoom Real-Time training",
     "Project & Task Based Learning",
@@ -148,7 +148,7 @@ const Programs = () => {
           </div>
         </div>
       </div>
-      <WhyJavaTraining title={Fundamentals?.courseTitle} />
+      <WhyJavaTraining title={Fundamentals?.courseTitle} headerTitle={HeaderData} />
 
       <p className="text-xl md:text-3xl font-semibold text-[#343433] text-center mb-10 font-poppins mt-16">
         Our Alumni Work at Top Companies

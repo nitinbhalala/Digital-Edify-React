@@ -71,6 +71,7 @@ export const courseData = [
   {
     course: "java",
     headerTitle: "Java Training & Certification",
+    courseHeader: ["Java Administrator", "Java Developer", "Java Architect", "Business Analyst", "Java Consultant"],
     headerImage: javabanner,
     courseTitle: "Why Java Training With Digital Edify?",
     title: "Java Course Curriculum",
@@ -608,6 +609,7 @@ export const courseData = [
   {
     course: "ui_ux_design",
     headerTitle: "UI/UX Design Course Training",
+    courseHeader: ["Graphic Designer", "Web Designer", "Architects Designer", "Visual Designer", "Interior Designer"],
     headerImage: uiuxbanner,
     courseTitle: "Why UI/UX Design Course?",
     title: "UI/UX Design Course Curriculum",
@@ -926,6 +928,7 @@ export const courseData = [
   {
     course: "python",
     headerTitle: "Python Training & Certification",
+    courseHeader: ["Software Engineer", "Python Developer", "Research Analyst", "Data Analyst", "Software Developer"],
     headerImage: pythonbanr,
     courseTitle: "Why Python Training With Digital Edify?",
     title: "Python Course Curriculum",
@@ -1496,6 +1499,8 @@ export const courseData = [
   {
     course: "react_js",
     headerTitle: "React JS Training & Certification",
+    courseHeader: ["ReactJS Developer", "UI Developer", "Front End Developer", "Front End Engineer", "Full Stack Engineer"],
+    headerImage: pythonbanr,
     headerImage: reactbanr,
     courseTitle: "Why React JS Training With Digital Edify?",
     title: "React JS Course Curriculum",
@@ -2428,6 +2433,7 @@ export const courseData = [
   {
     course: "full_stack_developer",
     headerTitle: "Become a Full-Stack Developer",
+    courseHeader: ["REACT Developer", "Frontend Developer", "Backend Developer", "Java Developer", "Software Developer"],
     headerImage: fullstackbnr1,
     courseTitle: "Why Full Stack Masters Program ?",
     title: "Full stack Masters With Cloud & DevOps Curriculum",
@@ -3676,6 +3682,7 @@ export const courseData = [
     course: "business_analyst",
     headerTitle: "Business Analyst Training & Certification",
     headerImage: babanner,
+    courseHeader: ["Business Analyst", "Systems Analyst", "Product Owner", "Project Manager", "Cloud Engineer"],
     courseTitle: "Why Business Analysis With Digital Edify?",
     title: "Business Analyst Course Curriculum",
     subTitle: "It stretches your mind, think better and create even better.",
@@ -4264,6 +4271,7 @@ export const courseData = [
   {
     course: "software_testing",
     headerTitle: "Software Testing Training",
+    courseHeader: ["QA Engineer", "Test Analyst", "Test Engineer", "Test Architect", "Test Manager"],
     headerImage: testingbnr,
     courseTitle: "Why Software Testing Training With Digital Edify?",
     title: "Software Testing Course Curriculum",
@@ -5120,6 +5128,7 @@ export const courseData = [
   {
     course: "devops",
     headerTitle: "DevOps Training & Certification",
+    courseHeader: ["DevOps Engineer", "DevOps Architect", "DevOps Consultant", "System Engineer", "System Administrator"],
     headerImage: devnewimg,
     courseTitle: "Why DevOps Program With Digital Edify?",
     title: "DevOps Course Curriculum",
@@ -6350,6 +6359,7 @@ export const courseData = [
   {
     course: "azure_devops",
     headerTitle: "Azure DevOps Training & Certification",
+    courseHeader: ["DevOps Engineer", "Azure DevOps Engineer", "Azure DevOps Consultant", "DevOps Architect", "System Administrator"],
     headerImage: azdev,
     courseTitle: "Why Azure DevOps Program With Digital Edify?",
     title: "Azure DevOps Course Curriculum",
@@ -7792,6 +7802,7 @@ export const courseData = [
   {
     course: "aws_cloud",
     headerTitle: "AWS Cloud Training & Certification",
+    courseHeader: ["Infrastructure Engineer", "AWS Engineer", "AWS Architect", "Cloud Architect", "Cloud Engineer", "AWS Consultant"],
     headerImage: awsbanner,
     courseTitle: "Why AWS Training With Digital Edify?",
     title: "AWS Course Curriculum",
@@ -8320,6 +8331,7 @@ export const courseData = [
   {
     course: "azure_cloud",
     headerTitle: "Azure Cloud Training & Certification",
+    courseHeader: ["DevOps Engineer", "Azure DevOps Engineer", "Azure DevOps Consultant", "DevOps Architect", "System Administrator"],
     headerImage: azdev,
     courseTitle: "Why Azure Training With Digital Edify?",
     title: "Azure Course Curriculum",
@@ -8758,6 +8770,7 @@ export const courseData = [
   {
     course: "salesforce",
     headerTitle: "Salesforce Training",
+    courseHeader: ["ReactJS Developer", "UI Developer", "Front End Developer", "Front End Engineer", "Full Stack Engineer"],
     headerImage: slacebanner,
     courseTitle: "Why Salesforce Training With Digital Edify?",
     title: "Salesforce Course Curriculum",
@@ -9442,6 +9455,7 @@ export const courseData = [
   {
     course: "azure_data_engineering",
     headerTitle: "Azure Data Engineering Training & Certification",
+    courseHeader: ["Azure Data Engineer", "Azure Data Architect", "Azure Data Scientist", "Azure AI Engineer", "Azure Solutions Architect"],
     headerImage: azure_eng,
     courseTitle: "Why Azure Data Engineering With Digital Edify?",
     title: "Azure Data Engineer Course Curriculum",
@@ -10079,6 +10093,7 @@ export const courseData = [
   {
     course: "aws_data_engineering",
     headerTitle: "AWS Data Engineering Training & Certification",
+    courseHeader: ["AWS Data Engineer", "AWS Data Architect", "AWS Data Scientist", "AWS AI Engineer", "AWS Solutions Architect"],
     headerImage: aws_eng,
     courseTitle: "Why AWS Data Engineering With Digital Edify?",
     title: "AWS Data Engineer Course Curriculum",
@@ -10715,6 +10730,7 @@ export const courseData = [
   {
     course: "gcp_data_engineering",
     headerTitle: "GCP Data Engineering Training & Certification",
+    courseHeader: ["GCP Data Engineer", "GCP Data Architect", "GCP Data Scientist", "GCP AI Engineer", "GCP Solutions Architect"],
     headerImage: gcp_eng,
     courseTitle: "Why GCP Data Engineering With Digital Edify?",
     title: "GCP Data Engineer Course Curriculum",
@@ -11345,6 +11361,7 @@ export const courseData = [
   {
     course: "ai_training_and_certification",
     headerTitle: "AI Training & Certification",
+    courseHeader: ["AI Developer", "AI", "Backend Developer", "AI Developer", "AI Developer"],
     headerImage: aibnr,
     courseTitle: "Why AI Program ?",
     title: "AI Curriculum",
@@ -11886,6 +11903,7 @@ export const courseData = [
   {
     course: "data_science_training",
     headerTitle: "Data Science Training & Certification",
+    courseHeader: ["Data Science Developer", "Data Science", "Backend Developer", "Data Science Developer", "Data Science Developer"],
     headerImage: databanner,
     courseTitle: "Why Data Science Program ?",
     title: "Data Science Curriculum",
@@ -12408,6 +12426,7 @@ export const courseData = [
   {
     course: "power_bi",
     headerTitle: "Master Data Visualization with Our Power BI Training",
+    courseHeader: ["Power Bi Engineer", "Power Bi Architect", "Technology Consultant ReactJs", "Systems Engineer", "System Administrator"],
     headerImage: babanner,
     courseTitle: "Why Azure Power Bi Training With Digital Edify?",
     title: "Power Bi Course Curriculum",
@@ -13250,6 +13269,7 @@ export const programsData = [
   {
     course: "full_stack_java",
     headerTitle: "Become a Full-Stack Java Developer",
+    courseHeader: ["Software Engineer", "FrontEnd Developer", "Java Developer", "FullStack Developer", "Application Engineer"],
     headerImage: java,
     courseTitle: "Why Job Ready Program FullStack Java With Digital Edify?",
     title: "Job Ready Program FullStack Java Course Curriculum",
@@ -14396,6 +14416,7 @@ export const programsData = [
   {
     course: "full_stack_python",
     headerTitle: "Master Full-Stack Python Development with Expert Guidance",
+    courseHeader: ["REACT Developer", "Frontend Developer", "Backend Developer", "Java Developer", "Java Developer", "Software Developer"],
     headerImage: fullstackbnr,
     courseTitle: "Why Full Stack Masters Program ?",
     title: "Full stack Masters With Cloud & DevOps Curriculum",
@@ -15421,6 +15442,7 @@ export const programsData = [
   {
     course: "full_stack_mern",
     headerTitle: "Dive into Full-Stack MERN Development",
+    courseHeader: ["REACT Developer", "Frontend Developer", "Backend Developer", "Java Developer", "Java Developer", "Software Developer"],
     headerImage: fullstackbnr,
     courseTitle: "Why Full Stack Masters Program ?",
     title: "Full stack Masters With Cloud & DevOps Curriculum",
@@ -16433,6 +16455,7 @@ export const programsData = [
   {
     course: "full_stack_ai_data_science",
     headerTitle: "Become an AI & Data Science Expert with Our Program",
+    courseHeader: ["AI Developer", "AI", "Backend Developer", "AI Developer", "AI Developer"],
     headerImage: java,
     courseTitle: "Why AI & Data Science Expert ?",
     title: "Fullstack AI & Data Science Course Curriculum",
@@ -16976,6 +16999,7 @@ export const programsData = [
   {
     course: "multi_cloud_devops",
     headerTitle: "Master Multi-Cloud DevOps with Comprehensive Training",
+    courseHeader: ["DevOps Engineer", "AWS DevOps Engineer", "Azure DevOps Engineer", "DevOps Consultant", "System Administrator", "Site Reliability Engineer"],
     headerImage: java,
     courseTitle: "Why Multi-Cloud DevOps With Digital Edify?",
     title: "Multi-Cloud DevOps Course Curriculum",
@@ -18376,6 +18400,7 @@ export const programsData = [
   {
     course: "multi_cloud_data_engineering",
     headerTitle: "Advance Your Career with Multi-Cloud Data Engineering Skills",
+    courseHeader: ["Azure Data Engineer", "Azure Data Architect", "Azure Data Scientist", "Azure AI Engineer", "Azure Solutions Architect"],
     headerImage: java,
     courseTitle: "Why Multi-Cloud Data Engineering With Digital Edify?",
     title: "Multi-Cloud Data Engineering Course Curriculum",
@@ -19047,6 +19072,7 @@ export const programsData = [
   {
     course: "ai_data_analyst",
     headerTitle: "Become a Skilled Data Analyst with Comprehensive Training",
+    courseHeader: ["Power Bi Engineer", "Power Bi Architect", "Technology Consultant ReactJs", "Systems Engineer", "System Administrator"],
     headerImage: java,
     courseTitle: "Why AI Data Analyst Training With Digital Edify?",
     title: "AI Data Analyst Course Curriculum",
