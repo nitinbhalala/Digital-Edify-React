@@ -37,16 +37,17 @@ const HeroSection = ({ serviceData }) => {
                     serviceData?.imagePosition === "br"
                       ? "50% 50% 5% 50%"
                       : serviceData?.imagePosition === "bl"
-                      ? "50% 50% 50% 5%"
-                      : serviceData?.imagePosition === "tr"
-                      ? "50% 5% 50% 50%"
-                      : "5% 50% 50% 50%",
+                        ? "50% 50% 50% 5%"
+                        : serviceData?.imagePosition === "tr"
+                          ? "50% 5% 50% 50%"
+                          : "5% 50% 50% 50%",
                 }}
               >
                 <img
                   src={serviceData?.headerImage}
                   alt="About Us"
                   className="rounded-full w-64 h-64 object-cover"
+                  loading="lazy"
                 />
               </div>
             </div>

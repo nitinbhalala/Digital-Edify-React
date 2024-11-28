@@ -21,7 +21,8 @@ const Compaines = () => {
                     <img
                         key={`row1-${index}`}
                         src={image}
-                        alt={`Image ${index + 1}`}
+                        loading="lazy"
+                        alt={`Image ${index + 1}` || "Compaines"}
                         className={`object-contain filter grayscale-[100%] hover:filter-none ${index === 0
                             ? "h-9 md:h-20 w-[120px] md:w-[160px]"
                             : index === 1
@@ -42,8 +43,9 @@ const Compaines = () => {
                 {images.slice(5, 11).map((image, index) => (
                     <img
                         key={`row2-${index}`}
+                        loading="lazy"
                         src={image}
-                        alt={`Image ${index + 6}`}
+                        alt={`Image ${index + 6}` || "Compaines"}
                         className={`object-contain filter grayscale-[100%] hover:filter-none ${index === 0
                             ? "h-10 md:h-18 w-[150px]"
                             : index === 1

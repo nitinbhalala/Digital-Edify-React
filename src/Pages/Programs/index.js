@@ -96,6 +96,7 @@ const Programs = () => {
                       src={rating}
                       alt="rating"
                       className="hidden md:block"
+                      loading="lazy"
                     />
                     <p className="hidden md:block text-[10px] md:text-base text-gray-600 font-light">
                       (500)

@@ -69,7 +69,7 @@ import oneToOneTraining from "../assets/Services/onetoone.jpg";
 
 export const courseData = [
   {
-    course: "java",
+    course: "java-training-certification",
     headerTitle: "Java Training & Certification",
     courseHeader: ["Java Administrator", "Java Developer", "Java Architect", "Business Analyst", "Java Consultant"],
     headerImage: javabanner,
@@ -607,7 +607,7 @@ export const courseData = [
     ],
   },
   {
-    course: "ui_ux_design",
+    course: "ui-ux-design-training",
     headerTitle: "UI/UX Design Course Training",
     courseHeader: ["Graphic Designer", "Web Designer", "Architects Designer", "Visual Designer", "Interior Designer"],
     headerImage: uiuxbanner,
@@ -926,7 +926,7 @@ export const courseData = [
     ],
   },
   {
-    course: "python",
+    course: "python-training-certification",
     headerTitle: "Python Training & Certification",
     courseHeader: ["Software Engineer", "Python Developer", "Research Analyst", "Data Analyst", "Software Developer"],
     headerImage: pythonbanr,
@@ -1497,7 +1497,7 @@ export const courseData = [
     ],
   },
   {
-    course: "react_js",
+    course: "react-js-training-certification",
     headerTitle: "React JS Training & Certification",
     courseHeader: ["ReactJS Developer", "UI Developer", "Front End Developer", "Front End Engineer", "Full Stack Engineer"],
     headerImage: pythonbanr,
@@ -2431,7 +2431,7 @@ export const courseData = [
     ],
   },
   {
-    course: "full_stack_developer",
+    course: "full-stack-developer-course",
     headerTitle: "Become a Full-Stack Developer",
     courseHeader: ["REACT Developer", "Frontend Developer", "Backend Developer", "Java Developer", "Software Developer"],
     headerImage: fullstackbnr1,
@@ -3679,7 +3679,7 @@ export const courseData = [
     ],
   },
   {
-    course: "business_analyst",
+    course: "business-analyst-training-certification",
     headerTitle: "Business Analyst Training & Certification",
     headerImage: babanner,
     courseHeader: ["Business Analyst", "Systems Analyst", "Product Owner", "Project Manager", "Cloud Engineer"],
@@ -4269,7 +4269,7 @@ export const courseData = [
     ],
   },
   {
-    course: "software_testing",
+    course: "software-testing-training",
     headerTitle: "Software Testing Training",
     courseHeader: ["QA Engineer", "Test Analyst", "Test Engineer", "Test Architect", "Test Manager"],
     headerImage: testingbnr,
@@ -5126,7 +5126,7 @@ export const courseData = [
     ],
   },
   {
-    course: "devops",
+    course: "devops-training-certification",
     headerTitle: "DevOps Training & Certification",
     courseHeader: ["DevOps Engineer", "DevOps Architect", "DevOps Consultant", "System Engineer", "System Administrator"],
     headerImage: devnewimg,
@@ -6357,7 +6357,7 @@ export const courseData = [
     ],
   },
   {
-    course: "azure_devops",
+    course: "azure-devops-training-certification",
     headerTitle: "Azure DevOps Training & Certification",
     courseHeader: ["DevOps Engineer", "Azure DevOps Engineer", "Azure DevOps Consultant", "DevOps Architect", "System Administrator"],
     headerImage: azdev,
@@ -7800,7 +7800,7 @@ export const courseData = [
     ],
   },
   {
-    course: "aws_cloud",
+    course: "aws-cloud-training-certification",
     headerTitle: "AWS Cloud Training & Certification",
     courseHeader: ["Infrastructure Engineer", "AWS Engineer", "AWS Architect", "Cloud Architect", "Cloud Engineer", "AWS Consultant"],
     headerImage: awsbanner,
@@ -8329,7 +8329,7 @@ export const courseData = [
     ],
   },
   {
-    course: "azure_cloud",
+    course: "azure-cloud-training-certification",
     headerTitle: "Azure Cloud Training & Certification",
     courseHeader: ["DevOps Engineer", "Azure DevOps Engineer", "Azure DevOps Consultant", "DevOps Architect", "System Administrator"],
     headerImage: azdev,
@@ -8768,7 +8768,7 @@ export const courseData = [
     ],
   },
   {
-    course: "salesforce",
+    course: "sales-force-training-certification",
     headerTitle: "Salesforce Training",
     courseHeader: ["ReactJS Developer", "UI Developer", "Front End Developer", "Front End Engineer", "Full Stack Engineer"],
     headerImage: slacebanner,
@@ -9453,7 +9453,7 @@ export const courseData = [
     ],
   },
   {
-    course: "azure_data_engineering",
+    course: "azure-data-engineering-training-certification",
     headerTitle: "Azure Data Engineering Training & Certification",
     courseHeader: ["Azure Data Engineer", "Azure Data Architect", "Azure Data Scientist", "Azure AI Engineer", "Azure Solutions Architect"],
     headerImage: azure_eng,
@@ -10091,7 +10091,7 @@ export const courseData = [
     ],
   },
   {
-    course: "aws_data_engineering",
+    course: "aws-data-engineering-training-certification",
     headerTitle: "AWS Data Engineering Training & Certification",
     courseHeader: ["AWS Data Engineer", "AWS Data Architect", "AWS Data Scientist", "AWS AI Engineer", "AWS Solutions Architect"],
     headerImage: aws_eng,
@@ -10728,7 +10728,7 @@ export const courseData = [
     ],
   },
   {
-    course: "gcp_data_engineering",
+    course: "gcp-data-engineering-training-certification",
     headerTitle: "GCP Data Engineering Training & Certification",
     courseHeader: ["GCP Data Engineer", "GCP Data Architect", "GCP Data Scientist", "GCP AI Engineer", "GCP Solutions Architect"],
     headerImage: gcp_eng,
@@ -11359,7 +11359,7 @@ export const courseData = [
     ],
   },
   {
-    course: "ai_training_and_certification",
+    course: "ai-training-certification",
     headerTitle: "AI Training & Certification",
     courseHeader: ["AI Developer", "AI", "Backend Developer", "AI Developer", "AI Developer"],
     headerImage: aibnr,
@@ -11901,7 +11901,7 @@ export const courseData = [
     ],
   },
   {
-    course: "data_science_training",
+    course: "data-science-training-certification",
     headerTitle: "Data Science Training & Certification",
     courseHeader: ["Data Science Developer", "Data Science", "Backend Developer", "Data Science Developer", "Data Science Developer"],
     headerImage: databanner,
@@ -12424,7 +12424,7 @@ export const courseData = [
     ],
   },
   {
-    course: "power_bi",
+    course: "power-bi-training-certification",
     headerTitle: "Master Data Visualization with Our Power BI Training",
     courseHeader: ["Power Bi Engineer", "Power Bi Architect", "Technology Consultant ReactJs", "Systems Engineer", "System Administrator"],
     headerImage: babanner,
@@ -13267,7 +13267,7 @@ export const courseData = [
 
 export const programsData = [
   {
-    course: "full_stack_java",
+    course: "full-stack-java-training",
     headerTitle: "Become a Full-Stack Java Developer",
     courseHeader: ["Software Engineer", "FrontEnd Developer", "Java Developer", "FullStack Developer", "Application Engineer"],
     headerImage: java,
@@ -14414,7 +14414,7 @@ export const programsData = [
     ],
   },
   {
-    course: "full_stack_python",
+    course: "full-stack-python-training",
     headerTitle: "Master Full-Stack Python Development with Expert Guidance",
     courseHeader: ["REACT Developer", "Frontend Developer", "Backend Developer", "Java Developer", "Java Developer", "Software Developer"],
     headerImage: fullstackbnr,
@@ -15440,7 +15440,7 @@ export const programsData = [
     ],
   },
   {
-    course: "full_stack_mern",
+    course: "full-stack-mern-training",
     headerTitle: "Dive into Full-Stack MERN Development",
     courseHeader: ["REACT Developer", "Frontend Developer", "Backend Developer", "Java Developer", "Java Developer", "Software Developer"],
     headerImage: fullstackbnr,
@@ -16453,7 +16453,7 @@ export const programsData = [
     ],
   },
   {
-    course: "full_stack_ai_data_science",
+    course: "full-stack-ai-data-science-training",
     headerTitle: "Become an AI & Data Science Expert with Our Program",
     courseHeader: ["AI Developer", "AI", "Backend Developer", "AI Developer", "AI Developer"],
     headerImage: java,
@@ -16997,7 +16997,7 @@ export const programsData = [
     ],
   },
   {
-    course: "multi_cloud_devops",
+    course: "multi-cloud-devops-training",
     headerTitle: "Master Multi-Cloud DevOps with Comprehensive Training",
     courseHeader: ["DevOps Engineer", "AWS DevOps Engineer", "Azure DevOps Engineer", "DevOps Consultant", "System Administrator", "Site Reliability Engineer"],
     headerImage: java,
@@ -18398,7 +18398,7 @@ export const programsData = [
     ],
   },
   {
-    course: "multi_cloud_data_engineering",
+    course: "multi-cloud-data-engineering-training",
     headerTitle: "Advance Your Career with Multi-Cloud Data Engineering Skills",
     courseHeader: ["Azure Data Engineer", "Azure Data Architect", "Azure Data Scientist", "Azure AI Engineer", "Azure Solutions Architect"],
     headerImage: java,
@@ -19070,7 +19070,7 @@ export const programsData = [
     ],
   },
   {
-    course: "ai_data_analyst",
+    course: "data-analyst-training",
     headerTitle: "Become a Skilled Data Analyst with Comprehensive Training",
     courseHeader: ["Power Bi Engineer", "Power Bi Architect", "Technology Consultant ReactJs", "Systems Engineer", "System Administrator"],
     headerImage: java,
@@ -19938,7 +19938,7 @@ export const programsData = [
 
 export const servicesData = [
   {
-    course: "class_training",
+    course: "class-training",
     pageName: "Class Room Training",
     headerImage: classTraining,
     imagePosition: "br",
@@ -20000,7 +20000,7 @@ export const servicesData = [
     ],
   },
   {
-    course: "online_training",
+    course: "online-training",
     pageName: "Online Training",
     headerImage: onlineTraining,
     imagePosition: "bl",
@@ -20052,7 +20052,7 @@ export const servicesData = [
     ],
   },
   {
-    course: "weekend_training",
+    course: "weekend-training",
     pageName: "Weekend Training",
     headerImage: weekendTraining,
     imagePosition: "rl",
@@ -20114,7 +20114,7 @@ export const servicesData = [
     ],
   },
   {
-    course: "corporate_training",
+    course: "corporate-training",
     pageName: "Corporate Training",
     headerImage: corporateTraining,
     imagePosition: "tr",
@@ -20166,7 +20166,7 @@ export const servicesData = [
     ],
   },
   {
-    course: "one_to_one_training",
+    course: "one-to-one-training",
     pageName: "One-To-One Training",
     headerImage: oneToOneTraining,
     imagePosition: "br",

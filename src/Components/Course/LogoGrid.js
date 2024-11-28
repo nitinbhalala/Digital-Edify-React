@@ -9,9 +9,10 @@ const LogoGrid = ({ logos }) => {
                     className="flex justify-center items-center"
                 >
                     <img
-                        src={logo.src}
-                        alt={logo.alt}
+                        src={logo?.src}
+                        alt={logo?.alt || "LogoGrid"}
                         className="h-10 w-20 md:h-16 md:w-[140px] object-contain filter grayscale-[100%] hover:filter-none mx-auto"
+                        loading="lazy"
                     />
                 </div>
             ))}

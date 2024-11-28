@@ -34,8 +34,9 @@ const Header = () => {
             <img
               onClick={() => navigate("/")}
               src={digitaledify}
-              alt="Digital Edify - Best AWS, DevOps, Python, Digital Marketing Training Institute"
-              title="Digital Edify - Best AWS, DevOps, Python, Digital Marketing Training Institute"
+              alt="Digital Edify - Best AWS"
+              title="Digital Edify - Best AWS"
+              loading="lazy"
               className="cursor-pointer h-14"
             />
           </div>
@@ -47,9 +48,8 @@ const Header = () => {
           </div>
 
           <div
-            className={` ${
-              isMobileMenuOpen ? "block px-6 pt-10" : "hidden"
-            } fixed lg:static top-0 left-0 w-full lg:w-auto h-screen lg:h-auto flex flex-col lg:flex-row transition-all bg-white lg:bg-transparent lg:flex gap-3 md:gap-6 lg:items-center`}
+            className={` ${isMobileMenuOpen ? "block px-6 pt-10" : "hidden"
+              } fixed lg:static top-0 left-0 w-full lg:w-auto h-screen lg:h-auto flex flex-col lg:flex-row transition-all bg-white lg:bg-transparent lg:flex gap-3 md:gap-6 lg:items-center`}
           >
             <div className="content-center">
               <ul className="flex flex-col lg:flex-row lg:gap-5 ">
@@ -59,11 +59,10 @@ const Header = () => {
                   onMouseLeave={handleMouseLeave}
                 >
                   <a
-                    className={`font-normal py-7 text-sm font-poppins uppercase flex gap-2 items-center cursor-pointer ${
-                      isDropdownOpen === 1
-                        ? "border-b border-b-[#F06292]"
-                        : "border-0"
-                    } `}
+                    className={`font-normal py-7 text-sm font-poppins uppercase flex gap-2 items-center cursor-pointer ${isDropdownOpen === 1
+                      ? "border-b border-b-[#F06292]"
+                      : "border-0"
+                      } `}
                   >
                     Courses <LuChevronDown size={15} />
                   </a>
@@ -77,9 +76,9 @@ const Header = () => {
                           </h5>
                           <ul className="space-y-2">
                             <li>
-                              <a
+                              <p
                                 className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
-                                onClick={() => navigate("/course/java")}
+                                onClick={() => navigate("/courses/java-training-certification")}
                               >
                                 <MdKeyboardDoubleArrowRight
                                   color="#ca0067"
@@ -87,11 +86,11 @@ const Header = () => {
                                   size={18}
                                 />
                                 Java
-                              </a>
+                              </p>
                             </li>
                             <li>
-                              <a
-                                onClick={() => navigate("/course/ui_ux_design")}
+                              <p
+                                onClick={() => navigate("/courses/ui-ux-design-training")}
                                 className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                               >
                                 <MdKeyboardDoubleArrowRight
@@ -100,11 +99,11 @@ const Header = () => {
                                   size={18}
                                 />
                                 UI/UX Design
-                              </a>
+                              </p>
                             </li>
                             <li>
-                              <a
-                                onClick={() => navigate("/course/python")}
+                              <p
+                                onClick={() => navigate("/courses/python-training-certification")}
                                 className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                               >
                                 <MdKeyboardDoubleArrowRight
@@ -113,11 +112,11 @@ const Header = () => {
                                   size={18}
                                 />
                                 Python
-                              </a>
+                              </p>
                             </li>
                             <li>
-                              <a
-                                onClick={() => navigate("/course/react_js")}
+                              <p
+                                onClick={() => navigate("/courses/react-js-training-certification")}
                                 className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                               >
                                 <MdKeyboardDoubleArrowRight
@@ -126,12 +125,12 @@ const Header = () => {
                                   size={18}
                                 />
                                 React JS
-                              </a>
+                              </p>
                             </li>
                             <li>
-                              <a
+                              <p
                                 onClick={() =>
-                                  navigate("/course/full_stack_developer")
+                                  navigate("/courses/full-stack-developer-course")
                                 }
                                 className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                               >
@@ -141,12 +140,12 @@ const Header = () => {
                                   size={18}
                                 />
                                 Full-Stack Developer
-                              </a>
+                              </p>
                             </li>
                             <li>
-                              <a
+                              <p
                                 onClick={() =>
-                                  navigate("/course/business_analyst")
+                                  navigate("/courses/business-analyst-training-certification")
                                 }
                                 className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                               >
@@ -156,12 +155,12 @@ const Header = () => {
                                   size={18}
                                 />
                                 Business Analyst
-                              </a>
+                              </p>
                             </li>
                             <li>
-                              <a
+                              <p
                                 onClick={() =>
-                                  navigate("/course/software_testing")
+                                  navigate("/courses/software-testing-training")
                                 }
                                 className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                               >
@@ -171,7 +170,7 @@ const Header = () => {
                                   size={18}
                                 />
                                 Software Testing
-                              </a>
+                              </p>
                             </li>
                           </ul>
                         </div>
@@ -182,8 +181,8 @@ const Header = () => {
                           </h5>
                           <ul className="space-y-2">
                             <li>
-                              <a
-                                onClick={() => navigate("/course/devops")}
+                              <p
+                                onClick={() => navigate("/courses/devops-training-certification")}
                                 className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                               >
                                 <MdKeyboardDoubleArrowRight
@@ -192,11 +191,11 @@ const Header = () => {
                                   size={18}
                                 />
                                 DevOps
-                              </a>
+                              </p>
                             </li>
                             <li>
-                              <a
-                                onClick={() => navigate("/course/azure_devops")}
+                              <p
+                                onClick={() => navigate("/courses/azure-devops-training-certification")}
                                 className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                               >
                                 <MdKeyboardDoubleArrowRight
@@ -205,11 +204,11 @@ const Header = () => {
                                   size={18}
                                 />
                                 Azure DevOps
-                              </a>
+                              </p>
                             </li>
                             <li>
-                              <a
-                                onClick={() => navigate("/course/aws_cloud")}
+                              <p
+                                onClick={() => navigate("/courses/aws-cloud-training-certification")}
                                 className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                               >
                                 <MdKeyboardDoubleArrowRight
@@ -218,11 +217,11 @@ const Header = () => {
                                   size={18}
                                 />
                                 AWS Cloud
-                              </a>
+                              </p>
                             </li>
                             <li>
-                              <a
-                                onClick={() => navigate("/course/azure_cloud")}
+                              <p
+                                onClick={() => navigate("/courses/azure-cloud-training-certification")}
                                 className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                               >
                                 <MdKeyboardDoubleArrowRight
@@ -231,11 +230,11 @@ const Header = () => {
                                   size={18}
                                 />
                                 Azure Cloud
-                              </a>
+                              </p>
                             </li>
                             <li>
-                              <a
-                                onClick={() => navigate("/course/salesforce")}
+                              <p
+                                onClick={() => navigate("/courses/sales-force-training-certification")}
                                 className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                               >
                                 <MdKeyboardDoubleArrowRight
@@ -244,7 +243,7 @@ const Header = () => {
                                   size={18}
                                 />
                                 Salesforce
-                              </a>
+                              </p>
                             </li>
                           </ul>
                         </div>
@@ -255,9 +254,9 @@ const Header = () => {
                           </h5>
                           <ul className="space-y-2">
                             <li>
-                              <a
+                              <p
                                 onClick={() =>
-                                  navigate("/course/azure_data_engineering")
+                                  navigate("/courses/azure-data-engineering-training-certification")
                                 }
                                 className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                               >
@@ -267,12 +266,12 @@ const Header = () => {
                                   size={18}
                                 />
                                 Azure Data Engineering
-                              </a>
+                              </p>
                             </li>
                             <li>
-                              <a
+                              <p
                                 onClick={() =>
-                                  navigate("/course/aws_data_engineering")
+                                  navigate("/courses/aws-data-engineering-training-certification")
                                 }
                                 className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                               >
@@ -282,12 +281,12 @@ const Header = () => {
                                   size={18}
                                 />
                                 AWS Data Engineering
-                              </a>
+                              </p>
                             </li>
                             <li>
-                              <a
+                              <p
                                 onClick={() =>
-                                  navigate("/course/gcp_data_engineering")
+                                  navigate("/courses/gcp-data-engineering-training-certification")
                                 }
                                 className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                               >
@@ -297,13 +296,13 @@ const Header = () => {
                                   size={18}
                                 />
                                 GCP Data Engineering
-                              </a>
+                              </p>
                             </li>
                             <li>
-                              <a
+                              <p
                                 onClick={() =>
                                   navigate(
-                                    "/course/ai_training_and_certification"
+                                    "/courses/ai-training-certification"
                                   )
                                 }
                                 className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
@@ -314,12 +313,12 @@ const Header = () => {
                                   size={18}
                                 />
                                 AI Training & Certification
-                              </a>
+                              </p>
                             </li>
                             <li>
-                              <a
+                              <p
                                 onClick={() =>
-                                  navigate("/course/data_science_training")
+                                  navigate("/courses/data-science-training-certification")
                                 }
                                 className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                               >
@@ -329,11 +328,11 @@ const Header = () => {
                                   size={18}
                                 />
                                 Data Science Training
-                              </a>
+                              </p>
                             </li>
                             <li>
-                              <a
-                                onClick={() => navigate("/course/power_bi")}
+                              <p
+                                onClick={() => navigate("/courses/power-bi-training-certification")}
                                 className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                               >
                                 <MdKeyboardDoubleArrowRight
@@ -342,7 +341,7 @@ const Header = () => {
                                   size={18}
                                 />
                                 Power BI
-                              </a>
+                              </p>
                             </li>
                           </ul>
                         </div>
@@ -356,11 +355,10 @@ const Header = () => {
                   onMouseLeave={handleMouseLeave}
                 >
                   <a
-                    className={`font-normal text-sm font-poppins uppercase flex gap-2 items-center cursor-pointer py-7 ${
-                      isDropdownOpen === 2
-                        ? "border-b border-b-[#F06292]"
-                        : "border-0"
-                    }`}
+                    className={`font-normal text-sm font-poppins uppercase flex gap-2 items-center cursor-pointer py-7 ${isDropdownOpen === 2
+                      ? "border-b border-b-[#F06292]"
+                      : "border-0"
+                      }`}
                   >
                     Programs <LuChevronDown size={15} />
                   </a>
@@ -370,9 +368,9 @@ const Header = () => {
                       <div className="w-60">
                         <ul className="space-y-2">
                           <li>
-                            <a
+                            <p
                               onClick={() =>
-                                navigate("/programs/full_stack_java")
+                                navigate("/programs/full-stack-java-training")
                               }
                               className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                             >
@@ -382,12 +380,12 @@ const Header = () => {
                                 size={18}
                               />
                               Full-Stack Java
-                            </a>
+                            </p>
                           </li>
                           <li>
-                            <a
+                            <p
                               onClick={() =>
-                                navigate("/programs/full_stack_python")
+                                navigate("/programs/full-stack-python-training")
                               }
                               className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                             >
@@ -397,12 +395,12 @@ const Header = () => {
                                 size={18}
                               />
                               Full-Stack Python
-                            </a>
+                            </p>
                           </li>
                           <li>
-                            <a
+                            <p
                               onClick={() =>
-                                navigate("/programs/full_stack_mern")
+                                navigate("/programs/full-stack-mern-training")
                               }
                               className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                             >
@@ -412,12 +410,12 @@ const Header = () => {
                                 size={18}
                               />
                               Full-Stack MERN
-                            </a>
+                            </p>
                           </li>
                           <li>
-                            <a
+                            <p
                               onClick={() =>
-                                navigate("/programs/full_stack_ai_data_science")
+                                navigate("/programs/full-stack-ai-data-science-training")
                               }
                               className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                             >
@@ -427,12 +425,12 @@ const Header = () => {
                                 size={18}
                               />
                               Full-Stack AI Data Science
-                            </a>
+                            </p>
                           </li>
                           <li>
-                            <a
+                            <p
                               onClick={() =>
-                                navigate("/programs/multi_cloud_devops")
+                                navigate("/programs/multi-cloud-devops-training")
                               }
                               className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                             >
@@ -442,13 +440,13 @@ const Header = () => {
                                 size={18}
                               />
                               Multi-Cloud DevOps
-                            </a>
+                            </p>
                           </li>
                           <li>
-                            <a
+                            <p
                               onClick={() =>
                                 navigate(
-                                  "/programs/multi_cloud_data_engineering"
+                                  "/programs/multi-cloud-data-engineering-training"
                                 )
                               }
                               className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
@@ -459,12 +457,12 @@ const Header = () => {
                                 size={18}
                               />
                               Multi-Cloud Data Engineering
-                            </a>
+                            </p>
                           </li>
                           <li>
-                            <a
+                            <p
                               onClick={() =>
-                                navigate("/programs/ai_data_analyst")
+                                navigate("/programs/data-analyst-training")
                               }
                               className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                             >
@@ -474,7 +472,7 @@ const Header = () => {
                                 size={18}
                               />
                               AI Data Analyst
-                            </a>
+                            </p>
                           </li>
                         </ul>
                       </div>
@@ -487,11 +485,10 @@ const Header = () => {
                   onMouseLeave={handleMouseLeave}
                 >
                   <a
-                    className={`font-normal text-sm font-poppins uppercase flex gap-2 items-center cursor-pointer py-7 ${
-                      isDropdownOpen === 3
-                        ? "border-b border-b-[#F06292]"
-                        : "border-0"
-                    }`}
+                    className={`font-normal text-sm font-poppins uppercase flex gap-2 items-center cursor-pointer py-7 ${isDropdownOpen === 3
+                      ? "border-b border-b-[#F06292]"
+                      : "border-0"
+                      }`}
                   >
                     Services <LuChevronDown size={15} />
                   </a>
@@ -501,9 +498,9 @@ const Header = () => {
                       <div className="w-60">
                         <ul className="space-y-2">
                           <li>
-                            <a
+                            <p
                               onClick={() =>
-                                navigate("/services/class_training")
+                                navigate("/services/class-training")
                               }
                               className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                             >
@@ -513,12 +510,12 @@ const Header = () => {
                                 size={18}
                               />
                               Class Training
-                            </a>
+                            </p>
                           </li>
                           <li>
-                            <a
+                            <p
                               onClick={() =>
-                                navigate("/services/online_training")
+                                navigate("/services/online-training")
                               }
                               className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                             >
@@ -528,12 +525,12 @@ const Header = () => {
                                 size={18}
                               />
                               Online Training
-                            </a>
+                            </p>
                           </li>
                           <li>
-                            <a
+                            <p
                               onClick={() =>
-                                navigate("/services/weekend_training")
+                                navigate("/services/weekend-training")
                               }
                               className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                             >
@@ -543,12 +540,12 @@ const Header = () => {
                                 size={18}
                               />
                               Weekend Training
-                            </a>
+                            </p>
                           </li>
                           <li>
-                            <a
+                            <p
                               onClick={() =>
-                                navigate("/services/corporate_training")
+                                navigate("/services/corporate-training")
                               }
                               className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                             >
@@ -558,12 +555,12 @@ const Header = () => {
                                 size={18}
                               />
                               Corporate Training
-                            </a>
+                            </p>
                           </li>
                           <li>
-                            <a
+                            <p
                               onClick={() =>
-                                navigate("/services/one_to_one_training")
+                                navigate("/services/one-to-one-training")
                               }
                               className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                             >
@@ -573,7 +570,7 @@ const Header = () => {
                                 size={18}
                               />
                               One-To-One Training
-                            </a>
+                            </p>
                           </li>
                         </ul>
                       </div>
@@ -585,23 +582,22 @@ const Header = () => {
                   onMouseEnter={() => handleMouseEnter(4)}
                   onMouseLeave={handleMouseLeave}
                 >
-                  <a
-                    className={`font-normal text-sm font-poppins uppercase flex gap-2 items-center cursor-pointer py-7 ${
-                      isDropdownOpen === 4
-                        ? "border-b border-b-[#F06292]"
-                        : "border-0"
-                    }`}
+                  <p
+                    className={`font-normal text-sm font-poppins uppercase flex gap-2 items-center cursor-pointer py-7 ${isDropdownOpen === 4
+                      ? "border-b border-b-[#F06292]"
+                      : "border-0"
+                      }`}
                   >
                     Resources <LuChevronDown size={15} />
-                  </a>
+                  </p>
                   {isDropdownOpen === 4 && (
                     <div className="absolute top-[57px] -left-2 mt-2 bg-[#fafafa] z-10 shadow-lg rounded-lg p-4 w-max">
                       {/* Application Stack */}
                       <div className="w-60">
                         <ul className="space-y-2">
                           <li>
-                            <a
-                              onClick={() => navigate("/blogs")}
+                            <p
+                              onClick={() => navigate("/blogs/edify-blogs")}
                               className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                             >
                               <MdKeyboardDoubleArrowRight
@@ -610,11 +606,11 @@ const Header = () => {
                                 size={18}
                               />
                               Blogs
-                            </a>
+                            </p>
                           </li>
                           <li>
-                            <a
-                              onClick={() => navigate("/demos")}
+                            <p
+                              onClick={() => navigate("/demos/edify-demos")}
                               className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                             >
                               <MdKeyboardDoubleArrowRight
@@ -623,7 +619,7 @@ const Header = () => {
                                 size={18}
                               />
                               Demos
-                            </a>
+                            </p>
                           </li>
                         </ul>
                       </div>
@@ -635,23 +631,22 @@ const Header = () => {
                   onMouseEnter={() => handleMouseEnter(5)}
                   onMouseLeave={handleMouseLeave}
                 >
-                  <a
-                    className={`font-normal text-sm font-poppins uppercase flex gap-2 items-center cursor-pointer py-7 ${
-                      isDropdownOpen === 5
-                        ? "border-b border-b-[#F06292]"
-                        : "border-0"
-                    }`}
+                  <p
+                    className={`font-normal text-sm font-poppins uppercase flex gap-2 items-center cursor-pointer py-7 ${isDropdownOpen === 5
+                      ? "border-b border-b-[#F06292]"
+                      : "border-0"
+                      }`}
                   >
                     Company <LuChevronDown size={15} />
-                  </a>
+                  </p>
                   {isDropdownOpen === 5 && (
                     <div className="absolute top-[57px] -left-2 mt-2 bg-[#fafafa] z-10 shadow-lg rounded-lg p-4 w-max">
                       {/* Application Stack */}
                       <div className="w-60">
                         <ul className="space-y-2">
                           <li>
-                            <a
-                              onClick={() => navigate("/about_us")}
+                            <p
+                              onClick={() => navigate("/company/about-us")}
                               className="flex items-center cursor-pointer text-gray-600 hover:text-blue-500 hover:gap-2"
                             >
                               <MdKeyboardDoubleArrowRight
@@ -660,7 +655,7 @@ const Header = () => {
                                 size={18}
                               />
                               About Us
-                            </a>
+                            </p>
                           </li>
                         </ul>
                       </div>

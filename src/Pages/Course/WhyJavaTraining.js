@@ -200,7 +200,7 @@ const WhyJavaTraining = ({ title, headerTitle }) => {
                     style={{ boxShadow: "0 0 30px #adb5ca57" }}
                 >
                     <p className="text-gray-800 font-medium mb-4 text-xl">Demand</p>
-                    <img src={arrow} alt="arrow" />
+                    <img src={arrow} alt="arrow" loading="lazy" />
                     <div className="flex items-center">
                         <div>
                             <p className="text-[#1554BB] mt-4 text-4xl font-bold">

@@ -18,13 +18,13 @@ const Certificate = () => {
                     <p class="text-xl md:text-3xl font-bold text-center mb-3 text-[#343433]">
                         Internship Certificate
                     </p>
-                    <img src={certi1} alt="certi1" className="mx-auto w-4/5 lg:w-full" />
+                    <img src={certi1} alt="certi1" loading="lazy" className="mx-auto w-4/5 lg:w-full" />
                 </div>
                 <div className="flex-row justify-center items-center">
                     <p class="text-xl md:text-3xl font-bold text-center mb-3 text-[#343433]">
                         Course Completion Certificate
                     </p>
-                    <img src={certi1} alt="certi1" className="mx-auto w-4/5 lg:w-full" />
+                    <img src={certi1} alt="certi1" loading="lazy" className="mx-auto w-4/5 lg:w-full" />
                 </div>
             </div>
         </div>

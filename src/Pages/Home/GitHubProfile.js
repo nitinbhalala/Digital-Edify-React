@@ -64,6 +64,7 @@ const GitHubProfile = () => {
                 src={global}
                 alt="global"
                 className="absolute right-0 hidden md:block h-[550px] lg:h-full "
+                loading="lazy"
             />
         </div>
     )

@@ -10,8 +10,8 @@ const EngineerCard = ({ data }) => {
         >
             <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 w-20 h-20">
                 <img
-                    src={data.profilePic}
-                    alt={data.name}
+                    src={data?.profilePic}
+                    alt={data?.name || "EngineerCard"}
                     className="rounded-full object-cover w-full h-full"
                     loading="lazy"
                 />
@@ -21,14 +21,14 @@ const EngineerCard = ({ data }) => {
             </div>
 
             <h4 className="mt-9 font-semibold text-lg text-center">
-                {data.name}
+                {data?.name}
             </h4>
             <h5 className="text-sm text-center text-gray-700 mt-1">
-                {data.role}
+                {data?.role}
             </h5>
             <img
                 src={data.companyLogo}
-                alt={data.company}
+                alt={data?.company || "EngineerCard"}
                 className="mt-4 object-contain"
                 loading="lazy"
             />

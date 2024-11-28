@@ -48,6 +48,7 @@ const HeroSection = ({ name, disc, boldDisc }) => {
                 src={blog7}
                 alt="About Us"
                 className="rounded-full w-64 h-64 object-cover"
+                loading="lazy"
               />
             </div>
           </div>

@@ -13,7 +13,7 @@ const Footer = () => {
                 <div className="container md:flex md:justify-center">
 
                     <div className="w-fit mx-auto">
-                        <img src={digitaledify} alt="digitaledify" className="mx-auto" />
+                        <img src={digitaledify} loading="lazy" alt="digitaledify" className="mx-auto" />
                         <p className="mt-4 font-poppins text-center">Follow us on</p>
                         <div className="flex space-x-4 mt-2">
                             <a href="#" className='hover:text-blue-500' aria-label="Facebook">
